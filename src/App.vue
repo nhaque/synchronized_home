@@ -47,16 +47,13 @@
 </script>
 
 <style>
-    #research_page {
-        background-color: #F4F4F4;
-    }
 
     .container {
         margin: 0 5vw 0 5vw;
         width: 90vw;
         background-color: #FFFFFF;
     }
-
+yarn
 
     #app {
         font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -89,11 +86,11 @@
     }
 
     p {
-        font-family: Open Sans;
+        font-family: Open Sans, sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 20px;
-        line-height: 26px;
+        line-height: 28px;
 
 
 
@@ -101,7 +98,7 @@
     }
 
     ul {
-        font-family: Open Sans;
+        font-family: Open Sans, sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 20px;
@@ -111,7 +108,7 @@
     }
 
     ul li::before {
-        font-family: Open Sans;
+        font-family: Open Sans, sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 20px;

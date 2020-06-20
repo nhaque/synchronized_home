@@ -57,8 +57,8 @@
         font-family: Open Sans, sans-serif;
         font-style: normal;
         font-weight: 300;
-        font-size: 14px;
-        line-height: 16px;
+        font-size: 12px;
+        line-height: 18px;
         color: #000000;
     }
 </style>

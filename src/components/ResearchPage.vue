@@ -40,10 +40,10 @@
                 <Card class="col-md-6 col-xs-6 my-1" :quant="card.log_data.number" :card_title="card.log_data.title"
                       :card_content="card.log_data.text"></Card>
             </div>
-            <div class="row my-3">
+            <div class="row my-3 pl-5">
                 <h6>Design Implication Guidelines</h6>
             </div>
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-md-6 col-sm-12">
                     <IconText1 :icon_text_title="iconText.chunked_courses.title"
                                :icon_text_text="iconText.chunked_courses.text" :img-src="iconText.chunked_courses.icon"
@@ -56,7 +56,7 @@
                                :list_texts="iconText.interactive_micro.pencilBullet.list_text"></IconText1>
                 </div>
             </div>
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-md-6 col-sm-12">
                     <IconText1 :icon_text_title="iconText.continued_access.title"
                                :icon_text_text="iconText.continued_access.text"
@@ -70,10 +70,10 @@
                                :list_texts="iconText.flexible_pedagogies.pencilBullet.list_text"></IconText1>
                 </div>
             </div>
-            <div class="row my-3">
+            <div class="row my-3 pl-5">
                 <h6>Key Insights</h6>
             </div>
-            <div class="row">
+            <div class="row justify-content-center pl-5">
                 <div class="col-md col-sm">
                     <IconText2 :icon_text_title="iconText.personal_commitment.title"
                                :icon_text_text="iconText.personal_commitment.text"
@@ -113,10 +113,10 @@
                       :card_title="card.affinity_diagram.title"
                       :card_content="card.affinity_diagram.text"></Card>
             </div>
-            <div class="row">
+            <div class="row pl-5">
                 <h6>Key Insights</h6>
             </div>
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-md-6 col-sm-12">
                     <IconText1 :icon_text_title="iconText.extra_effort.title"
                                :icon_text_text="iconText.extra_effort.text" :img-src="iconText.extra_effort.icon"

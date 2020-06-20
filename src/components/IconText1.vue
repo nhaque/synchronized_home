@@ -55,7 +55,7 @@
         font-style: normal;
         font-weight: 300;
         font-size: 14px;
-        line-height: 130%;
+        line-height: 150%;
         /* or 16px */
         color: #111111;
     }
