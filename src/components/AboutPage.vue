@@ -19,8 +19,8 @@
         </div>
 
             <div class="team-member  py-5">
-                <div class="container">
-                    <div class="row justify-content-center my-5">
+                <div class="container" id = "intro">
+                    <div class="row justify-content-center my-6">
                         <div class="col-md-12 col-sm-12">
                             <Introduction :name="introduction.shujing.name" :role="introduction.shujing.role"
                                           :intro_text="introduction.shujing.intro"
@@ -28,7 +28,7 @@
                         </div>
                     </div>
 
-                    <div class="row justify-content-center my-5">
+                    <div class="row justify-content-center my-6">
                         <div class="col-md-12 col-sm-12">
                             <Introduction :name="introduction.yu.name" :role="introduction.yu.role"
                                           :intro_text="introduction.yu.intro"
@@ -36,7 +36,7 @@
                         </div>
                     </div>
 
-                    <div class="row justify-content-center my-5">
+                    <div class="row justify-content-center my-6">
                         <div class="col-md-12 col-sm-12">
                             <Introduction :name="introduction.nabeeha.name" :role="introduction.nabeeha.role"
                                           :intro_text="introduction.nabeeha.intro"
@@ -45,7 +45,7 @@
                     </div>
 
 
-                    <div class="row justify-content-center my-5">
+                    <div class="row justify-content-center my-6">
                         <div class="col-md-12 col-sm-12">
                             <Introduction :name="introduction.congying.name" :role="introduction.congying.role"
                                           :intro_text="introduction.congying.intro"
@@ -53,7 +53,7 @@
                         </div>
                     </div>
 
-                    <div class="row justify-content-center my-5">
+                    <div class="row justify-content-center my-6">
                         <div class="col-md-12 col-sm-12">
                             <Introduction :name="introduction.henry.name" :role="introduction.henry.role"
                                           :intro_text="introduction.henry.intro"
@@ -181,6 +181,17 @@
 </script>
 
 <style>
+    .mt-6,
+    .my-6 {
+        margin-top: 8rem !important;
+    }
+
+    .mb-6,
+    .my-6 {
+        margin-bottom: 8rem !important;
+    }
+
+
     .team-member {
         background-color: #F4F4F4;
     }
@@ -188,5 +199,9 @@
     #team-img {
         width: 100%;
         height: auto;
+    }
+
+    #intro {
+        background-color: #F4F4F4;
     }
 </style>

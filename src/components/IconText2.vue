@@ -37,7 +37,7 @@
         font-family: Open Sans, sans-serif;
         font-style: normal;
         font-weight: bold;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 19px;
 
         color: #02B1E1;
@@ -47,7 +47,7 @@
         font-family: Open Sans, sans-serif;
         font-style: normal;
         font-weight: normal;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 130%;
         /* or 16px */
         color: #111111;

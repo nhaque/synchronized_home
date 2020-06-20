@@ -5,8 +5,10 @@
             <div class = "btn btn-primary" @click="goToResearchPage"> research </div>
         </div>
         <AboutPage v-if = "about_page"></AboutPage>
+        <div id = "research_page">
         <div id="research" class="container">
             <ResearchPage v-if = "research_page"></ResearchPage>
+        </div>
             <Footer></Footer>
         </div>
     </div>
@@ -45,10 +47,14 @@
 </script>
 
 <style>
+    #research_page {
+        background-color: #F4F4F4;
+    }
 
     .container {
         margin: 0 5vw 0 5vw;
         width: 90vw;
+        background-color: #FFFFFF;
     }
 
 
@@ -77,37 +83,39 @@
         font-family: Proxima Nova, Helvetica, sans-serif;
         font-style: normal;
         font-weight: 600;
-        font-size: 16px;
-        line-height: 16px;
+        font-size: 20px;
+        line-height: 26px;
         color: #000000;
     }
 
     p {
-        font-family: Open Sans, sans-serif;
+        font-family: Open Sans;
         font-style: normal;
         font-weight: normal;
-        font-size: 16px;
-        line-height: 30px;
+        font-size: 20px;
+        line-height: 26px;
+
+
 
         color: #000000;
     }
 
     ul {
-        font-family: Open Sans, sans-serif;
+        font-family: Open Sans;
         font-style: normal;
         font-weight: normal;
-        font-size: 16px;
-        line-height: 22px;
+        font-size: 20px;
+        line-height: 26px;
 
         color: #111111;
     }
 
     ul li::before {
-        font-family: Open Sans, sans-serif;
+        font-family: Open Sans;
         font-style: normal;
         font-weight: normal;
-        font-size: 16px;
-        line-height: 22px;
+        font-size: 20px;
+        line-height: 26px;
 
         color: #2F80ED;
     }

@@ -5,7 +5,7 @@
                 <img :src="image">
             </div>
             <div class="col-8 d-flex justify-content-between flex-column  introduction-body">
-                <div class="row name_role my-2" >
+                <div class="row name_role my-4" >
                     <div class="col introduction-name">
                         {{name}}
                     <span class="col introduction-role pl-0">
@@ -13,7 +13,7 @@
                     </span>
                     </div>
                 </div>
-                <div class="row introduction-text my-2">
+                <div class="row introduction-text mb-4">
                     <div class="col-md-12 col-lg-12">
                         {{intro_text}}
                     </div>
@@ -81,19 +81,19 @@
 
 
     .introduction-text {
-        font-family: Open Sans, sans-serif;
+        font-family: Open Sans;
         font-style: normal;
         font-weight: normal;
-        font-size: 16px;
+        font-size: 20px;
         line-height: 26px;
         color: #111111;
     }
 
     .contact {
-        font-family: Open Sans, sans-serif;
+        font-family: Open Sans;
         font-style: normal;
         font-weight: normal;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 22px;
         color: #2F80ED;
     }

@@ -1,17 +1,17 @@
 <template>
     <div>
         <div id = "research-page" class="container">
-            <div class="row">
+            <div class="row my-2">
                 <h2 class="col">Research Plan</h2>
             </div>
-            <div class="row">
+            <div class="row my-2">
                 <p class="col">
                     We made a research plan to understand MindEdge products and the potential users and uncover their
                     needs
                     through background research and generative research.
                 </p>
             </div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center my-5">
                 <div class="col-md-8 col-sm-12">
                     <img :src="image.double_diamond">
                 </div>
@@ -19,8 +19,8 @@
             <div class="row">
                 <h2 class="col">Background Research</h2>
             </div>
-            <div class="row">
-                <p class="col">
+            <div class="row my-2">
+                <p class="col my-2">
                     To design a good online learning mobile app for adult learners, we need to learn about the problem
                     space
                     as much as possible. Our goal for background research is to understand the current market for mobile
@@ -28,7 +28,7 @@
                     products and identify design principles to guide the future phases.
                 </p>
             </div>
-            <div class="row justify-content-center mb-5">
+            <div class="row justify-content-center my-5">
                 <Card class="col-md-6 col-xs-6 my-1" :quant="card.lit_review.number" :card_title="card.lit_review.title"
                       :card_content="card.lit_review.text"></Card>
 
@@ -40,7 +40,7 @@
                 <Card class="col-md-6 col-xs-6 my-1" :quant="card.log_data.number" :card_title="card.log_data.title"
                       :card_content="card.log_data.text"></Card>
             </div>
-            <div class="row">
+            <div class="row my-3">
                 <h6>Design Implication Guidelines</h6>
             </div>
             <div class="row">
@@ -70,7 +70,7 @@
                                :list_texts="iconText.flexible_pedagogies.pencilBullet.list_text"></IconText1>
                 </div>
             </div>
-            <div class="row">
+            <div class="row my-3">
                 <h6>Key Insights</h6>
             </div>
             <div class="row">
@@ -90,7 +90,7 @@
                                :img-src="iconText.personalization.icon"></IconText2>
                 </div>
             </div>
-            <div class="row">
+            <div class="row my-3 mt-3">
                 <h2 class="col">Generative Research</h2>
             </div>
             <div class="row">
@@ -102,7 +102,7 @@
                     learning model, 10 insights and 3 personas.
                 </p>
             </div>
-            <div class="row justify-content-center mb-5">
+            <div class="row justify-content-center my-5">
                 <Card class="col-md-6 col-xs-6 my-1" :quant="card.cta.number" :card_title="card.cta.title"
                       :card_content="card.cta.text"></Card>
 
