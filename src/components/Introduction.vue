@@ -85,7 +85,7 @@
         font-style: normal;
         font-weight: normal;
         font-size: 20px;
-        line-height: 26px;
+        line-height: 28px;
         color: #111111;
     }
 
