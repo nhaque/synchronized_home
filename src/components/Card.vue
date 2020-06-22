@@ -34,6 +34,7 @@
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
         border-width: 0;
     }
+
     .data_quantity{
         font-family: Open Sans, sans-serif;
         font-style: normal;
@@ -57,7 +58,7 @@
         font-style: normal;
         font-weight: 300;
         font-size: 12px;
-        line-height: 16px;
+        line-height: 18px;
         color: #000000;
     }
 </style>

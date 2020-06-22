@@ -37,7 +37,7 @@
         font-family: Open Sans, sans-serif;
         font-style: normal;
         font-weight: bold;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 19px;
 
         color: #02B1E1;
@@ -46,12 +46,13 @@
     .iconText2Text {
         font-family: Open Sans, sans-serif;
         font-style: normal;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 130%;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 150%;
         /* or 16px */
         color: #111111;
     }
+
     div img{
         height: 180px
     }
