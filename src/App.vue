@@ -1,7 +1,7 @@
 <template>
     <div>
         <div id="app" class="container">
-            <Navbar></Navbar>
+            <Navbar :about_page="about_page" :research_page="research_page"></Navbar>
             <div class = "btn btn-primary" @click="goToResearchPage"> research </div>
         </div>
         <AboutPage v-if = "about_page"></AboutPage>
