@@ -1,10 +1,10 @@
 <template>
     <div>
         <div id="app" class="container">
-            <Navbar :about_page="about_page" :research_page="research_page"></Navbar>
-            <div class = "btn btn-primary" @click="goToResearchPage"> research </div>
+            <Navbar :about_page="about_page" :research_page="research_page" v-on:changeView="changeView"></Navbar>
+<!--            <div class = "btn btn-primary" @click="goToResearchPage"> research </div>-->
         </div>
-        <AboutPage v-if = "about_page"></AboutPage>
+        <AboutPage v-if = "about_page" ></AboutPage>
         <div id = "research_page">
         <div id="research" class="container">
             <ResearchPage v-if = "research_page"></ResearchPage>
@@ -41,6 +41,10 @@
             goToResearchPage: function() {
                 this.about_page = false;
                 this.research_page = true;
+            },
+            changeView: function(){
+                this.about_page = !this.about_page;
+                this.research_page = !this.research_page;
             }
         }
     }
@@ -53,7 +57,6 @@
         width: 90vw;
         background-color: #FFFFFF;
     }
-yarn
 
     #app {
         font-family: Avenir, Helvetica, Arial, sans-serif;
