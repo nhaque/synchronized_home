@@ -1,16 +1,23 @@
 <template>
     <div>
         <div id="app" class="container">
-            <Navbar :about_page="about_page" :research_page="research_page" v-on:changeView="changeView"></Navbar>
-<!--            <div class = "btn btn-primary" @click="goToResearchPage"> research </div>-->
-        </div>
-        <AboutPage v-if = "about_page" ></AboutPage>
-        <div id = "research_page">
-        <div id="research" class="container">
-            <ResearchPage v-if = "research_page"></ResearchPage>
-        </div>
+            <div class="row">
+                <Navbar :about_page="about_page" :research_page="research_page" v-on:changeView="changeView"></Navbar>
+            </div>
+            <div id="main-content" class="mt-5">
+                <div id="about_page" class="row">
+                    <AboutPage v-if="about_page==current_page"></AboutPage>
+                </div>
+                <div id="research_page" class="row">
+                    <ResearchPage v-if="current_page==research_page"></ResearchPage>
+                </div>
+                <div id="ideation_page" class="row">
+                    <IdeationPage name="IdeationPage" v-if="current_page==ideation_page"></IdeationPage>
+                </div>
+            </div>
             <Footer></Footer>
         </div>
+
     </div>
 
 
@@ -21,6 +28,7 @@
     import ResearchPage from "./components/ResearchPage";
     import Navbar from "@/components/Navbar";
     import Footer from "@/components/Footer";
+    import IdeationPage from "@/components/IdeationPage";
 
 
     export default {
@@ -28,23 +36,24 @@
         components: {
             AboutPage,
             ResearchPage,
+            IdeationPage,
             Navbar,
             Footer,
         },
         data: function () {
             return {
-                about_page: true,
-                research_page: false
+                current_page: 0,
+                about_page: 0,
+                research_page: 1,
+                ideation_page: 2
             }
         },
         methods: {
-            goToResearchPage: function() {
-                this.about_page = false;
-                this.research_page = true;
+            goToResearchPage: function () {
+                this.current_page = 1
             },
-            changeView: function(){
-                this.about_page = !this.about_page;
-                this.research_page = !this.research_page;
+            changeView: function (page) {
+                this.current_page = page
             }
         }
     }
@@ -94,7 +103,6 @@
         font-weight: normal;
         font-size: 20px;
         line-height: 28px;
-
 
 
         color: #000000;
