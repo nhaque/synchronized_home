@@ -4,7 +4,7 @@
             <div class="row">
                 <Navbar :about_page="about_page" :research_page="research_page" v-on:changeView="changeView"></Navbar>
             </div>
-            <div id="main-content" class="mt-5">
+            <div id="main-content" class="">
                 <div id="about_page" class="row">
                     <AboutPage v-if="about_page==current_page"></AboutPage>
                 </div>
@@ -73,7 +73,6 @@
         -moz-osx-font-smoothing: grayscale;
         text-align: left;
         color: #2c3e50;
-        margin-top: 60px;
     }
 
     div h2 {

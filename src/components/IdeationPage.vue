@@ -1,6 +1,9 @@
 <template>
     <!--  Ideation Page  -->
     <div id="ideation-page" class="container">
+        <table>
+        <tr>
+            <td class="align-middle">
         <div class="row">
             <TealTitle class="col-12" title="Ideation"></TealTitle>
         </div>
@@ -10,12 +13,14 @@
         <div class="row text-justify">
             <Paragraph class="col" :content="paragraphs.content1"></Paragraph>
         </div>
-        <div class="row justify-content-center ">
+        <div class="row justify-content-center">
             <div class="col-12">
                 <img :src="images.image1" class="img-responsive" alt="design workshop">
             </div>
         </div>
-
+            </td>
+        </tr>
+        </table>
     </div>
 </template>
 
@@ -52,5 +57,8 @@
 <style scoped>
     .img-responsive{
         width:100%;
+    }
+    tr{
+        height: 100vh;
     }
 </style>

@@ -1,6 +1,13 @@
 <template>
     <div>
         <div id = "research-page" class="container">
+            <table>
+                <tr>
+                    <td class="align-middle">
+
+
+
+
             <div class="row my-2">
                 <h2 class="col">Research Plan</h2>
             </div>
@@ -16,6 +23,8 @@
                     <img :src="image.double_diamond">
                 </div>
             </div>
+                    </td>
+                </tr>
             <div class="row">
                 <h2 class="col">Background Research</h2>
             </div>
@@ -141,6 +150,7 @@
                                :list_texts="iconText.flexibility.pencilBullet.list_text"></IconText1>
                 </div>
             </div>
+            </table>
             <Footer></Footer>
         </div>
     </div>
@@ -308,5 +318,5 @@
 </script>
 
 <style>
-
+ tr{height:100vh;}
 </style>
