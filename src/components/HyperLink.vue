@@ -1,27 +1,28 @@
 <template>
-    <p class="align-middle">{{content}}</p>
+    <a :href="link">{{linkname}}</a>
 </template>
 
 <script>
     export default {
-        name: "Paragraph",
+        name: "HyperLink",
         props:{
-            content:String
+            link: String,
+            linkname: String,
         }
     }
 </script>
 
 <style scoped>
-    p{
+    a{
         font-family: Lato, sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 20px;
         line-height: 140%;
-        /* or 28px */
+        /* identical to box height, or 28px */
 
+        text-decoration-line: underline;
 
-        color: #222222;
+        color: #2F80ED;
     }
-
 </style>

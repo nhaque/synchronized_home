@@ -1,17 +1,17 @@
 <template>
     <div>
-        <div id="app" class="container">
-            <div class="row">
+        <div id="app" class="container-fluid">
+            <div class="row justify-content-center">
                 <Navbar :about_page="about_page" :research_page="research_page" v-on:changeView="changeView"></Navbar>
             </div>
             <div id="main-content" class="">
-                <div id="about_page" class="row">
+                <div id="about_page" class="row justify-content-center">
                     <AboutPage v-if="about_page==current_page"></AboutPage>
                 </div>
-                <div id="research_page" class="row">
+                <div id="research_page" class="row justify-content-center">
                     <ResearchPage v-if="current_page==research_page"></ResearchPage>
                 </div>
-                <div id="ideation_page" class="row">
+                <div id="ideation_page" class="row justify-content-center">
                     <IdeationPage name="IdeationPage" v-if="current_page==ideation_page"></IdeationPage>
                 </div>
             </div>
@@ -61,10 +61,11 @@
 
 <style>
 
-    .container {
-        margin: 0 5vw 0 5vw;
-        width: 90vw;
+    .container-fluid {
+        margin: 0 0vw 0 0vw;
+        width: 100vw;
         background-color: #FFFFFF;
+        padding: 0;
     }
 
     #app {
