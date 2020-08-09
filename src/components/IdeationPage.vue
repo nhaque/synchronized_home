@@ -26,13 +26,11 @@
             </transition>
 
             <!--            <tr id="PossibleDesignOpp" v-if="show.current>=1" >-->
-            <tr id="PossibleDesignOpp">
-                <div class="row mb-5">
-                    <div class="col-12"><img :src="background.wavetop" class="background" alt="background wave top">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
+            <tr id="PossibleDesignOpp" :style="{
+                backgroundImage: `url(${background.wave})`,
+             'background-repeat': 'no-repeat', 'background-size': 'cover'
+            }">
+
                         <td id="backgroundWaveTop" class="backgroundTop ">
                             <div class="row">
                                 <TealTitle class="col-12"
@@ -49,10 +47,6 @@
                             </div>
                             <HyperLink :link="link.medium1" linkname="Read the Medium Article"></HyperLink>
                         </td>
-                    </div>
-                </div>
-                <div class="row mt-5"><img :src="background.wevebot" class="background" alt="background wave top"/>
-                </div>
             </tr>
 
             <tr>
@@ -62,19 +56,19 @@
                     <Paragraph :content="paragraphs.content3"></Paragraph>
                     <HyperLink :link="link.medium2" linkname="Read the Medium Article"></HyperLink>
                     <div class="row justify-content-center">
-                        <div class="col-3">
+                        <div class="col-xl-3 col-lg-6 col-sm-12">
                             <Card :quant="cards.card1.quant" :card_title="cards.card1.card_title"
                                   :card_content="cards.card1.card_content"></Card>
                         </div>
-                        <div class="col-3">
+                        <div class="col-xl-3 col-lg-6 col-sm-12">
                             <Card :quant="cards.card2.quant" :card_title="cards.card2.card_title"
                                   :card_content="cards.card2.card_content"></Card>
                         </div>
-                        <div class="col-3">
+                        <div class="col-xl-3 col-lg-6 col-sm-12">
                             <Card :quant="cards.card3.quant" :card_title="cards.card3.card_title"
                                   :card_content="cards.card3.card_content"></Card>
                         </div>
-                        <div class="col-3">
+                        <div class="col-xl-3 col-lg-6 col-sm-12">
                             <Card :quant="cards.card4.quant" :card_title="cards.card4.card_title"
                                   :card_content="cards.card4.card_content"></Card>
                         </div>
@@ -152,6 +146,7 @@
     import background_wave_top from "@/components/images/wavetop.png"
     import background_wave_bot from "@/components/images/wavebot.png"
     import background_bubble from "@/components/images/bubblebackground.png"
+    import background_wave from "@/components/images/wavebackground.png"
 
     export default {
         name: "IdeationPage",
@@ -202,7 +197,8 @@
                 background: {
                     wavetop: background_wave_top,
                     wevebot: background_wave_bot,
-                    bubble: background_bubble
+                    bubble: background_bubble,
+                    wave: background_wave
                 },
                 link: {
                     medium1: "https://medium.com",
@@ -287,7 +283,7 @@
     }
 
     td {
-        padding: 0 20vw;
+        padding: 0 20%;
     }
 
     /*TODO slide*/
