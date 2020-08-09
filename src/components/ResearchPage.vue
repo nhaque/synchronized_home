@@ -1,45 +1,81 @@
 <template>
-    <div>
-        <div id = "research-page" class="container">
-            <div class="row my-2">
-                <h2 class="col">Research Plan</h2>
-            </div>
-            <div class="row my-2">
-                <p class="col">
-                    We made a research plan to understand MindEdge products and the potential users and uncover their
-                    needs
-                    through background research and generative research.
-                </p>
-            </div>
-            <div class="row justify-content-center my-5">
-                <div class="col-md-8 col-sm-12">
-                    <img :src="image.double_diamond">
-                </div>
-            </div>
-            <div class="row">
-                <h2 class="col">Background Research</h2>
-            </div>
-            <div class="row my-2">
-                <p class="col my-2">
-                    To design a good online learning mobile app for adult learners, we need to learn about the problem
-                    space
-                    as much as possible. Our goal for background research is to understand the current market for mobile
-                    educational technologies, investigate how learners are engaging with the current content of MindEdge
-                    products and identify design principles to guide the future phases.
-                </p>
-            </div>
-            <div class="row justify-content-center my-5">
-                <Card class="col-md-6 col-xs-6 my-1" :quant="card.lit_review.number" :card_title="card.lit_review.title"
-                      :card_content="card.lit_review.text"></Card>
+    <div id="research-page">
+        <table>
+            <tr>
+                <td class="align-middle">
+                    <TealTitle title="User-centered research"></TealTitle>
+                    <MainTitle :title="main_title.title1"></MainTitle>
+                    <Paragraph :content="paragraph.p1"></Paragraph>
+                    <div class="row justify-content-center my-5">
+                        <div class="col-lg-12 col-sm-12">
+                            <img class="w-100" :src="image.design_thinking">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="align-middle" :style="{
+                'background-color': '#F7FAFE', 'background-size': 'cover'
+            }">
+                    <TealTitle title="What is context?"></TealTitle>
+                    <MainTitle :title="main_title.title2"></MainTitle>
+                    <Paragraph :content="paragraph.p2"></Paragraph>
+                    <div class="row justify-content-center my-5">
+                        <Card class="col-md-6 col-xs-6 my-1" :quant="card.lit_review.number" :card_title="card.lit_review.title"
+                              :card_content="card.lit_review.text"></Card>
 
-                <Card class="col-md-6 col-xs-6 my-1" :quant="card.comp_analysis.number"
-                      :card_title="card.comp_analysis.title"
-                      :card_content="card.comp_analysis.text"></Card>
-                <Card class="col-md-6 col-xs-6 my-1" :quant="card.elearning.number" :card_title="card.elearning.title"
-                      :card_content="card.elearning.text"></Card>
-                <Card class="col-md-6 col-xs-6 my-1" :quant="card.log_data.number" :card_title="card.log_data.title"
-                      :card_content="card.log_data.text"></Card>
-            </div>
+                        <Card class="col-md-6 col-xs-6 my-1" :quant="card.comp_analysis.number"
+                              :card_title="card.comp_analysis.title"
+                              :card_content="card.comp_analysis.text"></Card>
+                        <Card class="col-md-6 col-xs-6 my-1" :quant="card.elearning.number" :card_title="card.elearning.title"
+                              :card_content="card.elearning.text"></Card>
+                        <Card class="col-md-6 col-xs-6 my-1" :quant="card.log_data.number" :card_title="card.log_data.title"
+                              :card_content="card.log_data.text"></Card>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="align-middle">
+
+                    <div id="research_carousel" ref="research_carousel" class="carousel slide row" data-wrap="false" data-interval="false">
+                        <a class="carousel-control-prev col-1" href="#research_carousel" role="button" data-slide="prev">
+                            <span class="" aria-hidden="true"><img :src="image.carousel_arrow_left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <div class="carousel-inner col-10 mx-auto py-5 ">
+                            <div class="carousel-item active">
+                                <CarouselItem id="carouselItem1" class=" w-100" :item_title="carousel_item.c1.title" :item_paragraph="carousel_item.c1.paragraph" :pencil_bullet_array="carousel_item.c1.pencil_array"
+                                              :img_src="carousel_item.c1.img_src"></CarouselItem>
+                            </div>
+                            <div class="carousel-item">
+                                <CarouselItem id="carouselItem2" class=" w-100" :item_title="carousel_item.c2.title" :item_paragraph="carousel_item.c2.paragraph" :pencil_bullet_array="carousel_item.c2.pencil_array"
+                                              :img_src="carousel_item.c2.img_src"></CarouselItem>
+                            </div>
+                            <div class="carousel-item">
+                                <CarouselItem id="carouselItem3" class=" w-100" :item_title="carousel_item.c3.title" :item_paragraph="carousel_item.c3.paragraph" :pencil_bullet_array="carousel_item.c3.pencil_array"
+                                              :img_src="carousel_item.c3.img_src"></CarouselItem>
+                            </div>
+                            <div class="carousel-item">
+                                <CarouselItem id="carouselItem4" class=" w-100" :item_title="carousel_item.c4.title" :item_paragraph="carousel_item.c4.paragraph" :pencil_bullet_array="carousel_item.c4.pencil_array"
+                                              :img_src="carousel_item.c4.img_src"></CarouselItem>
+                            </div>
+                        </div>
+                        <a class="carousel-control-next col-1" href="#research_carousel" role="button" data-slide="next">
+                            <span class="" aria-hidden="true"><img :src="image.carousel_arrow_right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+<!--                    TODO finish carousel-->
+                    <div id="carousel-slide-labels" class="row mt-5 justify-content-around">
+                        <div id="carousel-label-1" class="col-3 text-center font-weight-bold">01 Chunked Courses</div>
+                        <div id="carousel-label-2" class="col-3 text-center">02 Interactive Micro Content</div>
+                        <div id="carousel-label-3" class="col-3 text-center">03 Continued Access</div>
+                        <div id="carousel-label-4" class="col-3 text-center">04 Flexible Pedagogies</div>
+                    </div>
+
+                </td>
+            </tr>
+
             <div class="row my-3 pl-5">
                 <h6>Design Implication Guidelines</h6>
             </div>
@@ -141,16 +177,21 @@
                                :list_texts="iconText.flexibility.pencilBullet.list_text"></IconText1>
                 </div>
             </div>
-            <Footer></Footer>
-        </div>
+        </table>
+        <Footer></Footer>
     </div>
 
 </template>
 
 <script>
+    import $ from 'jquery';
+
     import Card from "@/components/Card";
     import IconText1 from "@/components/IconText1";
     import IconText2 from "@/components/IconText2";
+    import TealTitle from "@/components/TealTitle";
+    import MainTitle from "@/components/MainTitle";
+    import Paragraph from "@/components/Paragraph";
 
     //import image
     import image46 from "../assets/image46.png"
@@ -165,16 +206,67 @@
     import image2 from "../assets/image2.png"
     import image3 from "../assets/image3.png"
     import double_diamond from "../assets/double_diamond.png"
+    import design_thinking from "@/components/images/design_thinking_diagram.png"
+    import CarouselItem from "@/components/CarouselItem";
+    import four_cube from "@/components/images/fourcube.png"
+    import pointer from "@/components/images/pointer.png";
+    import screens from "@/components/images/screens.png";
+    import toss_up from "@/components/images/toss_up.png"
+    import carousel_arrow_right from "@/components/images/carousel_arrow_right.png"
+    import carousel_arrow_left from "@/components/images/carousel_arrow_left.png"
+    import carousel_slide_1 from "@/components/images/research_carousel_slide_1.png"
+    import carousel_slide_2 from "@/components/images/research_carousel_slide_2.png"
 
     export default {
         name: 'App',
         components: {
+            CarouselItem,
             Card,
             IconText1,
             IconText2,
+            TealTitle,
+            MainTitle,
+            Paragraph
         },
         data: function () {
             return {
+                main_title: {
+                    title1: "Understanding the context first, \n" +
+                        "then design for it.",
+                    title2: "Evaluative Research"
+                },
+                paragraph: {
+                    p1: "In the 8-month project, we spent more than 2 months working on user-centered research to understand our stakeholders’ goals and needs. We invited people from MindEdge, the potential customers and users to help us define our design goals.",
+                    p2: "To design a good online learning mobile app for adult learners, we need to learn about the problem space as much as possible. Our goal for evaluative research is to\tunderstand the current market for mobile educational technologies, investigate how learners are engaging with the current content of MindEdge products and identify design principles to guide the future phases.",
+                    p3: ""
+                },
+                carousel_item: {
+                    c1: {
+                        title: "01 Chunked Courses",
+                        paragraph: "Segmenting information, especially in the mobile setting, it is important to split instructional content into chunks for learners to digest with minimal risk of cognitive overload.\n",
+                        pencil_array: ["Single topic in a paragraph", "Arranged in short-time spans"],
+                        img_src: four_cube
+                    },
+                    c2: {
+                        title: "02 Chunked Courses",
+                        paragraph: "It is important to design how will learners interact with content like exercise,  feedback, nudging information and so on.\n",
+                        pencil_array: ["Practical exercises", "Hands-on tasks", "Instant feedback"],
+                        img_src: pointer
+                    },
+                    c3: {
+                        title: "03 Continued Access",
+                        paragraph: "Learners need to easily access the content from different channels.\n",
+                        pencil_array: ["Cloud computing file storage", "Track learning progress", "Offline services"],
+                        img_src: screens
+                    },
+                    c4: {
+                        title: "04 Flexible Pedagogies",
+                        paragraph: "The instructional material needs to satisfy learners with different prior knowledge and pace.\n",
+                        pencil_array: ["Different media formats", "Gamified activities", "Multiple, flexible learning paths"],
+                        img_src: toss_up
+                    }
+                },
+
                 card: {
                     lit_review: {
                         number: "30+",
@@ -301,12 +393,53 @@
                 },
                 image: {
                     double_diamond: double_diamond,
+                    design_thinking: design_thinking,
+                    carousel_arrow_right: carousel_arrow_right,
+                    carousel_arrow_left: carousel_arrow_left,
+                    carousel_slide_1: carousel_slide_1,
+                    carousel_slide_2: carousel_slide_2
                 },
             }
+        },
+        methods:{
+            advanceCarouselLabels: function(){
+                console.log("carousel advanced")
+                return null;
+            },
+
         }
     }
+
+//    regular javascript
+    $('#research_carousel').on('slid.bs.carousel', function () {
+        console.log("carousel slides");
+    })
 </script>
 
 <style>
+    #carousel-slide-labels{
+        font-family: Lato, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 24px;
+    }
 
+    .carousel-inner {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        height:40vh;
+    }
+
+    .carousel-item{
+        height:fit-content;
+    }
+
+    .carousel-control-prev{
+        align-items: flex-start;
+    }
+    .carousel-control-next{
+        align-items: flex-end;; /* Aligns it at the bottom */
+    }
 </style>

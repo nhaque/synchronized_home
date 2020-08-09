@@ -1,16 +1,26 @@
 <template>
     <div>
-        <div id="app" class="container">
-            <Navbar></Navbar>
-            <div class = "btn btn-primary" @click="goToResearchPage"> research </div>
-        </div>
-        <AboutPage v-if = "about_page"></AboutPage>
-        <div id = "research_page">
-        <div id="research" class="container">
-            <ResearchPage v-if = "research_page"></ResearchPage>
-        </div>
+        <div id="app" class="container-fluid">
+            <div class="row justify-content-center">
+                <Navbar :about_page="about_page" :research_page="research_page" v-on:changeView="changeView"></Navbar>
+            </div>
+            <div id="main-content" class="">
+                <div id="about_page" class="row justify-content-center">
+                    <AboutPage v-if="about_page==current_page"></AboutPage>
+                </div>
+                <div id="research_page" class="row justify-content-center">
+                    <ResearchPage v-if="current_page==research_page"></ResearchPage>
+                </div>
+                <div id="ideation_page" class="row justify-content-center">
+                    <IdeationPage name="IdeationPage" v-if="current_page==ideation_page"></IdeationPage>
+                </div>
+                <div id="prototype_page" class="row justify-content-center">
+                    <PrototypePage name="PrototypePage" v-if="current_page==prototype_page"></PrototypePage>
+                </div>
+            </div>
             <Footer></Footer>
         </div>
+
     </div>
 
 
@@ -21,26 +31,35 @@
     import ResearchPage from "./components/ResearchPage";
     import Navbar from "@/components/Navbar";
     import Footer from "@/components/Footer";
+    import IdeationPage from "@/components/IdeationPage";
+    import PrototypePage from "./components/PrototypePage";
 
 
     export default {
         name: 'App',
         components: {
+            PrototypePage,
             AboutPage,
             ResearchPage,
+            IdeationPage,
             Navbar,
             Footer,
         },
         data: function () {
             return {
-                about_page: true,
-                research_page: false
+                current_page: 0,
+                about_page: 0,
+                research_page: 1,
+                ideation_page: 2,
+                prototype_page: 3
             }
         },
         methods: {
-            goToResearchPage: function() {
-                this.about_page = false;
-                this.research_page = true;
+            goToResearchPage: function () {
+                this.current_page = 1
+            },
+            changeView: function (page) {
+                this.current_page = page
             }
         }
     }
@@ -48,12 +67,12 @@
 
 <style>
 
-    .container {
-        margin: 0 5vw 0 5vw;
-        width: 90vw;
+    .container-fluid {
+        margin: 0 0vw 0 0vw;
+        width: 100vw;
         background-color: #FFFFFF;
+        padding: 0;
     }
-yarn
 
     #app {
         font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -61,7 +80,14 @@ yarn
         -moz-osx-font-smoothing: grayscale;
         text-align: left;
         color: #2c3e50;
-        margin-top: 60px;
+    }
+
+    tr {
+        height: 90vh;
+    }
+
+    td {
+        padding: 0 20%;
     }
 
     div h2 {
@@ -91,7 +117,6 @@ yarn
         font-weight: normal;
         font-size: 20px;
         line-height: 28px;
-
 
 
         color: #000000;

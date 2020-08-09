@@ -1,25 +1,33 @@
 <template>
     <div>
-        <div class="container">
-            <div class="row my-2">
-                <h2 class="col">Hi, We are Team SynchronizED!</h2>
-            </div>
-            <div class="row">
-                <p class="col my-1">
-                    We are five thinkers from Carnegie Mellon University who are improving mobile learning experience
-                    based
-                    on learning science, cognitive model, user-centered research and design thinking.
-                </p>
-            </div>
-            <div class="row text-center my-5">
-                <div class="col-md-12 col-sm-12 pl-0 my-1">
-                    <img id="team-img" :src="image.team">
+        <table>
+            <tr>
+                <td class="align-middle">
+
+            <div class="container">
+
+                <div class="row my-2">
+                    <h2 class="col">Hi, We are Team SynchronizED!</h2>
+                </div>
+                <div class="row">
+                    <p class="col my-1">
+                        We are five thinkers from Carnegie Mellon University who are improving mobile learning
+                        experience
+                        based
+                        on learning science, cognitive model, user-centered research and design thinking.
+                    </p>
+                </div>
+                <div class="row text-center my-5">
+                    <div class="col-md-12 col-sm-12 pl-0 my-1">
+                        <img id="team-img" :src="image.team">
+                    </div>
                 </div>
             </div>
-        </div>
+                </td>
+            </tr>
 
             <div class="team-member  py-5">
-                <div class="container" id = "intro">
+                <div class="container" id="intro">
                     <div class="row justify-content-center my-6">
                         <div class="col-md-12 col-sm-12">
                             <Introduction :name="introduction.shujing.name" :role="introduction.shujing.role"
@@ -117,8 +125,10 @@
                         <img :src="image.team_logo">
                     </div>
                 </div>
+
             </div>
-        </div>
+        </table>
+    </div>
 
 </template>
 
@@ -181,6 +191,9 @@
 </script>
 
 <style>
+    tr{
+        height:100vh
+    }
     .mt-6,
     .my-6 {
         margin-top: 8rem !important;
