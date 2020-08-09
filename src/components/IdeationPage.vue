@@ -278,13 +278,6 @@
         object-fit: fill;
     }
 
-    tr {
-        height: 85vh;
-    }
-
-    td {
-        padding: 0 20%;
-    }
 
     /*TODO slide*/
     .slide-enter-active {

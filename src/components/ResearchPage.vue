@@ -1,54 +1,65 @@
 <template>
-    <div>
-        <div id = "research-page" class="container">
-            <table>
-                <tr>
-                    <td class="align-middle">
+    <div id="research-page">
+        <table>
+            <tr>
+                <td class="align-middle">
+                    <TealTitle title="User-centered research"></TealTitle>
+                    <MainTitle :title="main_title.title1"></MainTitle>
+                    <Paragraph :content="paragraph.p1"></Paragraph>
+                    <div class="row justify-content-center my-5">
+                        <div class="col-lg-12 col-sm-12">
+                            <img class="w-100" :src="image.design_thinking">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="align-middle" :style="{
+                'background-color': '#F7FAFE', 'background-size': 'cover'
+            }">
+                    <TealTitle title="What is context?"></TealTitle>
+                    <MainTitle :title="main_title.title2"></MainTitle>
+                    <Paragraph :content="paragraph.p2"></Paragraph>
+                    <div class="row justify-content-center my-5">
+                        <Card class="col-md-6 col-xs-6 my-1" :quant="card.lit_review.number" :card_title="card.lit_review.title"
+                              :card_content="card.lit_review.text"></Card>
 
+                        <Card class="col-md-6 col-xs-6 my-1" :quant="card.comp_analysis.number"
+                              :card_title="card.comp_analysis.title"
+                              :card_content="card.comp_analysis.text"></Card>
+                        <Card class="col-md-6 col-xs-6 my-1" :quant="card.elearning.number" :card_title="card.elearning.title"
+                              :card_content="card.elearning.text"></Card>
+                        <Card class="col-md-6 col-xs-6 my-1" :quant="card.log_data.number" :card_title="card.log_data.title"
+                              :card_content="card.log_data.text"></Card>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div src="" class="d-block w-100" alt="..."><p>test</p></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div src="" class="d-block w-100" alt="..."><p>test2</p></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div src="" class="d-block w-100" alt="..."><p>test3</p></div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </td>
+            </tr>
 
-
-
-            <div class="row my-2">
-                <h2 class="col">Research Plan</h2>
-            </div>
-            <div class="row my-2">
-                <p class="col">
-                    We made a research plan to understand MindEdge products and the potential users and uncover their
-                    needs
-                    through background research and generative research.
-                </p>
-            </div>
-            <div class="row justify-content-center my-5">
-                <div class="col-md-8 col-sm-12">
-                    <img :src="image.double_diamond">
-                </div>
-            </div>
-                    </td>
-                </tr>
-            <div class="row">
-                <h2 class="col">Background Research</h2>
-            </div>
-            <div class="row my-2">
-                <p class="col my-2">
-                    To design a good online learning mobile app for adult learners, we need to learn about the problem
-                    space
-                    as much as possible. Our goal for background research is to understand the current market for mobile
-                    educational technologies, investigate how learners are engaging with the current content of MindEdge
-                    products and identify design principles to guide the future phases.
-                </p>
-            </div>
-            <div class="row justify-content-center my-5">
-                <Card class="col-md-6 col-xs-6 my-1" :quant="card.lit_review.number" :card_title="card.lit_review.title"
-                      :card_content="card.lit_review.text"></Card>
-
-                <Card class="col-md-6 col-xs-6 my-1" :quant="card.comp_analysis.number"
-                      :card_title="card.comp_analysis.title"
-                      :card_content="card.comp_analysis.text"></Card>
-                <Card class="col-md-6 col-xs-6 my-1" :quant="card.elearning.number" :card_title="card.elearning.title"
-                      :card_content="card.elearning.text"></Card>
-                <Card class="col-md-6 col-xs-6 my-1" :quant="card.log_data.number" :card_title="card.log_data.title"
-                      :card_content="card.log_data.text"></Card>
-            </div>
             <div class="row my-3 pl-5">
                 <h6>Design Implication Guidelines</h6>
             </div>
@@ -150,9 +161,8 @@
                                :list_texts="iconText.flexibility.pencilBullet.list_text"></IconText1>
                 </div>
             </div>
-            </table>
-            <Footer></Footer>
-        </div>
+        </table>
+        <Footer></Footer>
     </div>
 
 </template>
@@ -161,6 +171,9 @@
     import Card from "@/components/Card";
     import IconText1 from "@/components/IconText1";
     import IconText2 from "@/components/IconText2";
+    import TealTitle from "@/components/TealTitle";
+    import MainTitle from "@/components/MainTitle";
+    import Paragraph from "@/components/Paragraph";
 
     //import image
     import image46 from "../assets/image46.png"
@@ -175,6 +188,7 @@
     import image2 from "../assets/image2.png"
     import image3 from "../assets/image3.png"
     import double_diamond from "../assets/double_diamond.png"
+    import design_thinking from "@/components/images/design_thinking_diagram.png"
 
     export default {
         name: 'App',
@@ -182,9 +196,23 @@
             Card,
             IconText1,
             IconText2,
+            TealTitle,
+            MainTitle,
+            Paragraph
         },
         data: function () {
             return {
+                main_title: {
+                    title1: "Understanding the context first, \n" +
+                        "then design for it.",
+                    title2: "Evaluative Research"
+                },
+                paragraph: {
+                    p1: "In the 8-month project, we spent more than 2 months working on user-centered research to understand our stakeholders’ goals and needs. We invited people from MindEdge, the potential customers and users to help us define our design goals."
+                    ,
+                    p2: "To design a good online learning mobile app for adult learners, we need to learn about the problem space as much as possible. Our goal for evaluative research is to\tunderstand the current market for mobile educational technologies, investigate how learners are engaging with the current content of MindEdge products and identify design principles to guide the future phases.",
+                    p3: ""
+                },
                 card: {
                     lit_review: {
                         number: "30+",
@@ -311,6 +339,7 @@
                 },
                 image: {
                     double_diamond: double_diamond,
+                    design_thinking: design_thinking
                 },
             }
         }
@@ -318,5 +347,4 @@
 </script>
 
 <style>
- tr{height:100vh;}
 </style>

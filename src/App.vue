@@ -76,6 +76,14 @@
         color: #2c3e50;
     }
 
+    tr {
+        height: 90vh;
+    }
+
+    td {
+        padding: 0 20%;
+    }
+
     div h2 {
         font-family: Proxima Nova, Helvetica, sans-serif;
         font-style: normal;
