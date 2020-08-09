@@ -214,8 +214,8 @@
     import toss_up from "@/components/images/toss_up.png"
     import carousel_arrow_right from "@/components/images/carousel_arrow_right.png"
     import carousel_arrow_left from "@/components/images/carousel_arrow_left.png"
-    import carousel_slide_1 from "@/components/images/research_carousel_slide_1.png"
-    import carousel_slide_2 from "@/components/images/research_carousel_slide_2.png"
+    // import carousel_slide_1 from "@/components/images/research_carousel_slide_1.png"
+    // import carousel_slide_2 from "@/components/images/research_carousel_slide_2.png"
 
     export default {
         name: 'App',
@@ -395,9 +395,9 @@
                     double_diamond: double_diamond,
                     design_thinking: design_thinking,
                     carousel_arrow_right: carousel_arrow_right,
-                    carousel_arrow_left: carousel_arrow_left,
-                    carousel_slide_1: carousel_slide_1,
-                    carousel_slide_2: carousel_slide_2
+                    carousel_arrow_left: carousel_arrow_left
+                    // carousel_slide_1: carousel_slide_1,
+                    // carousel_slide_2: carousel_slide_2
                 },
             }
         },
