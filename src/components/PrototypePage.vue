@@ -7,7 +7,7 @@
                 <tr id="RapidDesignAndIteration"
                     :style="{
                 backgroundImage: `url(${background.bubble})`,
-             'background-repeat': 'no-repeat'
+             'background-repeat': 'no-repeat', 'background-size': 'cover'
             }">
                     <td class="align-middle justify-content-center">
                         <div class="row">
@@ -73,7 +73,7 @@
             <tr id="IndividualIdeas"
                 :style="{
                 backgroundImage: `url(${background.wavetop})`,
-             'background-repeat': 'no-repeat'
+             'background-repeat': 'no-repeat', 'background-size': 'cover'
             }">
                 <td>
                     <div class="row">
@@ -110,7 +110,7 @@
             <tr id="WholeAppDesign"
                 :style="{
                 backgroundImage: `url(${background.wavebot})`,
-             'background-repeat': 'no-repeat'
+             'background-repeat': 'no-repeat', 'background-size': 'cover'
                 }">
                 <td>
                     <div class="row">
@@ -148,7 +148,7 @@
             <tr id="IdeaPitch"
                 :style="{
                 backgroundImage: `url(${background.bubble2})`,
-             'background-repeat': 'no-repeat'
+             'background-repeat': 'no-repeat', 'background-size': 'cover'
             }">
                 <td>
                     <div class="row">
