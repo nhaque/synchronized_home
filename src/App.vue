@@ -14,6 +14,9 @@
                 <div id="ideation_page" class="row justify-content-center">
                     <IdeationPage name="IdeationPage" v-if="current_page==ideation_page"></IdeationPage>
                 </div>
+                <div id="prototype_page" class="row justify-content-center">
+                    <PrototypePage name="PrototypePage" v-if="current_page==prototype_page"></PrototypePage>
+                </div>
             </div>
             <Footer></Footer>
         </div>
@@ -29,11 +32,13 @@
     import Navbar from "@/components/Navbar";
     import Footer from "@/components/Footer";
     import IdeationPage from "@/components/IdeationPage";
+    import PrototypePage from "./components/PrototypePage";
 
 
     export default {
         name: 'App',
         components: {
+            PrototypePage,
             AboutPage,
             ResearchPage,
             IdeationPage,
@@ -45,7 +50,8 @@
                 current_page: 0,
                 about_page: 0,
                 research_page: 1,
-                ideation_page: 2
+                ideation_page: 2,
+                prototype_page: 3
             }
         },
         methods: {

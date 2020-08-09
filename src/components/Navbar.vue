@@ -19,7 +19,7 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="#" @click="goToResearchPage">Research</a>
                     <a class="dropdown-item" href="#" @click="goToIdeationPage">Ideation</a>
-                    <a class="dropdown-item" href="#">Prototyping</a>
+                    <a class="dropdown-item" href="#" @click="goToPrototypePage">Prototyping</a>
                 </div>
             </li>
             <li class="nav-item">
@@ -41,6 +41,9 @@
             },
             goToIdeationPage: function(){
                 this.$emit('changeView', 2)
+            },
+            goToPrototypePage: function(){
+                this.$emit('changeView', 3)
             },
             goToAboutPage: function(){
                 this.$emit('changeView', 0)
