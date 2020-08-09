@@ -37,7 +37,7 @@
             <tr>
                 <td class="align-middle">
 
-                    <div id="research_carousel" class="carousel slide row" data-wrap="false" data-interval="false">
+                    <div id="research_carousel" ref="research_carousel" class="carousel slide row" data-wrap="false" data-interval="false">
                         <a class="carousel-control-prev col-1" href="#research_carousel" role="button" data-slide="prev">
                             <span class="" aria-hidden="true"><img :src="image.carousel_arrow_left"></span>
                             <span class="sr-only">Previous</span>
@@ -65,8 +65,12 @@
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
-                    <div class="row">
-                        <div class="col"></div>
+<!--                    TODO finish carousel-->
+                    <div id="carousel-slide-labels" class="row mt-5 justify-content-around">
+                        <div id="carousel-label-1" class="col-3 text-center font-weight-bold">01 Chunked Courses</div>
+                        <div id="carousel-label-2" class="col-3 text-center">02 Interactive Micro Content</div>
+                        <div id="carousel-label-3" class="col-3 text-center">03 Continued Access</div>
+                        <div id="carousel-label-4" class="col-3 text-center">04 Flexible Pedagogies</div>
                     </div>
 
                 </td>
@@ -180,6 +184,8 @@
 </template>
 
 <script>
+    import $ from 'jquery';
+
     import Card from "@/components/Card";
     import IconText1 from "@/components/IconText1";
     import IconText2 from "@/components/IconText2";
@@ -208,6 +214,8 @@
     import toss_up from "@/components/images/toss_up.png"
     import carousel_arrow_right from "@/components/images/carousel_arrow_right.png"
     import carousel_arrow_left from "@/components/images/carousel_arrow_left.png"
+    import carousel_slide_1 from "@/components/images/research_carousel_slide_1.png"
+    import carousel_slide_2 from "@/components/images/research_carousel_slide_2.png"
 
     export default {
         name: 'App',
@@ -388,13 +396,35 @@
                     design_thinking: design_thinking,
                     carousel_arrow_right: carousel_arrow_right,
                     carousel_arrow_left: carousel_arrow_left,
+                    carousel_slide_1: carousel_slide_1,
+                    carousel_slide_2: carousel_slide_2
                 },
             }
+        },
+        methods:{
+            advanceCarouselLabels: function(){
+                console.log("carousel advanced")
+                return null;
+            },
+
         }
     }
+
+//    regular javascript
+    $('#research_carousel').on('slid.bs.carousel', function () {
+        console.log("carousel slides");
+    })
 </script>
 
 <style>
+    #carousel-slide-labels{
+        font-family: Lato, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
     .carousel-inner {
         background: #FFFFFF;
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
