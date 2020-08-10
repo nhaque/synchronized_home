@@ -78,7 +78,7 @@
                                 <div class="col-md-12 col-sm-12">
                                     <Introduction :name="introduction.henry.name" :role="introduction.henry.role"
                                                   :intro_text="introduction.henry.intro"
-                                                  :image="introduction.henry.image"></Introduction>
+                                                  :image="introduction.henry.image" :resume="introduction.henry.resume" :linked-in="introduction.henry.linked_in" :portfolio="introduction.henry.portfolio"></Introduction>
                                 </div>
                             </div>
                         </div>
@@ -213,6 +213,9 @@
                         name: "Henry Chang",
                         role: "Product Manager",
                         intro: "Henry is all about building engaging learning products that attract and help a broad range of learners. He believes with his technical skills and the learning science principles learned in the METALS program, he can reach learners who traditionally have difficulties in accessing high-quality education."
+                    , resume: "https://drive.google.com/file/d/1talSCTkfrnYduGNxcp0wgcY8cekYBVpS/view?usp=sharing",
+                        linked_in: "https://www.linkedin.com/in/henrychang-dev/",
+                        portfolio: "http://www.henrylearning.com"
                     },
                     congying: {
                         image: congying,

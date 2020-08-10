@@ -20,15 +20,15 @@
                 </div>
                 <div class="row contact">
                     <div class = "col">
-                    <a :href="resume" class="resume">
+                    <a :href="resume" target="_blank" class="resume">
                         Resume
                     </a>
                     |
-                    <a :href="linkedIn" class="linkedIn">
+                    <a :href="linkedIn" target="_blank" class="linkedIn">
                         LinkedIn
                     </a>
                     |
-                    <a :href="portfolio" class="portfolio">
+                    <a :href="portfolio" target="_blank" class="portfolio">
                         Portfolio
                     </a>
                     </div>
