@@ -2,7 +2,7 @@
     <div>
         <div id="app" class="container-fluid">
             <div class="row justify-content-center">
-                <Navbar  @changeView:="changeView"></Navbar>
+                <Navbar v-on:changeView="changeView"></Navbar>
             </div>
             <div id="main-content" class="">
                 <div id="about_page" class="row justify-content-center">
