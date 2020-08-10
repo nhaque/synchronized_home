@@ -11,7 +11,7 @@
                         <TealTitle class="col-12" title="Who are we?"></TealTitle>
                     </div>
                     <div class="row my-3">
-                        <h2 class="col">Hi, We are Team SynchronizED!</h2>
+                        <MainTitle class="col-12" :title="titles.title1"></MainTitle>
                     </div>
                     <div class="row text-justify mb-5">
                         <p class="col my-1">
@@ -33,14 +33,14 @@
             <tr id="team-member-introduction"
                 :style="{
                 backgroundImage: `url(${image.bg2})`,
-             'background-repeat': 'no-repeat', 'background-size': 'contain'
+             'background-repeat': 'no-repeat', 'background-size': 'cover'
             }">
                 <td class="align-middle justify-content-center">
                     <div class="py-1">
                         <div class="container">
                             <div class="row my-6">
                                 <div class="row my-5">
-                                    <h2 class="col">Meet the team</h2>
+                                    <MainTitle class="col-12" :title="titles.title2"></MainTitle>
                                 </div>
                                 <div class="col-md-12 col-sm-12">
                                     <Introduction :name="introduction.shujing.name" :role="introduction.shujing.role"
@@ -96,10 +96,11 @@
                     <div class="row">
                         <TealTitle class="col-12" title="Our logo"></TealTitle>
                     </div>
+                    <div class="row">
+                        <MainTitle class="col-12" :title="titles.title3"></MainTitle>
+                    </div>
                     <div class="container py-3">
-                        <div class="row mb-5">
-                            <h2 class="col">Brand Design</h2>
-                        </div>
+
 
                         <div class="row my-2">
                             <div class="col-8 my-2">
@@ -161,6 +162,7 @@
 
 <script>
     import TealTitle from "@/components/TealTitle";
+    import MainTitle from "./MainTitle";
     import Introduction from "./Introduction";
     import shujing from "./images/shujing.png";
     import congying from "./images/congying.png";
@@ -177,10 +179,16 @@
         name: 'AboutPage',
         components: {
             Introduction,
-            TealTitle
+            TealTitle,
+            MainTitle
         },
         data: function () {
             return {
+                titles: {
+                    title1: "Hi, We are Team SynchronizED!",
+                    title2: "Meet the Team",
+                    title3: "Brand Design"
+                },
                 introduction: {
                     shujing: {
                         image: shujing,
