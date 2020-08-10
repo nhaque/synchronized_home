@@ -22,9 +22,9 @@
                             <img :src="images.image1" class="img-responsive col" alt="MindEdge App Hifi Prototype">
                     </div>
                     <div class="row my-5">
-                           <button id="demo_btn" class="btn btn-primary offset-5 col-2">
-                              Request Demo
-                           </button>
+                           <div class="btn btn-primary offset-5 col-2">
+                               Request Demo
+                           </div>
                     </div>
 
                 </td>
@@ -115,7 +115,7 @@
                 </div>
 
                 <div class="row my-5">
-                    <div class="col-8 my-auto">
+                    <div class="col-8 my-auto mr-2">
                         <div class="row">
                             <h3 class="col">Chunked Modules</h3>
                         </div>
@@ -123,13 +123,13 @@
                         <Paragraph class="col-12" :content="paragraphs.chunked_module"></Paragraph>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-3 ml-5">
                         <img :src="images.chunked_module" class="align-middle">
                     </div>
                 </div>
 
                 <div class="row my-5">
-                    <div class="col-4">
+                    <div class="col-3 mr-5">
                         <img :src="images.on_the_go" class="align-middle">
                     </div>
                     <div class="col-8 my-auto">
@@ -151,13 +151,13 @@
                             <Paragraph class="col-12" :content="paragraphs.trophies"></Paragraph>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-3 ml-5">
                         <img :src="images.trophies" class="align-middle">
                     </div>
                 </div>
 
                 <div class="row my-5">
-                    <div class="col-4">
+                    <div class="col-3 mr-5">
                         <img :src="images.nudge" class="align-middle">
                     </div>
                     <div class="col-8 my-auto">
@@ -179,7 +179,7 @@
                             <Paragraph class="col-12" :content="paragraphs.scaffold_hint"></Paragraph>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-3 ml-5">
                         <img :src="images.scaffold_hint" class="align-middle">
                     </div>
                 </div>
@@ -199,15 +199,15 @@
     import MainTitle from "@/components/MainTitle";
     import Paragraph from "@/components/Paragraph";
 
-    import pic1 from "@/components/images/app_intro.png"
+    import pic1 from "@/components/images/banner.png"
     import pic2 from "@/components/images/metals.png"
     import pic3 from "@/components/images/me_logo.png"
 
-    import chunked_module from "@/components/images/chunk_module.png"
-    import nudge from "@/components/images/nudge.png"
-    import on_the_go from "@/components/images/on_the_go.png"
-    import scaffold_hint from "@/components/images/scaffold_hint.png"
-    import trophies from "@/components/images/trophies.png"
+    import chunked_module from "@/components/images/chunking.gif"
+    import nudge from "@/components/images/nudge.gif"
+    import on_the_go from "@/components/images/challenge.gif"
+    import scaffold_hint from "@/components/images/scaffold_hint.gif"
+    import trophies from "@/components/images/trophies.gif"
 
 
     import background_wave_bubbles from "@/components/images/overview-bg.png"
@@ -299,7 +299,7 @@
     }
 
     #app-intro {
-        height: 140vh;
+        height: 110vh;
     }
 
     #persona {
@@ -342,20 +342,4 @@
     #supportive {
         color: #EF4A42;
     }
-
-    #demo_btn {
-        width: 178px;
-        height: 73px;
-        background: #0081B8;
-        box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.25);
-        border-radius: 10px;
-        line-height: 100%;
-        font-family: Lato, sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        text-align: center;
-        color: #FFFFFF;
-    }
-
 </style>
