@@ -1,6 +1,6 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-light bg-light nav-justified justify-content-between fixed-top">
-        <a class="navbar-brand ml-5" href="#">Logo</a>
+        <a class="navbar-brand ml-5" href="#"> Logo</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,10 +27,19 @@
     </nav>
 </template>
 
+
+
 <script>
+
+    import pic1 from "@/components/images/teamlogo.png";
+
     export default {
         name: "Navbar",
         props: {
+        },
+
+        images: {
+            logo: pic1
         },
         methods: {
             goToResearchPage: function () {
