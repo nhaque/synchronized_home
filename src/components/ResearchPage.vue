@@ -38,11 +38,11 @@
                 <td class="align-middle">
 
                     <div id="research_carousel" ref="research_carousel" class="carousel slide row" data-wrap="false" data-interval="false">
-                        <a class="carousel-control-prev col-1" href="#research_carousel" role="button" data-slide="prev">
+                        <a class="carousel-control-prev col-1" href="#research_carousel" role="button" data-slide="prev" @click="carousel_prev">
                             <span class="" aria-hidden="true"><img :src="image.carousel_arrow_left"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <div class="carousel-inner col-10 mx-auto py-5 ">
+                        <div class="carousel-inner offset-1 col-8 mx-auto py-5 ">
                             <div class="carousel-item active">
                                 <CarouselItem id="carouselItem1" class=" w-100" :item_title="carousel_item.c1.title" :item_paragraph="carousel_item.c1.paragraph" :pencil_bullet_array="carousel_item.c1.pencil_array"
                                               :img_src="carousel_item.c1.img_src"></CarouselItem>
@@ -60,7 +60,7 @@
                                               :img_src="carousel_item.c4.img_src"></CarouselItem>
                             </div>
                         </div>
-                        <a class="carousel-control-next col-1" href="#research_carousel" role="button" data-slide="next">
+                        <a class="carousel-control-next offset-1 col-1" href="#research_carousel" role="button" data-slide="next" @click="carousel_next">
                             <span class="" aria-hidden="true"><img :src="image.carousel_arrow_right"></span>
                             <span class="sr-only">Next</span>
                         </a>
@@ -241,6 +241,7 @@
                     p3: ""
                 },
                 carousel_item: {
+                    slide_number: 1,
                     c1: {
                         title: "01 Chunked Courses",
                         paragraph: "Segmenting information, especially in the mobile setting, it is important to split instructional content into chunks for learners to digest with minimal risk of cognitive overload.\n",
@@ -406,7 +407,24 @@
                 console.log("carousel advanced")
                 return null;
             },
+            carousel_prev: function(){
+                if (this.carousel_item.slide_number > 1){
+                    $('#carousel-label-'+this.carousel_item.slide_number).removeClass('font-weight-bold');
+                    this.carousel_item.slide_number--;
+                    $('#carousel-label-'+this.carousel_item.slide_number).addClass('font-weight-bold');
+                }
+            },
+            carousel_next: function(){
+                if (this.carousel_item.slide_number < 4){
+                    $('#carousel-label-'+this.carousel_item.slide_number).removeClass('font-weight-bold');
+                    this.carousel_item.slide_number++;
+                    $('#carousel-label-'+this.carousel_item.slide_number).addClass('font-weight-bold');
+                }
+            }
+        },
+        updated(){
 
+            console.log("carousel bold added");
         }
     }
 
