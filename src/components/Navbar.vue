@@ -1,6 +1,6 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-light bg-light nav-justified justify-content-between fixed-top">
-        <a class="navbar-brand ml-5" href="#"> </a>
+        <a class="navbar-brand ml-5" href="#"> <img :src="image.pic" class="img-responsive"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,7 +31,7 @@
 
 <script>
 
-    import pic1 from "@/components/images/teamlogo.png";
+    import pic1 from "@/components/images/logo1.png";
 
     export default {
         name: "Navbar",
@@ -40,8 +40,12 @@
         components: {
 
         },
-        image: {
-            pic: pic1
+        data: function(){
+            return{
+                image: {
+                    pic: pic1
+                }
+            }
         },
         methods: {
             goToResearchPage: function () {
@@ -80,5 +84,11 @@
         height: 94px;
         background: #FFFFFF;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    }
+    .img-responsive{
+        height: auto;
+        width: auto;
+        max-height: 85px;
+        max-width: 250px;
     }
 </style>
