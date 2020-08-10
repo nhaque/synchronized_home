@@ -1,13 +1,14 @@
 <template>
-    <div class="row m-3 iconText2">
+    <div class="iconText2">
+        <div class="row justify-content-center mb-4">
+            <img :src="imgSrc" alt=".."/>
+
+        </div>
+        <div class="row mb-3">
+            <h6 class="col-12 iconText2Title">{{icon_text_title}}</h6>
+        </div>
         <div class="row">
-            <img :src="imgSrc" class="col" alt=".."/>
-        </div>
-        <div class="row text-left">
-            <h6 class="col iconText2Title ">{{icon_text_title}}</h6>
-        </div>
-        <div class="row text-left">
-            <div class="col iconText2Text ">{{icon_text_text}}</div>
+            <div class="col-12 iconText2Text ">{{icon_text_text}}</div>
         </div>
     </div>
 </template>
@@ -34,27 +35,26 @@
     }
 
     .iconText2Title {
-        font-family: Open Sans, sans-serif;
+        font-family: Lato, sans-serif;
         font-style: normal;
         font-weight: bold;
-        font-size: 16px;
-        line-height: 19px;
-
-        color: #02B1E1;
+        font-size: 20px;
+        line-height: 24px;
+        color: #222222;
     }
 
     .iconText2Text {
-        font-family: Open Sans, sans-serif;
+        font-family: Lato, sans-serif;
         font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 150%;
-        /* or 16px */
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 130%;
+        /* or 21px */
         color: #111111;
     }
 
     div img{
-        height: 180px
+
     }
 
 </style>

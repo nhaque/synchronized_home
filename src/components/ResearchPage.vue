@@ -65,7 +65,7 @@
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
-<!--                    TODO finish carousel-->
+                    <!--                    TODO finish carousel-->
                     <div id="carousel-slide-labels" class="row mt-5 justify-content-around">
                         <div id="carousel-label-1" class="col-3 text-center font-weight-bold">01 Chunked Courses</div>
                         <div id="carousel-label-2" class="col-3 text-center">02 Interactive Micro Content</div>
@@ -76,107 +76,107 @@
                 </td>
             </tr>
 
-            <div class="row my-3 pl-5">
-                <h6>Design Implication Guidelines</h6>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-sm-12">
-                    <IconText1 :icon_text_title="iconText.chunked_courses.title"
-                               :icon_text_text="iconText.chunked_courses.text" :img-src="iconText.chunked_courses.icon"
-                               :list_texts="iconText.chunked_courses.pencilBullet.list_text"></IconText1>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <IconText1 :icon_text_title="iconText.interactive_micro.title"
-                               :icon_text_text="iconText.interactive_micro.text"
-                               :img-src="iconText.interactive_micro.icon"
-                               :list_texts="iconText.interactive_micro.pencilBullet.list_text"></IconText1>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-sm-12">
-                    <IconText1 :icon_text_title="iconText.continued_access.title"
-                               :icon_text_text="iconText.continued_access.text"
-                               :img-src="iconText.continued_access.icon"
-                               :list_texts="iconText.continued_access.pencilBullet.list_text"></IconText1>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <IconText1 :icon_text_title="iconText.flexible_pedagogies.title"
-                               :icon_text_text="iconText.flexible_pedagogies.text"
-                               :img-src="iconText.flexible_pedagogies.icon"
-                               :list_texts="iconText.flexible_pedagogies.pencilBullet.list_text"></IconText1>
-                </div>
-            </div>
-            <div class="row my-3 pl-5">
-                <h6>Key Insights</h6>
-            </div>
-            <div class="row justify-content-center pl-5">
-                <div class="col-md col-sm">
-                    <IconText2 :icon_text_title="iconText.personal_commitment.title"
-                               :icon_text_text="iconText.personal_commitment.text"
-                               :img-src="iconText.personal_commitment.icon"></IconText2>
-                </div>
-                <div class="col-md col-sm">
-                    <IconText2 :icon_text_title="iconText.course_design.title"
-                               :icon_text_text="iconText.course_design.text"
-                               :img-src="iconText.course_design.icon"></IconText2>
-                </div>
-                <div class="col-md col-sm">
-                    <IconText2 :icon_text_title="iconText.personalization.title"
-                               :icon_text_text="iconText.personalization.text"
-                               :img-src="iconText.personalization.icon"></IconText2>
-                </div>
-            </div>
-            <div class="row my-3 mt-3">
-                <h2 class="col">Generative Research</h2>
-            </div>
-            <div class="row">
-                <p class="col">
-                    In order to better understand the stakeholders’ needs, feelings and frustrations, we conducted
-                    interviews
-                    and cognitive task analysis. By the end of the spring, we came up with a stakeholder map, a adult
-                    online
-                    learning model, 10 insights and 3 personas.
-                </p>
-            </div>
-            <div class="row justify-content-center my-5">
-                <Card class="col-md-6 col-xs-6 my-1" :quant="card.cta.number" :card_title="card.cta.title"
-                      :card_content="card.cta.text"></Card>
+            <tr>
+                <td>
+                    <div class="row my-3">
+                        <h6>Key Insights</h6>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <IconText2 :icon_text_title="iconText.personal_commitment.title"
+                                       :icon_text_text="iconText.personal_commitment.text"
+                                       :img-src="iconText.personal_commitment.icon"></IconText2>
+                        </div>
+                        <div class="col">
+                            <IconText2 :icon_text_title="iconText.course_design.title"
+                                       :icon_text_text="iconText.course_design.text"
+                                       :img-src="iconText.course_design.icon"></IconText2>
+                        </div>
+                        <div class="col">
+                            <IconText2 :icon_text_title="iconText.personalization.title"
+                                       :icon_text_text="iconText.personalization.text"
+                                       :img-src="iconText.personalization.icon"></IconText2>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr :style="{
+                'background-color': '#F7FAFE', 'background-size': 'cover'
+            }">
+                <td>
+                    <div class="row">
+                        <TealTitle title="Understanding the Stakeholder Landscape" class="col"></TealTitle>
+                    </div>
+                    <div class="row mb-3">
+                        <h2 class="col">Generative Research</h2>
+                    </div>
+                    <div class="row">
+                        <p class="col">
+                            In order to better understand the stakeholders’ needs, feelings and frustrations, we conducted
+                            interviews
+                            and cognitive task analysis. By the end of the spring, we came up with a stakeholder map, a adult
+                            online
+                            learning model, 10 insights and 3 personas.
+                        </p>
+                    </div>
+                    <div class="row justify-content-center ">
+                        <Card class="col-md-6 col-xs-6 " :quant="card.cta.number" :card_title="card.cta.title"
+                              :card_content="card.cta.text"></Card>
 
-                <Card class="col-md-6 col-xs-6 my-1" :quant="card.interviews.number"
-                      :card_title="card.interviews.title"
-                      :card_content="card.interviews.text"></Card>
-                <Card class="col-md-6 col-xs-6 my-1" :quant="card.affinity_diagram.number"
-                      :card_title="card.affinity_diagram.title"
-                      :card_content="card.affinity_diagram.text"></Card>
-            </div>
-            <div class="row pl-5">
-                <h6>Key Insights</h6>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-sm-12">
-                    <IconText1 :icon_text_title="iconText.extra_effort.title"
-                               :icon_text_text="iconText.extra_effort.text" :img-src="iconText.extra_effort.icon"
-                               :list_texts="iconText.extra_effort.pencilBullet.list_text"></IconText1>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <IconText1 :icon_text_title="iconText.challenges.title"
-                               :icon_text_text="iconText.challenges.text" :img-src="iconText.challenges.icon"
-                               :list_texts="iconText.challenges.pencilBullet.list_text"></IconText1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-sm-12">
-                    <IconText1 :icon_text_title="iconText.long_term.title"
-                               :icon_text_text="iconText.long_term.text" :img-src="iconText.long_term.icon"
-                               :list_texts="iconText.long_term.pencilBullet.list_text"></IconText1>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <IconText1 :icon_text_title="iconText.flexibility.title"
-                               :icon_text_text="iconText.flexibility.text"
-                               :img-src="iconText.flexibility.icon"
-                               :list_texts="iconText.flexibility.pencilBullet.list_text"></IconText1>
-                </div>
-            </div>
+                        <Card class="col-md-6 col-xs-6" :quant="card.interviews.number"
+                              :card_title="card.interviews.title"
+                              :card_content="card.interviews.text"></Card>
+                        <Card class="col-md-6 col-xs-6" :quant="card.affinity_diagram.number"
+                              :card_title="card.affinity_diagram.title"
+                              :card_content="card.affinity_diagram.text"></Card>
+                    </div>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="row">
+                        <TealTitle title="Understanding the Stakeholders' Feeling and Needs" class="col"></TealTitle>
+                    </div>
+                    <div class="row">
+                        <MainTitle class="col" title="Generative Research"></MainTitle>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col d-flex flex-row justify-content-start">
+                            <ul class="nav nav-tabs d-flex flex-column col-2 align-items-end" id="myTab" role="tablist">
+                                <li class="nav-item my-3" role="presentation">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#instructor" role="tab" aria-controls="home" aria-selected="true">Instructor</a>
+                                </li>
+                                <li class="nav-item my-3" role="presentation">
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#learners" role="tab" aria-controls="profile" aria-selected="false">Learners</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content col-8 ml-0 py-5" id="myTabContent">
+                                <div class="tab-pane fade show active" id="instructor" role="tabpanel" aria-labelledby="instructors-tab">
+                                    <div class="row">
+                                        <ImageLeftParagraphRight class="col" :image_src="tab_content.instructor.row_1.instructor_input" :paragraph_content="tab_content.instructor.row_1.instructor_input_paragraph"
+                                                                 :title="tab_content.instructor.row_1.instructor_input_title"></ImageLeftParagraphRight>
+                                    </div>
+                                    <div class="row">
+                                        <ImageLeftParagraphRight class="col" :image_src="tab_content.instructor.row_2.realworld_challenge" :paragraph_content="tab_content.instructor.row_2.realworld_challenge_paragraph"
+                                                                 :title="tab_content.instructor.row_2.realworld_challenge_title"></ImageLeftParagraphRight>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="learners" role="tabpanel" aria-labelledby="learners-tab">
+                                    <div class="row">
+                                        <ImageLeftParagraphRight class="col" :image_src="tab_content.learners.row_1.image" :paragraph_content="tab_content.learners.row_1.paragraph"
+                                                                 :title="tab_content.learners.row_1.title"></ImageLeftParagraphRight>
+                                    </div>
+                                    <div class="row">
+                                        <ImageLeftParagraphRight class="col" :image_src="tab_content.learners.row_2.image" :paragraph_content="tab_content.learners.row_2.paragraph"
+                                                                 :title="tab_content.learners.row_2.title"></ImageLeftParagraphRight>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
         </table>
         <Footer></Footer>
     </div>
@@ -187,7 +187,6 @@
     import $ from 'jquery';
 
     import Card from "@/components/Card";
-    import IconText1 from "@/components/IconText1";
     import IconText2 from "@/components/IconText2";
     import TealTitle from "@/components/TealTitle";
     import MainTitle from "@/components/MainTitle";
@@ -214,15 +213,18 @@
     import toss_up from "@/components/images/toss_up.png"
     import carousel_arrow_right from "@/components/images/carousel_arrow_right.png"
     import carousel_arrow_left from "@/components/images/carousel_arrow_left.png"
-    // import carousel_slide_1 from "@/components/images/research_carousel_slide_1.png"
-    // import carousel_slide_2 from "@/components/images/research_carousel_slide_2.png"
+    import ImageLeftParagraphRight from "@/components/ImageLeftParagraphRight";
+    import instructor_input from "@/components/images/instructor_input.png";
+    import realworld_challenge from "@/components/images/realworldchallenge.png"
+    import long_term from "@/components/images/learnterm.png"
+    import flexibility from "@/components/images/flexibility.png"
 
     export default {
         name: 'App',
         components: {
+            ImageLeftParagraphRight,
             CarouselItem,
             Card,
-            IconText1,
             IconText2,
             TealTitle,
             MainTitle,
@@ -392,50 +394,76 @@
                         icon: image3
                     },
                 },
+                tab_content: {
+                    instructor: {
+                        row_1: {
+                            instructor_input: instructor_input,
+                            instructor_input_title: "Instructor’s input is highly demanded ",
+                            instructor_input_paragraph: "Instructors' extra effort in delivering accurate information, providing personal connection and class management is crucial to student success but is demanding\n"
+                        },
+                        row_2: {
+                            realworld_challenge: realworld_challenge,
+                            realworld_challenge_title: "Instructors desire real world challenges",
+                            realworld_challenge_paragraph: "Instructors desire real-world challenges and practices that are beyond traditional textbooks."
+                        }
+                    },
+                    learners:{
+                        row_1:{
+                            image: long_term,
+                            title: "Learners motivated by long-term success",
+                            paragraph: "Learners are motivated more by long-term real-life success than short-term learning outcomes."
+                        },
+                        row_2:{
+                            image: flexibility,
+                            title: "Learners need more flexibility",
+                            paragraph: "Students' needs of flexibility add more burden onto their self-regulation skills."
+                        }
+                    }
+                },
                 image: {
                     double_diamond: double_diamond,
                     design_thinking: design_thinking,
                     carousel_arrow_right: carousel_arrow_right,
-                    carousel_arrow_left: carousel_arrow_left
+                    carousel_arrow_left: carousel_arrow_left,
                     // carousel_slide_1: carousel_slide_1,
                     // carousel_slide_2: carousel_slide_2
                 },
             }
         },
-        methods:{
-            advanceCarouselLabels: function(){
+        methods: {
+            advanceCarouselLabels: function () {
                 console.log("carousel advanced")
                 return null;
             },
-            carousel_prev: function(){
-                if (this.carousel_item.slide_number > 1){
-                    $('#carousel-label-'+this.carousel_item.slide_number).removeClass('font-weight-bold');
+            carousel_prev: function () {
+                if (this.carousel_item.slide_number > 1) {
+                    $('#carousel-label-' + this.carousel_item.slide_number).removeClass('font-weight-bold');
                     this.carousel_item.slide_number--;
-                    $('#carousel-label-'+this.carousel_item.slide_number).addClass('font-weight-bold');
+                    $('#carousel-label-' + this.carousel_item.slide_number).addClass('font-weight-bold');
                 }
             },
-            carousel_next: function(){
-                if (this.carousel_item.slide_number < 4){
-                    $('#carousel-label-'+this.carousel_item.slide_number).removeClass('font-weight-bold');
+            carousel_next: function () {
+                if (this.carousel_item.slide_number < 4) {
+                    $('#carousel-label-' + this.carousel_item.slide_number).removeClass('font-weight-bold');
                     this.carousel_item.slide_number++;
-                    $('#carousel-label-'+this.carousel_item.slide_number).addClass('font-weight-bold');
+                    $('#carousel-label-' + this.carousel_item.slide_number).addClass('font-weight-bold');
                 }
             }
         },
-        updated(){
+        updated() {
 
             console.log("carousel bold added");
         }
     }
 
-//    regular javascript
+    //    regular javascript
     $('#research_carousel').on('slid.bs.carousel', function () {
         console.log("carousel slides");
     })
 </script>
 
-<style>
-    #carousel-slide-labels{
+<style scoped>
+    #carousel-slide-labels {
         font-family: Lato, sans-serif;
         font-style: normal;
         font-weight: 300;
@@ -447,17 +475,47 @@
         background: #FFFFFF;
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
         border-radius: 10px;
-        height:40vh;
+        height: 40vh;
     }
 
-    .carousel-item{
-        height:fit-content;
+    .carousel-item {
+        height: fit-content;
     }
 
-    .carousel-control-prev{
+    .carousel-control-prev {
         align-items: flex-start;
     }
-    .carousel-control-next{
+
+    .carousel-control-next {
         align-items: flex-end;; /* Aligns it at the bottom */
+    }
+
+    .nav-tabs{
+        border: 0px;
+    }
+
+    .nav-item {
+        border-right: none;
+        border-width: 1px;
+        border-color: gray;
+        border-radius: 10px 0px 0px 10px;
+        box-shadow:  -4px 0px 10px #bbbbbb,
+        -5px 0px 5px #bbbbbb, -4px 0px 10px #bbbbbb;
+        font-family: Lato, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    #myTabContent {
+        box-shadow:  0px 0px 5px #bbbbbb,
+        0px 0px 5px #bbbbbb, 0px 0px 5px #bbbbbb;
+        height: 40vh;
+        border-radius: 10px;
+    }
+
+    ul.col-2{
+        padding-right:0;
     }
 </style>
