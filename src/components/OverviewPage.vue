@@ -9,7 +9,7 @@
                 'background-color': '#ECF2F8', 'background-size': 'cover'
             }">
                     <!--                <td class="align-middle justify-content-center">-->
-                    <div class="row mt-6">
+                    <div class="row">
                         <TealTitle class="col-12" title="What is MindEdge Learning app"></TealTitle>
                     </div>
                     <div class="row mb-3">
@@ -21,7 +21,7 @@
                     <div class="row">
                             <img :src="images.image1" class="img-responsive col" alt="MindEdge App Hifi Prototype">
                     </div>
-                    <div class="row my-7">
+                    <div class="row my-5">
                            <button id="demo_btn" class="btn btn-primary offset-5 col-2">
                               Request Demo
                            </button>
@@ -100,7 +100,7 @@
         <tr id="feature-introduction"
             :style="{
                 backgroundImage: `url(${background.wavebubbles})`,
-             'background-repeat': 'no-repeat', 'background-size': '100% 100%'
+             'background-repeat': 'no-repeat', 'background-size': 'cover'
             }">
             <td class="align-middle justify-content-center">
                 <div class="row justify-content-center mb-2">
@@ -110,13 +110,13 @@
                     <MainTitle class="col-12" :title="titles.title6"></MainTitle>
                 </div>
 
-                <div class="row mb-7">
+                <div class="row">
                     <Paragraph class="col-12" :content="paragraphs.key_feature"></Paragraph>
                 </div>
 
                 <div class="row my-5">
-                    <div class= "col-7 my-auto mr-6">
-                        <div class="row mb-2">
+                    <div class="col-8 my-auto">
+                        <div class="row">
                             <h3 class="col">Chunked Modules</h3>
                         </div>
                         <div class="row">
@@ -132,8 +132,8 @@
                     <div class="col-4">
                         <img :src="images.on_the_go" class="align-middle">
                     </div>
-                    <div class= "col-7 my-auto mr-6">
-                        <div class="row mb-2">
+                    <div class="col-8 my-auto">
+                        <div class="row">
                             <h3 class="col">On-the-go challenge mode</h3>
                         </div>
                         <div class="row">
@@ -143,8 +143,8 @@
                 </div>
 
                 <div class="row my-5">
-                    <div class="col-7 my-auto mr-6">
-                        <div class="row mb-2">
+                    <div class="col-8 my-auto">
+                        <div class="row">
                             <h3 class="col">Trophies</h3>
                         </div>
                         <div class="row">
@@ -160,8 +160,8 @@
                     <div class="col-4">
                         <img :src="images.nudge" class="align-middle">
                     </div>
-                    <div class="col-7 my-auto  mr-6">
-                        <div class="row mb-2">
+                    <div class="col-8 my-auto">
+                        <div class="row">
                             <h3 class="col">Nudge</h3>
                         </div>
                         <div class="row">
@@ -171,8 +171,8 @@
                 </div>
 
                 <div class="row my-5">
-                    <div class="col-7 my-auto mr-6">
-                        <div class="row mb-2">
+                    <div class="col-8 my-auto">
+                        <div class="row">
                             <h3 class="col">Scaffolded Hint</h3>
                         </div>
                         <div class="row">
@@ -298,29 +298,8 @@
         object-fit: fill;
     }
 
-    .mr-6,
-    .mx-6 {
-        margin-right: 5rem !important;
-    }
-
-    .ml-6,
-    .mx-6 {
-        margin-right: 5rem !important;
-    }
-
-
-    .mt-7,
-    .my-7 {
-        margin-top: 7rem !important;
-    }
-
-    .mb-7,
-    .my-7 {
-        margin-bottom: 7rem !important;
-    }
-
     #app-intro {
-        height: 130vh;
+        height: 140vh;
     }
 
     #persona {
