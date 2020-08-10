@@ -220,18 +220,18 @@
                         name: "Yu Zhao",
                         role: "Project Manager",
                         intro: "Yu’s undergraduate degree in psychology allows her to use scientific methods to understand human cognitive and learning processes. She is passionate about bridging learning science and user experience to bring successful projects. She is a huge Pixar fan."
-                        ,resume: "#", // ENTER LINK TO YOUR RESUME HERE
+                        ,resume: "https://drive.google.com/file/d/0B_0CuC4LHB5Idi1JcTBxUnJKdy15MWVCYlN1YTdac21UY2xj/view", // ENTER LINK TO YOUR RESUME HERE
                         linked_in: "https://www.linkedin.com/in/yu-alexa-zhao/", // ENTER LINK TO YOUR LINKEDIN PROFILE HERE
-                        portfolio: "#" // ENTER LINK TO YOUR PORTFOLIO HERE
+                        portfolio: "http://yuzhao.design/" // ENTER LINK TO YOUR PORTFOLIO HERE
                     },
                     nabeeha: {
                         image: nabeeha,
                         name: "Nabeeha Fatima",
                         role: "Development Lead",
                         intro: "Nabeeha is passionate about building platforms with interactions and innovative tech to meet industry needs and enhance learner experience. Prior to METALS, she worked as a front-end developer and UX lead in Qatar. In her spare time, she is a a tea connoisseur and a novice board gamer."
-                        ,resume: "#", // ENTER LINK TO YOUR RESUME HERE
+                        ,resume: "https://drive.google.com/file/d/1rsVLtaZvo9Ra5cOh4aDT0YeZPA4cH9Vv/view", // ENTER LINK TO YOUR RESUME HERE
                         linked_in: "https://www.linkedin.com/in/nabeeha-fatima-a194668a/", // ENTER LINK TO YOUR LINKEDIN PROFILE HERE
-                        portfolio: "#" // ENTER LINK TO YOUR PORTFOLIO HERE
+                        portfolio: "http://nhaque.github.io" // ENTER LINK TO YOUR PORTFOLIO HERE
                     },
                     henry: {
                         image: henry,
