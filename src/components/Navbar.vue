@@ -20,6 +20,7 @@
                     <a class="dropdown-item" href="#" @click="goToResearchPage">Research</a>
                     <a class="dropdown-item" href="#" @click="goToIdeationPage">Ideation</a>
                     <a class="dropdown-item" href="#" @click="goToPrototypePage">Prototyping</a>
+                    <a class="dropdown-item" href="#" @click="goToOverviewPage">Overview</a>
                 </div>
             </li>
             <li class="nav-item">
@@ -44,6 +45,9 @@
             },
             goToPrototypePage: function(){
                 this.$emit('changeView', 3)
+            },
+            goToOverviewPage: function(){
+                this.$emit('changeView', 4)
             },
             goToAboutPage: function(){
                 this.$emit('changeView', 0)
