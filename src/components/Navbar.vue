@@ -45,7 +45,7 @@
         },
         methods: {
             goToResearchPage: function () {
-                this.$emit('changeView', 1)
+                this.$emit('changeView', 1);
             },
             goToIdeationPage: function(){
                 this.$emit('changeView', 2)
