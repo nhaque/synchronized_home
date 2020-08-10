@@ -115,13 +115,8 @@
                 </div>
 
                 <div class="row my-5">
-<<<<<<< HEAD
                     <div class= "col-7 my-auto mr-6">
                         <div class="row mb-2">
-=======
-                    <div class="col-8 my-auto mr-2">
-                        <div class="row">
->>>>>>> origin/master
                             <h3 class="col">Chunked Modules</h3>
                         </div>
                         <div class="row">
