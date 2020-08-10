@@ -10,14 +10,14 @@
              'background-repeat': 'no-repeat', 'background-size': 'cover'
             }">
                     <td class="align-middle justify-content-center">
-                        <div class="row">
+                        <div class="row mb-2">
                             <TealTitle class="col-12" title="Prototyping"></TealTitle>
                         </div>
                         <div class="row">
                             <MainTitle class="col-12" :title="titles.title1"></MainTitle>
                         </div>
-                        <div class="row text-justify">
-                            <Paragraph class="col" :content="paragraphs.content1"></Paragraph>
+                        <div class="row text-justify my-5">
+                            <Paragraph class="col-10" :content="paragraphs.content1"></Paragraph>
                         </div>
                         <div class="row justify-content-center">
                             <div class="col-12">
@@ -38,16 +38,16 @@
                 <td class="align-middle" :style="{
                 'background-color': '#FFF8EE', 'background-size': 'cover'
             }">
-                    <div class="row">
+                    <div class="row mb-2">
                         <TealTitle class="col-12"
-                                   title="#What were the methods we used?"></TealTitle>
+                                   title="What were the methods we used?"></TealTitle>
                     </div>
                     <div class="row">
                         <MainTitle class="col-12" :title="titles.title2"></MainTitle>
                     </div>
-                    <div class="row">
-                        <Paragraph class="col-12" :content="paragraphs.content2"></Paragraph>
-                        <div class="row justify-content-center">
+                    <div class="row my-3">
+                        <Paragraph class="col-11" :content="paragraphs.content2"></Paragraph>
+                        <div class="row justify-content-center my-5">
                             <div class="col-xl-3 col-lg-6 col-sm-12">
                                 <Card :quant="cards.card1.quant" :card_title="cards.card1.card_title"
                                       :card_content="cards.card1.card_content"></Card>
@@ -76,13 +76,13 @@
              'background-repeat': 'no-repeat', 'background-size': 'cover'
             }">
                 <td>
-                    <div class="row">
+                    <div class="row mb-2">
                         <TealTitle class="col-12" title="#001 Create crafts"></TealTitle>
                     </div>
                     <div class="row">
                         <MainTitle class="col-12" :title="titles.title3"></MainTitle>
                     </div>
-                    <div class="row">
+                    <div class="row my-5">
                         <div class="col-12">
                             <Paragraph class="" :content="paragraphs.content3"></Paragraph>
                         </div>
@@ -92,7 +92,7 @@
                             <img :src="images.image2" class="img-responsive" alt="User Stories, Flow and Lo-fi">
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row my-5">
                         <div class="col-4" align="center">
                             <h7>User Stories</h7>
                         </div>
@@ -112,16 +112,16 @@
              'background-repeat': 'no-repeat', 'background-size': 'cover'
                 }">
                 <td>
-                    <div class="row">
+                    <div class="row my-2">
                         <TealTitle class="col-12" title="#002 Build the system"></TealTitle>
                     </div>
                     <div class="row">
                         <MainTitle class="col-12" :title="titles.title4"></MainTitle>
                     </div>
-                    <div class="row">
+                    <div class="row my-5">
                         <div class="col-12">
                             <Paragraph class="" :content="paragraphs.content4"></Paragraph>
-                            <div class="row justify-content-center">
+                            <div class="row justify-content-center my-5">
                                 <div class="col-12">
                                     <img :src="images.image3" class="img-responsive" alt="Information Architecture, Adaptivity model and navigation">
                                 </div>
@@ -150,18 +150,18 @@
              'background-repeat': 'no-repeat', 'background-size': 'cover'
             }">
                 <td>
-                    <div class="row">
+                    <div class="row my-2">
                         <TealTitle class="col-12" title="#003 Idea Pitch"></TealTitle>
                     </div>
                     <div class="row">
                         <MainTitle class="col-12" :title="titles.title5"></MainTitle>
                     </div>
-                    <div class="row">
+                    <div class="row my-5">
                         <div class="col-12">
                             <Paragraph class="" :content="paragraphs.content5"></Paragraph>
                         </div>
                     </div>
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-center my-5">
                         <div class="col-12">
                             <img :src="images.image4" class="img-responsive" alt="Content Design">
                         </div>
