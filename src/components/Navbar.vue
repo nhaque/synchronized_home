@@ -1,12 +1,12 @@
 <template>
-    <nav class="navbar navbar-expand-lg nav-justified justify-content-between fixed-top">
+    <nav class="navbar navbar-expand-lg justify-content-between fixed-top">
         <a class="navbar-brand ml-5" href="#" @click="goToOverviewPage"> <b>SynchronizED</b></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <ul class="navbar-nav mr-5">
-            <li class="nav-item active">
+            <li class="nav-item active font-weight-bold">
                 <a class="nav-link" href="#" @click="goToOverviewPage">Product<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
@@ -90,5 +90,13 @@
         width: auto;
         max-height: 92px;
         max-width: 250px;
+    }
+
+    a{
+        color:#000000;
+    }
+
+    a.hover{
+        color:#0081B8;
     }
 </style>
