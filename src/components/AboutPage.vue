@@ -45,7 +45,11 @@
                                 <div class="col-md-12 col-sm-12">
                                     <Introduction :name="introduction.shujing.name" :role="introduction.shujing.role"
                                                   :intro_text="introduction.shujing.intro"
-                                                  :image="introduction.shujing.image"></Introduction>
+                                                  :image="introduction.shujing.image"
+                                                  :resume="introduction.shujing.resume"
+                                                  :linked-in="introduction.shujing.linked_in"
+                                                  :portfolio="introduction.shujing.portfolio"
+                                    ></Introduction>
                                 </div>
                             </div>
 
@@ -53,7 +57,11 @@
                                 <div class="col-md-12 col-sm-12">
                                     <Introduction :name="introduction.yu.name" :role="introduction.yu.role"
                                                   :intro_text="introduction.yu.intro"
-                                                  :image="introduction.yu.image"></Introduction>
+                                                  :image="introduction.yu.image"
+                                                  :resume="introduction.yu.resume"
+                                                  :linked-in="introduction.yu.linked_in"
+                                                  :portfolio="introduction.yu.portfolio"
+                                    ></Introduction>
                                 </div>
                             </div>
 
@@ -61,7 +69,11 @@
                                 <div class="col-md-12 col-sm-12">
                                     <Introduction :name="introduction.nabeeha.name" :role="introduction.nabeeha.role"
                                                   :intro_text="introduction.nabeeha.intro"
-                                                  :image="introduction.nabeeha.image"></Introduction>
+                                                  :image="introduction.nabeeha.image"
+                                                  :resume="introduction.nabeeha.resume"
+                                                  :linked-in="introduction.nabeeha.linked_in"
+                                                  :portfolio="introduction.nabeeha.portfolio"
+                                    ></Introduction>
                                 </div>
                             </div>
 
@@ -70,7 +82,11 @@
                                 <div class="col-md-12 col-sm-12">
                                     <Introduction :name="introduction.congying.name" :role="introduction.congying.role"
                                                   :intro_text="introduction.congying.intro"
-                                                  :image="introduction.congying.image"></Introduction>
+                                                  :image="introduction.congying.image"
+                                                  :resume="introduction.congying.resume"
+                                                  :linked-in="introduction.congying.linked_in"
+                                                  :portfolio="introduction.congying.portfolio"
+                                    ></Introduction>
                                 </div>
                             </div>
 
@@ -195,25 +211,34 @@
                         name: "Shujing Lin",
                         role: "Research Lead",
                         intro: "Shujing is interested in exploring the world and embracing different cultures, which motivated her to pursue an undergraduate degree in Italian. She has two years of experience in teaching Italian and piano. She is passionate about education and is looking forward to designing engaging and effective learning experience. She is a huge Disney fan."
+                        ,resume: "#", // ENTER LINK TO YOUR RESUME HERE
+                        linked_in: "#", // ENTER LINK TO YOUR LINKEDIN PROFILE HERE
+                        portfolio: "#" // ENTER LINK TO YOUR PORTFOLIO HERE
                     },
                     yu: {
                         image: yu,
                         name: "Yu Zhao",
                         role: "Project Manager",
                         intro: "Yu’s undergraduate degree in psychology allows her to use scientific methods to understand human cognitive and learning processes. She is passionate about bridging learning science and user experience to bring successful projects. She is a huge Pixar fan."
+                        ,resume: "#", // ENTER LINK TO YOUR RESUME HERE
+                        linked_in: "#", // ENTER LINK TO YOUR LINKEDIN PROFILE HERE
+                        portfolio: "#" // ENTER LINK TO YOUR PORTFOLIO HERE
                     },
                     nabeeha: {
                         image: nabeeha,
                         name: "Nabeeha Fatima",
                         role: "Development Lead",
                         intro: "Nabeeha is passionate about building platforms with interactions and innovative tech to meet industry needs and enhance learner experience. Prior to METALS, she worked as a front-end developer and UX lead in Qatar. In her spare time, she is a a tea connoisseur and a novice board gamer."
+                        ,resume: "#", // ENTER LINK TO YOUR RESUME HERE
+                        linked_in: "#", // ENTER LINK TO YOUR LINKEDIN PROFILE HERE
+                        portfolio: "#" // ENTER LINK TO YOUR PORTFOLIO HERE
                     },
                     henry: {
                         image: henry,
                         name: "Henry Chang",
                         role: "Product Manager",
                         intro: "Henry is all about building engaging learning products that attract and help a broad range of learners. He believes with his technical skills and the learning science principles learned in the METALS program, he can reach learners who traditionally have difficulties in accessing high-quality education."
-                    , resume: "https://drive.google.com/file/d/1talSCTkfrnYduGNxcp0wgcY8cekYBVpS/view?usp=sharing",
+                        ,resume: "https://drive.google.com/file/d/1talSCTkfrnYduGNxcp0wgcY8cekYBVpS/view?usp=sharing",
                         linked_in: "https://www.linkedin.com/in/henrychang-dev/",
                         portfolio: "http://www.henrylearning.com"
                     },
@@ -222,6 +247,9 @@
                         name: "Congying Zhang",
                         role: "Design Lead",
                         intro: "Congying is a UX designer who loves solving problems with innovative ideas, and always keeps the image of the end user in mind. She is excited to apply the learning theory and design principles learned from METALS program to improve educational experiences. She fell in love with Animal Crossing recently."
+                        ,resume: "#", // ENTER LINK TO YOUR RESUME HERE
+                        linked_in: "#", // ENTER LINK TO YOUR LINKEDIN PROFILE HERE
+                        portfolio: "#" // ENTER LINK TO YOUR PORTFOLIO HERE
                     }
                 },
                 image: {
