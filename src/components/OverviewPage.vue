@@ -22,9 +22,9 @@
                             <img :src="images.image1" class="img-responsive col" alt="MindEdge App Hifi Prototype">
                     </div>
                     <div class="row my-7">
-                           <button id="demo_btn" class="btn btn-primary offset-5 col-2">
+                           <a class="offset-5 col-2" href="mailto:support@synchronized.com"><button id="demo_btn" class="btn btn-primary ">
                               Request Demo
-                           </button>
+                           </button></a>
                     </div>
 
                 </td>
