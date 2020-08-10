@@ -91,12 +91,4 @@
         max-height: 92px;
         max-width: 250px;
     }
-
-    a {
-        color:#000000;
-    }
-
-    a.hover{
-        color:#0081B8;
-    }
 </style>
