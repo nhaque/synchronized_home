@@ -4,7 +4,7 @@
             <tr id="team-introduction"
                 :style="{
                 backgroundImage: `url(${image.bg1})`,
-             'background-repeat': 'no-repeat', 'background-size': 'cover'
+             'background-repeat': 'no-repeat', 'background-size': '100% 100%'
             }">
                 <td class="align-middle justify-content-center">
                     <div class="row my-2">
@@ -33,10 +33,10 @@
             <tr id="team-member-introduction"
                 :style="{
                 backgroundImage: `url(${image.bg2})`,
-             'background-repeat': 'no-repeat', 'background-size': 'cover'
+             'background-repeat': 'no-repeat', 'background-size': 'contain'
             }">
                 <td class="align-middle justify-content-center">
-                    <div class="py-5">
+                    <div class="py-1">
                         <div class="container">
                             <div class="row my-6">
                                 <div class="row my-5">
@@ -169,7 +169,7 @@
     import henry from "./images/henry.png";
     import team from "./images/team.png";
     import team_logo from "./images/teamlogo.png";
-    import team_bg_1 from "./images/team-bg-1.png";
+    import team_bg_1 from "./images/team-bg1.png";
     import team_bg_2 from "./images/team-bg-2.png";
     import team_bg_3 from "./images/team-bg-3.png";
 
@@ -235,7 +235,7 @@
     }
 
     #team-member-introduction {
-        height: 200vh;
+        height: 120vh;
     }
 
     #team-logo {
