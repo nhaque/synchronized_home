@@ -34,8 +34,19 @@
                     </div>
                 </td>
             </tr>
-            <tr>
+            <tr :style="{
+                backgroundImage: `url(${background.wave})`,
+             'background-repeat': 'no-repeat', 'background-size': '100% 100%'
+            }">
                 <td class="align-middle">
+                    <div class="row">
+                        <TealTitle title="Theory-based design guideline"></TealTitle>
+                    </div>
+                    <div class="row mb-5">
+                        <MainTitle :title="main_title.title2"></MainTitle>
+                    </div>
+
+
 
                     <div id="research_carousel" ref="research_carousel" class="carousel slide row" data-wrap="false" data-interval="false">
                         <a class="carousel-control-prev col-1" href="#research_carousel" role="button" data-slide="prev" @click="carousel_prev">
@@ -133,7 +144,10 @@
 
                 </td>
             </tr>
-            <tr>
+            <tr :style="{
+                backgroundImage: `url(${background.bubbles})`,
+             'background-repeat': 'no-repeat', 'background-size': '100% 100%'
+            }">
                 <td>
                     <div class="row">
                         <TealTitle title="Understanding the Stakeholders' Feeling and Needs" class="col"></TealTitle>
@@ -217,7 +231,9 @@
     import instructor_input from "@/components/images/instructor_input.png";
     import realworld_challenge from "@/components/images/realworldchallenge.png"
     import long_term from "@/components/images/learnterm.png"
-    import flexibility from "@/components/images/flexibility.png"
+    import flexibility from "@/components/images/flexibility.png";
+    import background_wave from "@/components/images/research-bg1.png";
+    import background_bubbles from "@/components/images/research-bg2.png";
 
     export default {
         name: 'App',
@@ -235,7 +251,8 @@
                 main_title: {
                     title1: "Understanding the context first, \n" +
                         "then design for it.",
-                    title2: "Evaluative Research"
+                    title2: "Design implication Guidelines",
+                    title3: "Evaluative Research"
                 },
                 paragraph: {
                     p1: "In the 8-month project, we spent more than 2 months working on user-centered research to understand our stakeholders’ goals and needs. We invited people from MindEdge, the potential customers and users to help us define our design goals.",
@@ -428,6 +445,10 @@
                     // carousel_slide_1: carousel_slide_1,
                     // carousel_slide_2: carousel_slide_2
                 },
+                background: {
+                    wave: background_wave,
+                    bubbles: background_bubbles
+                }
             }
         },
         methods: {
