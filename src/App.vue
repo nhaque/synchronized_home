@@ -89,7 +89,7 @@
     }
 
     tr {
-        height: 90vh;
+        height: 110vh;
     }
 
 
