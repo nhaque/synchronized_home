@@ -144,9 +144,14 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-6"><img :src="images.image5" class="row" alt="sticky notes miro"></div>
-                        <div class="col-6"><img :src="images.image6" class="align-middle" alt="miro collab"></div>
+                        <div class="col-6" align="center"><img :src="images.image5" class="row mb-3" alt="sticky notes miro">
+                            <h7>Idea Pitch</h7>
+                        </div>
+                        <div class="col-6" align="center"><img :src="images.image6" class="row mb-3 align-middle" alt="miro collab">
+                            <h7>Quantitative Evaluation</h7>
+                        </div>
                     </div>
+
                 </td>
             </tr>
 
@@ -228,9 +233,9 @@
                     bg4: bg4
                 },
                 link: {
-                    medium1: "https://medium.com",
-                    medium2: "https://medium.com",
-                    medium3: "https://medium.com"
+                    medium1: "https://medium.com/metals-capstone-2020-syncronized/client-kick-off-defining-the-scope-of-the-project-9914ab4952b",
+                    medium2: "https://medium.com/metals-capstone-2020-syncronized/our-research-scope-and-methods-d41fe09538c2",
+                    medium3: "https://medium.com/metals-capstone-2020-syncronized/online-design-research-what-and-how-efb90d7a82cf"
                 },
                 cards: {
                     card1: {
