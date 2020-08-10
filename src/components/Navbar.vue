@@ -7,10 +7,7 @@
         </button>
         <ul class="navbar-nav mr-5">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Overview <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Product <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#" @click="goToOverviewPage">Product<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -20,7 +17,6 @@
                     <a class="dropdown-item" href="#" @click="goToResearchPage">Research</a>
                     <a class="dropdown-item" href="#" @click="goToIdeationPage">Ideation</a>
                     <a class="dropdown-item" href="#" @click="goToPrototypePage">Prototyping</a>
-                    <a class="dropdown-item" href="#" @click="goToOverviewPage">Overview</a>
                 </div>
             </li>
             <li class="nav-item">

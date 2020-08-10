@@ -52,7 +52,7 @@
         },
         data: function () {
             return {
-                current_page: 0,
+                current_page: 4,
                 about_page: 0,
                 research_page: 1,
                 ideation_page: 2,
