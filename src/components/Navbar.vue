@@ -1,6 +1,6 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-light bg-light nav-justified justify-content-between fixed-top">
-        <a class="navbar-brand ml-5" href="#"> <img :src="image.pic" class="img-responsive"></a>
+        <a class="navbar-brand ml-5" href="#" @click="goToOverviewPage"> <b>SynchronizED</b></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,7 +31,7 @@
 
 <script>
 
-    import pic1 from "@/components/images/logo1.png";
+    import pic1 from "@/components/images/teamlogo.png";
 
     export default {
         name: "Navbar",
@@ -88,7 +88,7 @@
     .img-responsive{
         height: auto;
         width: auto;
-        max-height: 85px;
+        max-height: 92px;
         max-width: 250px;
     }
 </style>
