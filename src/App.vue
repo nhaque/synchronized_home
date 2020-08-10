@@ -86,6 +86,19 @@
         height: 90vh;
     }
 
+    #team-introduction {
+        height: 120vh;
+    }
+
+
+    #team-member-introduction {
+        height: 200vh;
+    }
+
+    #team-logo {
+        height: 150vh;
+    }
+
     td {
         padding: 0 20%;
     }

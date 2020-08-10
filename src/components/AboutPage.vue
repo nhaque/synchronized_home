@@ -1,138 +1,166 @@
 <template>
     <div>
         <table>
-            <tr>
-                <td class="align-middle">
-
-            <div class="container">
-
-                <div class="row my-2">
-                    <h2 class="col">Hi, We are Team SynchronizED!</h2>
-                </div>
-                <div class="row">
-                    <p class="col my-1">
-                        We are five thinkers from Carnegie Mellon University who are improving mobile learning
-                        experience
-                        based
-                        on learning science, cognitive model, user-centered research and design thinking.
-                    </p>
-                </div>
-                <div class="row text-center my-5">
-                    <div class="col-md-12 col-sm-12 pl-0 my-1">
-                        <img id="team-img" :src="image.team">
+            <tr id="team-introduction"
+                :style="{
+                backgroundImage: `url(${image.bg1})`,
+             'background-repeat': 'no-repeat', 'background-size': 'cover'
+            }">
+                <td class="align-middle justify-content-center">
+                    <div class="row my-2">
+                        <TealTitle class="col-12" title="Who are we?"></TealTitle>
                     </div>
-                </div>
-            </div>
+                    <div class="row my-3">
+                        <h2 class="col">Hi, We are Team SynchronizED!</h2>
+                    </div>
+                    <div class="row text-justify mb-5">
+                        <p class="col my-1">
+                            We are five thinkers from Carnegie Mellon University who are improving mobile learning
+                            experience
+                            based
+                            on learning science, cognitive model, user-centered research and design thinking.
+                        </p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <img id="team-img" :src="image.team">
+                        </div>
+                    </div>
                 </td>
             </tr>
 
-            <div class="team-member  py-5">
-                <div class="container" id="intro">
-                    <div class="row justify-content-center my-6">
-                        <div class="col-md-12 col-sm-12">
-                            <Introduction :name="introduction.shujing.name" :role="introduction.shujing.role"
-                                          :intro_text="introduction.shujing.intro"
-                                          :image="introduction.shujing.image"></Introduction>
+
+            <tr id="team-member-introduction"
+                :style="{
+                backgroundImage: `url(${image.bg2})`,
+             'background-repeat': 'no-repeat', 'background-size': 'cover'
+            }">
+                <td class="align-middle justify-content-center">
+                    <div class="team-member  py-5">
+                        <div class="container" id="intro">
+                            <div class="row my-6">
+                                <div class="row my-5">
+                                    <h2 class="col">Meet the team</h2>
+                                </div>
+                                <div class="col-md-12 col-sm-12">
+                                    <Introduction :name="introduction.shujing.name" :role="introduction.shujing.role"
+                                                  :intro_text="introduction.shujing.intro"
+                                                  :image="introduction.shujing.image"></Introduction>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-center my-6">
+                                <div class="col-md-12 col-sm-12">
+                                    <Introduction :name="introduction.yu.name" :role="introduction.yu.role"
+                                                  :intro_text="introduction.yu.intro"
+                                                  :image="introduction.yu.image"></Introduction>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-center my-6">
+                                <div class="col-md-12 col-sm-12">
+                                    <Introduction :name="introduction.nabeeha.name" :role="introduction.nabeeha.role"
+                                                  :intro_text="introduction.nabeeha.intro"
+                                                  :image="introduction.nabeeha.image"></Introduction>
+                                </div>
+                            </div>
+
+
+                            <div class="row justify-content-center my-6">
+                                <div class="col-md-12 col-sm-12">
+                                    <Introduction :name="introduction.congying.name" :role="introduction.congying.role"
+                                                  :intro_text="introduction.congying.intro"
+                                                  :image="introduction.congying.image"></Introduction>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-center my-6">
+                                <div class="col-md-12 col-sm-12">
+                                    <Introduction :name="introduction.henry.name" :role="introduction.henry.role"
+                                                  :intro_text="introduction.henry.intro"
+                                                  :image="introduction.henry.image"></Introduction>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </td>
+            </tr>
 
-                    <div class="row justify-content-center my-6">
-                        <div class="col-md-12 col-sm-12">
-                            <Introduction :name="introduction.yu.name" :role="introduction.yu.role"
-                                          :intro_text="introduction.yu.intro"
-                                          :image="introduction.yu.image"></Introduction>
+
+            <tr id="team-logo"
+                :style="{
+                backgroundImage: `url(${image.bg3})`,
+             'background-repeat': 'no-repeat', 'background-size': 'cover'
+            }">
+                <td class="align-middle justify-content-center">
+                    <div class="row">
+                        <TealTitle class="col-12" title="Our logo"></TealTitle>
+                    </div>
+                    <div class="container py-3">
+                        <div class="row mb-5">
+                            <h2 class="col">Brand Design</h2>
+                        </div>
+
+                        <div class="row my-2">
+                            <div class="col-8 my-2">
+                                <ul>
+                                    <div class="row my-2">
+                                        <li class="col my-1">
+                                            The team name consists of the initials of the team members’ names: S is from
+                                            Shujing, Y
+                                            is from Yu, N is from Nabeeha, C is from Congying, H is from Henry, and ED
+                                            is from
+                                            education!
+                                        </li>
+                                    </div>
+
+                                    <div class="row my-2">
+                                        <li class="col my-1">
+                                            Blue is our favorite color
+                                        </li>
+                                    </div>
+
+                                    <div class="row my-2">
+                                        <li class="col my-1">
+                                            The paralleled cloud means the synchrony of the team members
+                                        </li>
+                                    </div>
+
+                                    <div class="row my-2">
+                                        <li class="col my-1">
+                                            The sky and cloud implies the bright future of the project and our team
+                                            members
+                                        </li>
+                                    </div>
+
+                                    <div class="row my-2">
+                                        <li class="col my-1">
+                                            Also, the cloud looks like a ‘thumb up’ 👍
+                                        </li>
+                                    </div>
+
+                                    <div class="row my-2">
+                                        <li class="col my-1">
+                                            It doesn’t mean synchronous learning!
+                                        </li>
+                                    </div>
+                                </ul>
+                            </div>
+
+                            <div class="col-4 my-2">
+                                <img :src="image.team_logo">
+                            </div>
                         </div>
                     </div>
-
-                    <div class="row justify-content-center my-6">
-                        <div class="col-md-12 col-sm-12">
-                            <Introduction :name="introduction.nabeeha.name" :role="introduction.nabeeha.role"
-                                          :intro_text="introduction.nabeeha.intro"
-                                          :image="introduction.nabeeha.image"></Introduction>
-                        </div>
-                    </div>
-
-
-                    <div class="row justify-content-center my-6">
-                        <div class="col-md-12 col-sm-12">
-                            <Introduction :name="introduction.congying.name" :role="introduction.congying.role"
-                                          :intro_text="introduction.congying.intro"
-                                          :image="introduction.congying.image"></Introduction>
-                        </div>
-                    </div>
-
-                    <div class="row justify-content-center my-6">
-                        <div class="col-md-12 col-sm-12">
-                            <Introduction :name="introduction.henry.name" :role="introduction.henry.role"
-                                          :intro_text="introduction.henry.intro"
-                                          :image="introduction.henry.image"></Introduction>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="container py-5">
-                <div class="row my-2">
-                    <h2 class="col">Logo Design</h2>
-                </div>
-
-                <div class="row my-2">
-                    <div class="col-8 my-2">
-                        <ul>
-                            <div class="row my-2">
-                                <li class="col my-1">
-                                    The team name consists of the initials of the team members’ names: S is from
-                                    Shujing, Y
-                                    is from Yu, N is from Nabeeha, C is from Congying, H is from Henry, and ED is from
-                                    education!
-                                </li>
-                            </div>
-
-                            <div class="row my-2">
-                                <li class="col my-1">
-                                    Blue is our favorite color
-                                </li>
-                            </div>
-
-                            <div class="row my-2">
-                                <li class="col my-1">
-                                    The paralleled cloud means the synchrony of the team members
-                                </li>
-                            </div>
-
-                            <div class="row my-2">
-                                <li class="col my-1">
-                                    The sky and cloud implies the bright future of the project and our team members
-                                </li>
-                            </div>
-
-                            <div class="row my-2">
-                                <li class="col my-1">
-                                    Also, the cloud looks like a ‘thumb up’ 👍
-                                </li>
-                            </div>
-
-                            <div class="row my-2">
-                                <li class="col my-1">
-                                    It doesn’t mean synchronous learning!
-                                </li>
-                            </div>
-                        </ul>
-                    </div>
-
-                    <div class="col-4 my-2">
-                        <img :src="image.team_logo">
-                    </div>
-                </div>
-
-            </div>
+                </td>
+            </tr>
         </table>
     </div>
 
 </template>
 
 <script>
+    import TealTitle from "@/components/TealTitle";
     import Introduction from "./Introduction";
     import shujing from "./images/shujing.png";
     import congying from "./images/congying.png";
@@ -141,11 +169,15 @@
     import henry from "./images/henry.png";
     import team from "./images/team.png";
     import team_logo from "./images/teamlogo.png";
+    import team_bg_1 from "./images/team-bg-1.png";
+    import team_bg_2 from "./images/team-bg-2.png";
+    import team_bg_3 from "./images/team-bg-3.png";
 
     export default {
         name: 'AboutPage',
         components: {
-            Introduction
+            Introduction,
+            TealTitle
         },
         data: function () {
             return {
@@ -183,7 +215,10 @@
                 },
                 image: {
                     team: team,
-                    team_logo: team_logo
+                    team_logo: team_logo,
+                    bg1: team_bg_1,
+                    bg2: team_bg_2,
+                    bg3: team_bg_3
                 }
             }
         }
@@ -191,9 +226,10 @@
 </script>
 
 <style>
-    tr{
-        height:100vh
+    tr {
+        height: 100vh
     }
+
     .mt-6,
     .my-6 {
         margin-top: 8rem !important;
@@ -206,7 +242,7 @@
 
 
     .team-member {
-        background-color: #F4F4F4;
+        background-color: #FFFFFF;
     }
 
     #team-img {
@@ -215,6 +251,6 @@
     }
 
     #intro {
-        background-color: #F4F4F4;
+        background-color: #FFFFFF;
     }
 </style>
