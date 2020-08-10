@@ -36,8 +36,8 @@
              'background-repeat': 'no-repeat', 'background-size': 'cover'
             }">
                 <td class="align-middle justify-content-center">
-                    <div class="team-member  py-5">
-                        <div class="container" id="intro">
+                    <div class="py-5">
+                        <div class="container">
                             <div class="row my-6">
                                 <div class="row my-5">
                                     <h2 class="col">Meet the team</h2>
@@ -90,7 +90,7 @@
             <tr id="team-logo"
                 :style="{
                 backgroundImage: `url(${image.bg3})`,
-             'background-repeat': 'no-repeat', 'background-size': 'cover'
+             'background-repeat': 'no-repeat', 'background-size': '100% 100%'
             }">
                 <td class="align-middle justify-content-center">
                     <div class="row">
@@ -105,7 +105,7 @@
                             <div class="col-8 my-2">
                                 <ul>
                                     <div class="row my-2">
-                                        <li class="col my-1">
+                                        <li class="col my-3">
                                             The team name consists of the initials of the team members’ names: S is from
                                             Shujing, Y
                                             is from Yu, N is from Nabeeha, C is from Congying, H is from Henry, and ED
@@ -114,32 +114,32 @@
                                         </li>
                                     </div>
 
-                                    <div class="row my-2">
+                                    <div class="row my-3">
                                         <li class="col my-1">
                                             Blue is our favorite color
                                         </li>
                                     </div>
 
-                                    <div class="row my-2">
+                                    <div class="row my-3">
                                         <li class="col my-1">
                                             The paralleled cloud means the synchrony of the team members
                                         </li>
                                     </div>
 
-                                    <div class="row my-2">
+                                    <div class="row my-3">
                                         <li class="col my-1">
                                             The sky and cloud implies the bright future of the project and our team
                                             members
                                         </li>
                                     </div>
 
-                                    <div class="row my-2">
+                                    <div class="row my-3">
                                         <li class="col my-1">
                                             Also, the cloud looks like a ‘thumb up’ 👍
                                         </li>
                                     </div>
 
-                                    <div class="row my-2">
+                                    <div class="row my-3">
                                         <li class="col my-1">
                                             It doesn’t mean synchronous learning!
                                         </li>
@@ -147,7 +147,7 @@
                                 </ul>
                             </div>
 
-                            <div class="col-4 my-2">
+                            <div class="col-4 my-3">
                                 <img :src="image.team_logo">
                             </div>
                         </div>
@@ -230,6 +230,18 @@
         height: 100vh
     }
 
+    #team-introduction {
+        height: 120vh;
+    }
+
+    #team-member-introduction {
+        height: 200vh;
+    }
+
+    #team-logo {
+        height: 120vh;
+    }
+
     .mt-6,
     .my-6 {
         margin-top: 8rem !important;
@@ -241,16 +253,16 @@
     }
 
 
-    .team-member {
-        background-color: #FFFFFF;
-    }
-
     #team-img {
         width: 100%;
         height: auto;
+        filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+        border-radius: 10px;
     }
 
-    #intro {
-        background-color: #FFFFFF;
-    }
+
+
+
+
+
 </style>

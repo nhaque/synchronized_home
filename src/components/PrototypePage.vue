@@ -85,7 +85,6 @@
                     <div class="row">
                         <div class="col-12">
                             <Paragraph class="" :content="paragraphs.content3"></Paragraph>
-
                         </div>
                     </div>
                     <div class="row justify-content-center">
@@ -160,7 +159,6 @@
                     <div class="row">
                         <div class="col-12">
                             <Paragraph class="" :content="paragraphs.content5"></Paragraph>
-
                         </div>
                     </div>
                     <div class="row justify-content-center">
@@ -312,10 +310,6 @@
         background-color: #F9F8FF;
     }
 
-    /*#backgroundWaveTop{*/
-    /*    position: sticky;*/
-    /*    top: 2rem;*/
-    /*}*/
 
     img.background {
         width: 100%;
@@ -323,44 +317,4 @@
         object-fit: fill;
     }
 
-
-    /*TODO slide*/
-    .slide-enter-active {
-    }
-
-    .slide-leave-active {
-    }
-
-    .slide-leave-to {
-    }
-
-    .slide-enter {
-    }
-
-    /*TODO adjust slide animation*/
-    /* Enter and leave animations can use different */
-    /* durations and timing functions.              */
-    .slide-fade-enter-active {
-        transition: all .5s ease-in-out;
-        transition-delay: .5s;
-        /*transition: all .3s ease;*/
-    }
-
-    .slide-fade-leave-active {
-        /*transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);*/
-        transition: all .5s ease-in;
-
-    }
-
-    .slide-fade-leave-to
-        /* .slide-fade-leave-active below version 2.1.8 */
-    {
-        transform: translateY(-100vh);
-        /*opacity: 0;*/
-    }
-
-    .slide-fade-enter {
-        transform: translateY(90vh);
-        /*opacity: 0;*/
-    }
 </style>

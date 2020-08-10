@@ -4,65 +4,193 @@
     <table>
         <transition name="slide-fade">
             <!--            <tr id="FromInsightToIdeas" v-if="show.current<1" >-->
-            <tr>
+            <tr id="app-intro">
                 <td class="align-middle justify-content-center" :style="{
                 'background-color': '#ECF2F8', 'background-size': 'cover'
             }">
-<!--                <td class="align-middle justify-content-center">-->
+                    <!--                <td class="align-middle justify-content-center">-->
                     <div class="row">
                         <TealTitle class="col-12" title="What is MindEdge Learning app"></TealTitle>
                     </div>
-                    <div class="row">
+                    <div class="row mb-3">
                         <MainTitle class="col-12" :title="titles.title1"></MainTitle>
                     </div>
-                    <div class="row text-justify">
+                    <div class="row text-justify mb-3">
                         <Paragraph class="col" :content="paragraphs.content1"></Paragraph>
                     </div>
-                    <div class="row justify-content-center">
-                        <div class="col-12">
-                            <img :src="images.image1" class="img-responsive" alt="MindEdge App Hifi Prototype">
-                        </div>
+                    <div class="row">
+                            <img :src="images.image1" class="img-responsive col" alt="MindEdge App Hifi Prototype">
                     </div>
+                    <div class="row my-5">
+                           <div class="btn btn-primary offset-5 col-2">
+                               Request Demo
+                           </div>
+                    </div>
+
                 </td>
 
             </tr>
 
         </transition>
 
-            <tr>
-                <td class="align-middle justify-content-center">
-                    <!--                <td class="align-middle justify-content-center">-->
+        <tr>
+            <td class="align-middle justify-content-center">
+                <!--                <td class="align-middle justify-content-center">-->
 
-                    <div class="row">
-                        <MainTitle class="col-12" :title="titles.title2"></MainTitle>
+                <div class="row mb-3">
+                    <MainTitle class="col-12" :title="titles.title2"></MainTitle>
+                </div>
+                <div class="row text-justify">
+                    <Paragraph class="col" :content="paragraphs.content2"></Paragraph>
+                </div>
+                <div class="row justify-content-center my-5">
+                    <div class="col-4">
+                        <img :src="images.image2" class="img-responsive" alt="METALS logo">
                     </div>
-                    <div class="row text-justify">
-                        <Paragraph class="col" :content="paragraphs.content2"></Paragraph>
+                    <div class="col-8">
+                        <Paragraph class="col" :content="paragraphs.content3"></Paragraph>
                     </div>
-                    <div class="row">
-                        <div class="col-4">
-                            <img :src="images.image2" class="img-responsive" alt="METALS logo">
-                        </div>
-                        <div class="col-8">
-                            <Paragraph class="col" :content="paragraphs.content3"></Paragraph>
-                        </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <img :src="images.image3" class="img-responsive" alt="Failed to display image">
                     </div>
-                    <div class="row justify-content-center">
-                        <div class="col-4">
-                            <img :src="images.image3" class="img-responsive" alt="MindEdge logo">
-                        </div>
-                        <div class="col-8">
-                            <Paragraph class="col" :content="paragraphs.content4"></Paragraph>
-                        </div>
+                    <div class="col-8">
+                        <Paragraph class="col" :content="paragraphs.content4"></Paragraph>
                     </div>
-                </td>
+                </div>
+            </td>
 
-            </tr>
+        </tr>
 
+        <tr id="persona">
+            <td class="align-middle justify-content-center">
+                <div class="row mb-2">
+                    <TealTitle class="col-12" :title="titles.title3"></TealTitle>
+                </div>
+                <div class="row mb-5">
+                    <MainTitle class="col-12" :title="titles.title4"></MainTitle>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <img id="persona-img" :src="images.persona">
+                    </div>
+                </div>
+            </td>
+
+        </tr>
+
+        <tr id="problem-space">
+            <td class="align-middle justify-content-center">
+                <div class="row justify-content-center mb-2">
+                    <TealTitle class="col-12" :title="titles.title5"></TealTitle>
+                </div>
+                <div class="row justify-content-center">
+                    <p id="hmw" class="col-12 my-3">
+                        How Might We design a mobile learning experience that is
+                        <span id="engaging">engaging</span>, <span id="easy">easy to use</span> and
+                        <span id="supportive"> supportive </span> to help with career and academic success?
+                    </p>
+                </div>
+            </td>
+
+        </tr>
+
+
+        <tr id="feature-introduction"
+            :style="{
+                backgroundImage: `url(${background.wavebubbles})`,
+             'background-repeat': 'no-repeat', 'background-size': 'cover'
+            }">
+            <td class="align-middle justify-content-center">
+                <div class="row justify-content-center mb-2">
+                    <TealTitle class="col-12" title="Our Solution"></TealTitle>
+                </div>
+                <div class="row">
+                    <MainTitle class="col-12" :title="titles.title6"></MainTitle>
+                </div>
+
+                <div class="row">
+                    <Paragraph class="col-12" :content="paragraphs.key_feature"></Paragraph>
+                </div>
+
+                <div class="row my-5">
+                    <div class="col-8 my-auto">
+                        <div class="row">
+                            <h3 class="col">Chunked Modules</h3>
+                        </div>
+                        <div class="row">
+                        <Paragraph class="col-12" :content="paragraphs.chunked_module"></Paragraph>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <img :src="images.chunked_module" class="align-middle">
+                    </div>
+                </div>
+
+                <div class="row my-5">
+                    <div class="col-4">
+                        <img :src="images.on_the_go" class="align-middle">
+                    </div>
+                    <div class="col-8 my-auto">
+                        <div class="row">
+                            <h3 class="col">On-the-go challenge mode</h3>
+                        </div>
+                        <div class="row">
+                            <Paragraph class="col-12" :content="paragraphs.on_the_go"></Paragraph>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-5">
+                    <div class="col-8 my-auto">
+                        <div class="row">
+                            <h3 class="col">Trophies</h3>
+                        </div>
+                        <div class="row">
+                            <Paragraph class="col-12" :content="paragraphs.trophies"></Paragraph>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <img :src="images.trophies" class="align-middle">
+                    </div>
+                </div>
+
+                <div class="row my-5">
+                    <div class="col-4">
+                        <img :src="images.nudge" class="align-middle">
+                    </div>
+                    <div class="col-8 my-auto">
+                        <div class="row">
+                            <h3 class="col">Nudge</h3>
+                        </div>
+                        <div class="row">
+                            <Paragraph class="col-12" :content="paragraphs.nudge"></Paragraph>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-5">
+                    <div class="col-8 my-auto">
+                        <div class="row">
+                            <h3 class="col">Scaffolded Hint</h3>
+                        </div>
+                        <div class="row">
+                            <Paragraph class="col-12" :content="paragraphs.scaffold_hint"></Paragraph>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <img :src="images.scaffold_hint" class="align-middle">
+                    </div>
+                </div>
+
+            </td>
+
+        </tr>
 
 
     </table>
-    
+
 </template>
 
 <script>
@@ -74,14 +202,19 @@
     import pic1 from "@/components/images/banner.png"
     import pic2 from "@/components/images/metals.png"
     import pic3 from "@/components/images/me_logo.png"
-    // import pic4 from "@/components/images/stickynotes.png"
-    // import pic5 from "@/components/images/speeddating.png"
-    // import pic6 from "@/components/images/pitcheval.png"
+
+    import chunked_module from "@/components/images/chunk_module.png"
+    import nudge from "@/components/images/nudge.png"
+    import on_the_go from "@/components/images/on_the_go.png"
+    import scaffold_hint from "@/components/images/scaffold_hint.png"
+    import trophies from "@/components/images/trophies.png"
+
 
     import background_wave_bubbles from "@/components/images/overview-bg.png"
-    // import background_wave_bot from "@/components/images/wavebot.png"
-    // import background_bubble from "@/components/images/bubblebackground.png"
-    // import background_wave from "@/components/images/wavebackground.png"
+
+
+    import persona from "@/components/images/overview-persona.png"
+
 
     export default {
         name: "OverviewPage",
@@ -103,7 +236,10 @@
                 titles: {
                     title1: "MindEdge learning app, making adult learning portable and flexible",
                     title2: "About the Project",
-                    title3: "5 key features"
+                    title3: "Who are we designing for?",
+                    title4: "Non-traditional students enrolled in online community colleges",
+                    title5: "The Problem Space",
+                    title6: "5 key features"
                 },
                 paragraphs: {
                     content1: "MindEdge Learning is a mobile app that helps Community College students and other adult learners achieve the learning success."
@@ -115,61 +251,46 @@
                     content4: "MindEdge Learning is on a mission to improve the way the world learns. MindEdge has developed comprehensive, digital-first courseware built with adult learners in mind. MindEdge has For Credit, Professional Development, Continuing Education and Custom Solutions products."
                     ,
                     content5: "MindEdge app consists of five primary features: Chunked Modules, On-the-go challenge mode, Trophies, Nudge, and Scaffolded hint. Each of these features plays a role in helping users learn efficiently to achieve their learning goal and save time for their work or family."
+                    ,
+                    hmw: "How Might We design a mobile learning experience that is engaging, easy to use and supportive to help with career and academic success?"
+                    ,
+                    key_feature: "MindEdge app consists of five primary features: Chunked Modules, On-the-go challenge mode, Trophies, Nudge, and Scaffolded hint. Each of these features plays a role in helping users learn efficiently to achieve their learning goal and save time for their work or family."
+                    ,
+                    chunked_module: "MindEdge Learning chunks content into smaller units based on what type of content it is. Each chunk of content is placed in one card. The progress bar on the top indicates students’ current progress in this module. Students move on to the next card by swiping or clicking on the “continue” button at the bottom."
+                    ,
+                    on_the_go: "MindEdge provides students with an adaptive learning experience by offering them the opportunities to practice skills they haven’t mastered yet quickly. Students can review the results from last time’s practice, see the detailed explanations, and are encouraged to revisit the module they are struggling with."
+                    ,
+                    trophies: "We designed app-level trophies to encourage retention and learner motivation and course-level trophies to encourage content engagement."
+                    ,
+                    nudge: "Based on the learning science theory, we added nudge in our system to help learners improve their self-regulation skill."
+                    ,
+                    scaffold_hint: "We added a new feature “hint” to offer students several levels of hints. Students can click on “Hint” to reveal one hint at a time.  and the hints will become more and more specific as they click through them."
                 },
+
                 images: {
                     image1: pic1,
                     image2: pic2,
-                    image3: pic3
+                    image3: pic3,
+                    persona: persona,
+                    chunked_module: chunked_module,
+                    nudge: nudge,
+                    on_the_go: on_the_go,
+                    scaffold_hint: scaffold_hint,
+                    trophies: trophies
                     // image4: pic4,
                     // image5: pic5,
                     // image6: pic6
                 },
                 background: {
-                    wavebubbles: background_wave_bubbles,
-                    // wevebot: background_wave_bot,
-                    // bubble: background_bubble,
-                    // wave: background_wave
+                    wavebubbles: background_wave_bubbles
                 }
             }
         },
-        methods: {
-            scrollContent: function (event) {
-                if (event.deltaY > 0) {
-                    this.show.prev = this.show.current;
-                    this.show.current++;
-                }
-                if (event.deltaY < 0) {
-                    this.show.prev = this.show.current;
-                    this.show.current--;
-                }
-
-                console.log(this.show.current);
-            }
-        },
-        destroy() {
-            document.removeEventListener('wheel');
-        }
     }
 </script>
 
 <style scoped>
-    .img-responsive {
-        width: 100%;
-    }
 
-    .backgroundTop {
-        align-items: flex-start;
-        /*display: flex;*/
-    }
-
-    .backgroundF9F8FF {
-        background-color: #F9F8FF;
-    }
-
-    /*#backgroundWaveTop{*/
-    /*    position: sticky;*/
-    /*    top: 2rem;*/
-    /*}*/
 
     img.background {
         width: 100%;
@@ -177,45 +298,48 @@
         object-fit: fill;
     }
 
-
-    /*TODO slide*/
-    .slide-enter-active {
+    #app-intro {
+        height: 110vh;
     }
 
-    .slide-leave-active {
+    #persona {
+        background-color: #ECF2F8;
+        height: 120vh;
     }
 
-    .slide-leave-to {
+    #problem-space {
+        background-color: #FFF8EE;
+        height: 50vh;
     }
 
-    .slide-enter {
+    #hmw {
+        font-family: Josefin Sans, Libre Baskerville, serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 120%;
+        color: #111111;
     }
 
-    /*TODO adjust slide animation*/
-    /* Enter and leave animations can use different */
-    /* durations and timing functions.              */
-    .slide-fade-enter-active {
-        transition: all .5s ease-in-out;
-        transition-delay: .5s;
-        /*transition: all .3s ease;*/
+    #feature-introduction {
+        height: 350vh;
     }
 
-    .slide-fade-leave-active {
-        /*transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);*/
-        transition: all .5s ease-in;
-
+    #request_demo {
+        background: #0081B8;
+        box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
     }
 
-    .slide-fade-leave-to
-        /* .slide-fade-leave-active below version 2.1.8 */
-    {
-        transform: translateY(-100vh);
-        /*opacity: 0;*/
+    #engaging {
+        color: #02B1E1;
     }
 
-    .slide-fade-enter {
-        transform: translateY(90vh);
-        /*opacity: 0;*/
+    #easy {
+        color: #E8A647;
     }
 
+    #supportive {
+        color: #EF4A42;
+    }
 </style>
