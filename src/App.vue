@@ -17,6 +17,9 @@
                 <div id="prototype_page" class="row justify-content-center">
                     <PrototypePage name="PrototypePage" v-if="current_page==prototype_page"></PrototypePage>
                 </div>
+                <div id="overview_page" class="row justify-content-center">
+                    <OverviewPage name="OverviewPage" v-if="current_page==overview_page"></OverviewPage>
+                </div>
             </div>
             <Footer></Footer>
         </div>
@@ -33,6 +36,7 @@
     import Footer from "@/components/Footer";
     import IdeationPage from "@/components/IdeationPage";
     import PrototypePage from "./components/PrototypePage";
+    import OverviewPage from "./components/OverviewPage";
 
 
     export default {
@@ -42,6 +46,7 @@
             AboutPage,
             ResearchPage,
             IdeationPage,
+            OverviewPage,
             Navbar,
             Footer,
         },
@@ -51,7 +56,8 @@
                 about_page: 0,
                 research_page: 1,
                 ideation_page: 2,
-                prototype_page: 3
+                prototype_page: 3,
+                overview_page: 4
             }
         },
         methods: {
@@ -85,6 +91,7 @@
     tr {
         height: 90vh;
     }
+
 
     td {
         padding: 0 20%;
