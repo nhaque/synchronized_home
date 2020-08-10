@@ -20,15 +20,15 @@
                 </div>
                 <div class="row contact">
                     <div class = "col">
-                    <a :href="resume" target="_blank" class="resume">
-                        Resume
-                    </a>
-                    |
-                    <a :href="linkedIn" target="_blank" class="linkedIn">
-                        LinkedIn
-                    </a>
-                    |
-                    <a :href="portfolio" target="_blank" class="portfolio">
+                        <a :href="linkedIn" v-if="linkedIn!='#'" target="_blank" class="linkedIn">
+                            LinkedIn
+                        </a>
+                        <span v-if="resume!='#'">|</span>
+                        <a :href="resume" v-if="resume!='#'" target="_blank" class="resume">
+                            Resume
+                        </a>
+                        <span v-if="portfolio!='#'">|</span>
+                    <a :href="portfolio" v-if="portfolio!='#'" target="_blank" class="portfolio">
                         Portfolio
                     </a>
                     </div>

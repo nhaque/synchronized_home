@@ -212,7 +212,7 @@
                         role: "Research Lead",
                         intro: "Shujing is interested in exploring the world and embracing different cultures, which motivated her to pursue an undergraduate degree in Italian. She has two years of experience in teaching Italian and piano. She is passionate about education and is looking forward to designing engaging and effective learning experience. She is a huge Disney fan."
                         ,resume: "#", // ENTER LINK TO YOUR RESUME HERE
-                        linked_in: "#", // ENTER LINK TO YOUR LINKEDIN PROFILE HERE
+                        linked_in: "https://www.linkedin.com/in/shujing-lin-88480117a/", // ENTER LINK TO YOUR LINKEDIN PROFILE HERE
                         portfolio: "#" // ENTER LINK TO YOUR PORTFOLIO HERE
                     },
                     yu: {
@@ -221,7 +221,7 @@
                         role: "Project Manager",
                         intro: "Yu’s undergraduate degree in psychology allows her to use scientific methods to understand human cognitive and learning processes. She is passionate about bridging learning science and user experience to bring successful projects. She is a huge Pixar fan."
                         ,resume: "#", // ENTER LINK TO YOUR RESUME HERE
-                        linked_in: "#", // ENTER LINK TO YOUR LINKEDIN PROFILE HERE
+                        linked_in: "https://www.linkedin.com/in/yu-alexa-zhao/", // ENTER LINK TO YOUR LINKEDIN PROFILE HERE
                         portfolio: "#" // ENTER LINK TO YOUR PORTFOLIO HERE
                     },
                     nabeeha: {
@@ -230,7 +230,7 @@
                         role: "Development Lead",
                         intro: "Nabeeha is passionate about building platforms with interactions and innovative tech to meet industry needs and enhance learner experience. Prior to METALS, she worked as a front-end developer and UX lead in Qatar. In her spare time, she is a a tea connoisseur and a novice board gamer."
                         ,resume: "#", // ENTER LINK TO YOUR RESUME HERE
-                        linked_in: "#", // ENTER LINK TO YOUR LINKEDIN PROFILE HERE
+                        linked_in: "https://www.linkedin.com/in/nabeeha-fatima-a194668a/", // ENTER LINK TO YOUR LINKEDIN PROFILE HERE
                         portfolio: "#" // ENTER LINK TO YOUR PORTFOLIO HERE
                     },
                     henry: {
@@ -248,8 +248,8 @@
                         role: "Design Lead",
                         intro: "Congying is a UX designer who loves solving problems with innovative ideas, and always keeps the image of the end user in mind. She is excited to apply the learning theory and design principles learned from METALS program to improve educational experiences. She fell in love with Animal Crossing recently."
                         ,resume: "#", // ENTER LINK TO YOUR RESUME HERE
-                        linked_in: "#", // ENTER LINK TO YOUR LINKEDIN PROFILE HERE
-                        portfolio: "#" // ENTER LINK TO YOUR PORTFOLIO HERE
+                        linked_in: "https://www.linkedin.com/in/congying-zhang-camilla/", // ENTER LINK TO YOUR LINKEDIN PROFILE HERE
+                        portfolio: "https://www.congying-zhang.space/" // ENTER LINK TO YOUR PORTFOLIO HERE
                     }
                 },
                 image: {
