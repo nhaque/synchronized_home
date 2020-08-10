@@ -22,9 +22,9 @@
                             <img :src="images.image1" class="img-responsive col" alt="MindEdge App Hifi Prototype">
                     </div>
                     <div class="row my-5">
-                           <div class="btn btn-primary offset-5 col-2">
-                               Request Demo
-                           </div>
+                           <button id="demo_btn" class="btn btn-primary offset-5 col-2">
+                              Request Demo
+                           </button>
                     </div>
 
                 </td>
@@ -199,7 +199,7 @@
     import MainTitle from "@/components/MainTitle";
     import Paragraph from "@/components/Paragraph";
 
-    import pic1 from "@/components/images/banner.png"
+    import pic1 from "@/components/images/app_intro.png"
     import pic2 from "@/components/images/metals.png"
     import pic3 from "@/components/images/me_logo.png"
 
@@ -299,7 +299,7 @@
     }
 
     #app-intro {
-        height: 110vh;
+        height: 140vh;
     }
 
     #persona {
@@ -342,4 +342,20 @@
     #supportive {
         color: #EF4A42;
     }
+
+    #demo_btn {
+        width: 178px;
+        height: 73px;
+        background: #0081B8;
+        box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        line-height: 100%;
+        font-family: Lato, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
 </style>
