@@ -93,7 +93,11 @@
                 </td>
             </tr>
 
-            <tr id="remote_collaboration">
+            <tr id="OnlineCollaboration"
+                :style="{
+                backgroundImage: `url(${background.bg4})`,
+             'background-repeat': 'no-repeat', 'background-size': 'cover'
+            }">
                         <td>
                             <div class="row mb-3">
                                 <TealTitle class="col-12" title="Online working session"></TealTitle>
@@ -125,7 +129,7 @@
             <tr id="SelectingFeatures"
                 :style="{
                 backgroundImage: `url(${background.bubble})`,
-             'background-repeat': 'no-repeat'
+             'background-repeat': 'no-repeat',  'background-size': 'cover'
             }">
                 <td>
                     <div class="row mb-3">
@@ -166,7 +170,7 @@
 
     import background_wave_top from "@/components/images/wavetop.png"
     import background_wave_bot from "@/components/images/wavebot.png"
-    import background_bubble from "@/components/images/bubblebackground.png"
+    import background_bubble from "@/components/images/ideation-bg5.png"
     import background_wave from "@/components/images/wavebackground.png"
     import bg4 from "@/components/images/Ideation-bg4.png"
 

@@ -9,7 +9,7 @@
                 'background-color': '#ECF2F8', 'background-size': 'cover'
             }">
                     <!--                <td class="align-middle justify-content-center">-->
-                    <div class="row">
+                    <div class="row mt-6">
                         <TealTitle class="col-12" title="What is MindEdge Learning app"></TealTitle>
                     </div>
                     <div class="row mb-3">
@@ -21,10 +21,10 @@
                     <div class="row">
                             <img :src="images.image1" class="img-responsive col" alt="MindEdge App Hifi Prototype">
                     </div>
-                    <div class="row my-5">
-                           <div class="btn btn-primary offset-5 col-2">
-                               Request Demo
-                           </div>
+                    <div class="row my-7">
+                           <button id="demo_btn" class="btn btn-primary offset-5 col-2">
+                              Request Demo
+                           </button>
                     </div>
 
                 </td>
@@ -100,7 +100,7 @@
         <tr id="feature-introduction"
             :style="{
                 backgroundImage: `url(${background.wavebubbles})`,
-             'background-repeat': 'no-repeat', 'background-size': 'cover'
+             'background-repeat': 'no-repeat', 'background-size': '100% 100%'
             }">
             <td class="align-middle justify-content-center">
                 <div class="row justify-content-center mb-2">
@@ -110,13 +110,18 @@
                     <MainTitle class="col-12" :title="titles.title6"></MainTitle>
                 </div>
 
-                <div class="row">
+                <div class="row mb-7">
                     <Paragraph class="col-12" :content="paragraphs.key_feature"></Paragraph>
                 </div>
 
                 <div class="row my-5">
+<<<<<<< HEAD
+                    <div class= "col-7 my-auto mr-6">
+                        <div class="row mb-2">
+=======
                     <div class="col-8 my-auto mr-2">
                         <div class="row">
+>>>>>>> origin/master
                             <h3 class="col">Chunked Modules</h3>
                         </div>
                         <div class="row">
@@ -132,8 +137,8 @@
                     <div class="col-3 mr-5">
                         <img :src="images.on_the_go" class="align-middle">
                     </div>
-                    <div class="col-8 my-auto">
-                        <div class="row">
+                    <div class= "col-7 my-auto mr-6">
+                        <div class="row mb-2">
                             <h3 class="col">On-the-go challenge mode</h3>
                         </div>
                         <div class="row">
@@ -143,8 +148,8 @@
                 </div>
 
                 <div class="row my-5">
-                    <div class="col-8 my-auto">
-                        <div class="row">
+                    <div class="col-7 my-auto mr-6">
+                        <div class="row mb-2">
                             <h3 class="col">Trophies</h3>
                         </div>
                         <div class="row">
@@ -160,8 +165,8 @@
                     <div class="col-3 mr-5">
                         <img :src="images.nudge" class="align-middle">
                     </div>
-                    <div class="col-8 my-auto">
-                        <div class="row">
+                    <div class="col-7 my-auto  mr-6">
+                        <div class="row mb-2">
                             <h3 class="col">Nudge</h3>
                         </div>
                         <div class="row">
@@ -171,8 +176,8 @@
                 </div>
 
                 <div class="row my-5">
-                    <div class="col-8 my-auto">
-                        <div class="row">
+                    <div class="col-7 my-auto mr-6">
+                        <div class="row mb-2">
                             <h3 class="col">Scaffolded Hint</h3>
                         </div>
                         <div class="row">
@@ -199,7 +204,7 @@
     import MainTitle from "@/components/MainTitle";
     import Paragraph from "@/components/Paragraph";
 
-    import pic1 from "@/components/images/banner.png"
+    import pic1 from "@/components/images/app_intro.png"
     import pic2 from "@/components/images/metals.png"
     import pic3 from "@/components/images/me_logo.png"
 
@@ -298,8 +303,29 @@
         object-fit: fill;
     }
 
+    .mr-6,
+    .mx-6 {
+        margin-right: 5rem !important;
+    }
+
+    .ml-6,
+    .mx-6 {
+        margin-right: 5rem !important;
+    }
+
+
+    .mt-7,
+    .my-7 {
+        margin-top: 7rem !important;
+    }
+
+    .mb-7,
+    .my-7 {
+        margin-bottom: 7rem !important;
+    }
+
     #app-intro {
-        height: 110vh;
+        height: 130vh;
     }
 
     #persona {
@@ -342,4 +368,20 @@
     #supportive {
         color: #EF4A42;
     }
+
+    #demo_btn {
+        width: 178px;
+        height: 73px;
+        background: #0081B8;
+        box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        line-height: 100%;
+        font-family: Lato, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
 </style>
