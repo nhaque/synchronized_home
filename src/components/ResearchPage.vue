@@ -162,7 +162,7 @@
                                     <a class="nav-link" id="profile-tab" data-toggle="tab" href="#learners" role="tab" aria-controls="profile" aria-selected="false">Learners</a>
                                 </li>
                             </ul>
-                            <div class="tab-content col-8 ml-0 py-5" id="myTabContent">
+                            <div class="tab-content col-8 ml-0 py-4" id="myTabContent">
                                 <div class="tab-pane fade show active" id="instructor" role="tabpanel" aria-labelledby="instructors-tab">
                                     <div class="row">
                                         <ImageLeftParagraphRight class="col" :image_src="tab_content.instructor.row_1.instructor_input" :paragraph_content="tab_content.instructor.row_1.instructor_input_paragraph"
@@ -503,13 +503,7 @@
         height: fit-content;
     }
 
-    .carousel-control-prev {
-        align-items: flex-start;
-    }
 
-    .carousel-control-next {
-        align-items: flex-end;; /* Aligns it at the bottom */
-    }
 
     .nav-tabs{
         border: 0px;
