@@ -30,7 +30,7 @@
 <style scoped>
     .card{
         max-width: 220px;
-        height: 300px;
+        height: auto;
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
         border-width: 0;
     }
@@ -55,7 +55,7 @@
     .card-text{
         font-family: "Lato Light", sans-serif;
         font-weight: 300;
-        font-size: .60vw;
+        font-size: 12px;
         line-height: 18px;
         color: #000000;
     }

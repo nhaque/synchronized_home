@@ -550,7 +550,7 @@
         background: #FFFFFF;
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
         border-radius: 10px;
-        height: 40vh;
+        height: auto;
     }
 
     .carousel-item {
@@ -592,7 +592,7 @@
         background: #FFFFFF;
         box-shadow: 0px 0px 5px #bbbbbb,
         0px 0px 5px #bbbbbb, 0px 0px 5px #bbbbbb;
-        height: 40vh;
+        height: auto;
         border-radius: 10px;
     }
 
