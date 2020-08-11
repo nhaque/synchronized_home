@@ -17,7 +17,7 @@
                 <td class="align-middle" :style="{
                 'background-color': '#F7FAFE', 'background-size': 'cover'
             }">
-                    <TealTitle title="What is context?"></TealTitle>
+                    <TealTitle title="What is the context?"></TealTitle>
                     <MainTitle :title="main_title.title2"></MainTitle>
                     <Paragraph :content="paragraph.p2"></Paragraph>
                     <div class="row justify-content-center my-5">
@@ -43,7 +43,7 @@
                         <TealTitle title="Theory-based design guideline"></TealTitle>
                     </div>
                     <div class="row mb-5">
-                        <MainTitle :title="main_title.title2"></MainTitle>
+                        <MainTitle :title="main_title.title3"></MainTitle>
                     </div>
 
 
@@ -89,10 +89,13 @@
 
             <tr>
                 <td>
-                    <div class="row my-3">
-                        <h6>Key Insights</h6>
+                    <div class="row">
+                        <TealTitle title="Evaluative Research"></TealTitle>
                     </div>
-                    <div class="row justify-content-center">
+                    <div class="row">
+                        <MainTitle :title="main_title.title4"></MainTitle>
+                    </div>
+                    <div class="row justify-content-center my-5">
                         <div class="col">
                             <IconText2 :icon_text_title="iconText.personal_commitment.title"
                                        :icon_text_text="iconText.personal_commitment.text"
@@ -116,21 +119,15 @@
             }">
                 <td>
                     <div class="row">
-                        <TealTitle title="Understanding the Stakeholder Landscape" class="col"></TealTitle>
+                        <TealTitle title="Scoping the Stakeholder Landscape"></TealTitle>
                     </div>
                     <div class="row mb-3">
-                        <h2 class="col">Generative Research</h2>
+                        <MainTitle :title="main_title.title5"></MainTitle>
                     </div>
                     <div class="row">
-                        <p class="col">
-                            In order to better understand the stakeholders’ needs, feelings and frustrations, we conducted
-                            interviews
-                            and cognitive task analysis. By the end of the spring, we came up with a stakeholder map, a adult
-                            online
-                            learning model, 10 insights and 3 personas.
-                        </p>
+                        <Paragraph :content="paragraph.p3"></Paragraph>
                     </div>
-                    <div class="row justify-content-center ">
+                    <div class="row justify-content-center my-5">
                         <Card class="col-md-6 col-xs-6 " :quant="card.cta.number" :card_title="card.cta.title"
                               :card_content="card.cta.text"></Card>
 
@@ -150,12 +147,12 @@
             }">
                 <td>
                     <div class="row">
-                        <TealTitle title="Understanding the Stakeholders' Feeling and Needs" class="col"></TealTitle>
+                        <TealTitle title="Understanding the Stakeholders' Needs and Motivations"></TealTitle>
                     </div>
                     <div class="row">
-                        <MainTitle class="col" title="Generative Research"></MainTitle>
+                        <MainTitle :title="main_title.title6"></MainTitle>
                     </div>
-                    <div class="row mt-5">
+                    <div class="row justify-content-center my-5">
                         <div class="col d-flex flex-row justify-content-start">
                             <ul class="nav nav-tabs d-flex flex-column col-2 align-items-end" id="myTab" role="tablist">
                                 <li class="nav-item my-3" role="presentation">
@@ -251,13 +248,16 @@
                 main_title: {
                     title1: "Understanding the context first, \n" +
                         "then design for it.",
-                    title2: "Design implication Guidelines",
-                    title3: "Evaluative Research"
+                    title2: "Evaluative Research",
+                    title3: "Design implication Guidelines",
+                    title4: "Key Insights",
+                    title5: "Generative Research",
+                    title6: "Stakeholder Findings"
                 },
                 paragraph: {
                     p1: "In the 8-month project, we spent more than 2 months working on user-centered research to understand our stakeholders’ goals and needs. We invited people from MindEdge, the potential customers and users to help us define our design goals.",
                     p2: "To design a good online learning mobile app for adult learners, we need to learn about the problem space as much as possible. Our goal for evaluative research is to\tunderstand the current market for mobile educational technologies, investigate how learners are engaging with the current content of MindEdge products and identify design principles to guide the future phases.",
-                    p3: ""
+                    p3: "In order to better understand the stakeholders’ needs, feelings and frustrations, we conducted interviews and cognitive task analysis. By the end of the spring, we came up with a stakeholder map, a adult online learning model, 10 insights and 3 personas."
                 },
                 carousel_item: {
                     slide_number: 1,
