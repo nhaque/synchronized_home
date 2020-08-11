@@ -62,18 +62,15 @@
     }
 
     .introduction-name {
-        font-family: Proxima Nova, sans-serif;
-        font-style: normal;
-        font-weight: bold;
+        font-family: Lato Bold, sans-serif;
         font-size: 28px;
         line-height: 28px;
         color: #000000;
     }
 
     .introduction-role {
-        font-family: Proxima Nova, sans-serif;
+        font-family: Lato, sans-serif;
         font-style: normal;
-        font-weight: 300;
         font-size: 28px;
         line-height: 28px;
         color: #5F5F5F;
@@ -81,7 +78,7 @@
 
 
     .introduction-text {
-        font-family: Open Sans, sans-serif;
+        font-family: Lato, sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 20px;
@@ -90,12 +87,11 @@
     }
 
     .contact {
-        font-family: Open Sans， sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
         line-height: 22px;
-        color: #2F80ED;
+        color: #111111;
     }
 
     img {
