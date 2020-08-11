@@ -3,17 +3,9 @@
         <table>
             <tr>
                 <td class="align-middle">
-                    <div class="row mb-2">
-                        <div class="col">
-                            <TealTitle title="User-centered research"></TealTitle>
-                        </div>
-                    </div>
+                    <TealTitle title="User-centered research"></TealTitle>
                     <MainTitle :title="main_title.title1"></MainTitle>
-                    <div class="row my-4">
-                        <div class="col">
-                            <Paragraph :content="paragraph.p1"></Paragraph>
-                        </div>
-                    </div>
+                    <Paragraph :content="paragraph.p1"></Paragraph>
                     <div class="row justify-content-center my-5">
                         <div class="col-lg-12 col-sm-12">
                             <img class="w-100" :src="image.design_thinking">
@@ -25,30 +17,19 @@
                 <td class="align-middle" :style="{
                 'background-color': '#F7FAFE', 'background-size': 'cover'
             }">
-                    <div class="row mb-2">
-                        <div class="col">
-                            <TealTitle title="What is context?"></TealTitle>
-                        </div>
-                    </div>
+                    <TealTitle title="What is the context?"></TealTitle>
                     <MainTitle :title="main_title.title2"></MainTitle>
-                    <div class="row my-4">
-                        <div class="col">
-                            <Paragraph :content="paragraph.p2"></Paragraph>
-                        </div>
-                    </div>
+                    <Paragraph :content="paragraph.p2"></Paragraph>
                     <div class="row justify-content-center my-5">
-                        <Card class="col-md-6 col-xs-6 my-1" :quant="card.lit_review.number"
-                              :card_title="card.lit_review.title"
+                        <Card class="col-md-6 col-xs-6 my-1" :quant="card.lit_review.number" :card_title="card.lit_review.title"
                               :card_content="card.lit_review.text"></Card>
 
                         <Card class="col-md-6 col-xs-6 my-1" :quant="card.comp_analysis.number"
                               :card_title="card.comp_analysis.title"
                               :card_content="card.comp_analysis.text"></Card>
-                        <Card class="col-md-6 col-xs-6 my-1" :quant="card.elearning.number"
-                              :card_title="card.elearning.title"
+                        <Card class="col-md-6 col-xs-6 my-1" :quant="card.elearning.number" :card_title="card.elearning.title"
                               :card_content="card.elearning.text"></Card>
-                        <Card class="col-md-6 col-xs-6 my-1" :quant="card.log_data.number"
-                              :card_title="card.log_data.title"
+                        <Card class="col-md-6 col-xs-6 my-1" :quant="card.log_data.number" :card_title="card.log_data.title"
                               :card_content="card.log_data.text"></Card>
                     </div>
                 </td>
@@ -58,62 +39,47 @@
              'background-repeat': 'no-repeat', 'background-size': '100% 100%'
             }">
                 <td class="align-middle">
-                    <div class="row pt-5 mb-2">
-                        <div class="col">
-                            <TealTitle title="Theory-based design guideline"></TealTitle>
-                        </div>
+                    <div class="row">
+                        <TealTitle title="Theory-based design guideline"></TealTitle>
                     </div>
-
                     <div class="row mb-5">
-                        <div class="col">
-                            <MainTitle :title="main_title.title2"></MainTitle>
-                        </div>
+                        <MainTitle :title="main_title.title3"></MainTitle>
                     </div>
 
 
-                    <div id="research_carousel" ref="research_carousel" class="carousel slide row my-7" data-wrap="false"
-                         data-interval="false">
-                        <a class="carousel-control-prev col-1" href="#research_carousel" role="button" data-slide="prev"
-                           @click="carousel_prev">
+
+                    <div id="research_carousel" ref="research_carousel" class="carousel slide row" data-wrap="false" data-interval="false">
+                        <a class="carousel-control-prev col-1" href="#research_carousel" role="button" data-slide="prev" @click="carousel_prev">
                             <span class="" aria-hidden="true"><img :src="image.carousel_arrow_left"></span>
                             <span class="sr-only">Previous</span>
                         </a>
                         <div class="carousel-inner offset-1 col-8 mx-auto py-5 ">
                             <div class="carousel-item active">
-                                <CarouselItem id="carouselItem1" class=" w-100" :item_title="carousel_item.c1.title"
-                                              :item_paragraph="carousel_item.c1.paragraph"
-                                              :pencil_bullet_array="carousel_item.c1.pencil_array"
+                                <CarouselItem id="carouselItem1" class=" w-100" :item_title="carousel_item.c1.title" :item_paragraph="carousel_item.c1.paragraph" :pencil_bullet_array="carousel_item.c1.pencil_array"
                                               :img_src="carousel_item.c1.img_src"></CarouselItem>
                             </div>
                             <div class="carousel-item">
-                                <CarouselItem id="carouselItem2" class=" w-100" :item_title="carousel_item.c2.title"
-                                              :item_paragraph="carousel_item.c2.paragraph"
-                                              :pencil_bullet_array="carousel_item.c2.pencil_array"
+                                <CarouselItem id="carouselItem2" class=" w-100" :item_title="carousel_item.c2.title" :item_paragraph="carousel_item.c2.paragraph" :pencil_bullet_array="carousel_item.c2.pencil_array"
                                               :img_src="carousel_item.c2.img_src"></CarouselItem>
                             </div>
                             <div class="carousel-item">
-                                <CarouselItem id="carouselItem3" class=" w-100" :item_title="carousel_item.c3.title"
-                                              :item_paragraph="carousel_item.c3.paragraph"
-                                              :pencil_bullet_array="carousel_item.c3.pencil_array"
+                                <CarouselItem id="carouselItem3" class=" w-100" :item_title="carousel_item.c3.title" :item_paragraph="carousel_item.c3.paragraph" :pencil_bullet_array="carousel_item.c3.pencil_array"
                                               :img_src="carousel_item.c3.img_src"></CarouselItem>
                             </div>
                             <div class="carousel-item">
-                                <CarouselItem id="carouselItem4" class=" w-100" :item_title="carousel_item.c4.title"
-                                              :item_paragraph="carousel_item.c4.paragraph"
-                                              :pencil_bullet_array="carousel_item.c4.pencil_array"
+                                <CarouselItem id="carouselItem4" class=" w-100" :item_title="carousel_item.c4.title" :item_paragraph="carousel_item.c4.paragraph" :pencil_bullet_array="carousel_item.c4.pencil_array"
                                               :img_src="carousel_item.c4.img_src"></CarouselItem>
                             </div>
                         </div>
-                        <a class="carousel-control-next offset-1 col-1" href="#research_carousel" role="button"
-                           data-slide="next" @click="carousel_next">
+                        <a class="carousel-control-next offset-1 col-1" href="#research_carousel" role="button" data-slide="next" @click="carousel_next">
                             <span class="" aria-hidden="true"><img :src="image.carousel_arrow_right"></span>
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
                     <!--                    TODO finish carousel-->
-                    <div id="carousel-slide-labels" class="row my-6 justify-content-around">
+                    <div id="carousel-slide-labels" class="row mt-5 justify-content-around">
                         <div id="carousel-label-1" class="col-3 text-center font-weight-bold">01 Chunked Courses</div>
-                        <div id="carousel-label-2" class="col-3 text-center">02 Interactive Micro-Content</div>
+                        <div id="carousel-label-2" class="col-3 text-center">02 Interactive Micro Content</div>
                         <div id="carousel-label-3" class="col-3 text-center">03 Continued Access</div>
                         <div id="carousel-label-4" class="col-3 text-center">04 Flexible Pedagogies</div>
                     </div>
@@ -123,28 +89,24 @@
 
             <tr>
                 <td>
-                    <div class="row mb-3">
-                        <div class="col">
-                            <TealTitle title="Evaluative Research"></TealTitle>
-                        </div>
+                    <div class="row">
+                        <TealTitle title="Evaluative Research"></TealTitle>
                     </div>
-                    <div class="row my-3">
-                        <div class="col">
-                            <MainTitle title="Key Insights"></MainTitle>
-                        </div>
+                    <div class="row">
+                        <MainTitle :title="main_title.title4"></MainTitle>
                     </div>
-                    <div class="row align-content-center mx-auto my-5">
-                        <div class="col-4">
+                    <div class="row d-flex justify-content-center my-5">
+                        <div class="col">
                             <IconText2 :icon_text_title="iconText.personal_commitment.title"
                                        :icon_text_text="iconText.personal_commitment.text"
                                        :img-src="iconText.personal_commitment.icon"></IconText2>
                         </div>
-                        <div class="col-4">
+                        <div class="col">
                             <IconText2 :icon_text_title="iconText.course_design.title"
                                        :icon_text_text="iconText.course_design.text"
                                        :img-src="iconText.course_design.icon"></IconText2>
                         </div>
-                        <div class="col-4">
+                        <div class="col">
                             <IconText2 :icon_text_title="iconText.personalization.title"
                                        :icon_text_text="iconText.personalization.text"
                                        :img-src="iconText.personalization.icon"></IconText2>
@@ -156,24 +118,16 @@
                 'background-color': '#F7FAFE', 'background-size': 'cover'
             }">
                 <td>
-                    <div class="row mb-2">
-                        <TealTitle title="Understanding the Stakeholder Landscape" class="col"></TealTitle>
+                    <div class="row">
+                        <TealTitle title="Scoping the Stakeholder Landscape"></TealTitle>
                     </div>
                     <div class="row mb-3">
-                        <h2 class="col">Generative Research</h2>
+                        <MainTitle :title="main_title.title5"></MainTitle>
                     </div>
-                    <div class="row my-4">
-                        <p class="col">
-                            In order to better understand the stakeholders’ needs, feelings and frustrations, we
-                            conducted
-                            interviews
-                            and cognitive task analysis. By the end of the spring, we came up with a stakeholder map, a
-                            adult
-                            online
-                            learning model, 10 insights and 3 personas.
-                        </p>
+                    <div class="row">
+                        <Paragraph :content="paragraph.p3"></Paragraph>
                     </div>
-                    <div class="row justify-content-center ">
+                    <div class="row justify-content-center my-5">
                         <Card class="col-md-6 col-xs-6 " :quant="card.cta.number" :card_title="card.cta.title"
                               :card_content="card.cta.text"></Card>
 
@@ -192,51 +146,40 @@
              'background-repeat': 'no-repeat', 'background-size': '100% 100%'
             }">
                 <td>
-                    <div class="row mb-2">
-                        <TealTitle title="Understanding the Stakeholders' Feeling and Needs" class="col"></TealTitle>
+                    <div class="row">
+                        <TealTitle title="Understanding the Stakeholders' Needs and Motivations"></TealTitle>
                     </div>
                     <div class="row">
-                        <MainTitle class="col" title="Generative Research"></MainTitle>
+                        <MainTitle :title="main_title.title6"></MainTitle>
                     </div>
-                    <div class="row my-5">
+                    <div class="row justify-content-center my-5">
                         <div class="col d-flex flex-row justify-content-start">
                             <ul class="nav nav-tabs d-flex flex-column col-2 align-items-end" id="myTab" role="tablist">
                                 <li class="nav-item my-3" role="presentation">
-                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#instructor"
-                                       role="tab" aria-controls="home" aria-selected="true">Instructor</a>
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#instructor" role="tab" aria-controls="home" aria-selected="true">Instructor</a>
                                 </li>
                                 <li class="nav-item my-3" role="presentation">
-                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#learners" role="tab"
-                                       aria-controls="profile" aria-selected="false">Learners</a>
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#learners" role="tab" aria-controls="profile" aria-selected="false">Learners</a>
                                 </li>
                             </ul>
-                            <div class="tab-content col-8 ml-0 py-5" id="myTabContent">
-                                <div class="tab-pane fade show active" id="instructor" role="tabpanel"
-                                     aria-labelledby="instructors-tab">
-                                    <div class="row justify-content-center mb-3">
-                                        <ImageLeftParagraphRight class="col-10"
-                                                                 :image_src="tab_content.instructor.row_1.instructor_input"
-                                                                 :paragraph_content="tab_content.instructor.row_1.instructor_input_paragraph"
+                            <div class="tab-content col-8 ml-0 py-4" id="myTabContent">
+                                <div class="tab-pane fade show active" id="instructor" role="tabpanel" aria-labelledby="instructors-tab">
+                                    <div class="row">
+                                        <ImageLeftParagraphRight class="col" :image_src="tab_content.instructor.row_1.instructor_input" :paragraph_content="tab_content.instructor.row_1.instructor_input_paragraph"
                                                                  :title="tab_content.instructor.row_1.instructor_input_title"></ImageLeftParagraphRight>
                                     </div>
-                                    <div class="row justify-content-center">
-                                        <ImageLeftParagraphRight class="col-10"
-                                                                 :image_src="tab_content.instructor.row_2.realworld_challenge"
-                                                                 :paragraph_content="tab_content.instructor.row_2.realworld_challenge_paragraph"
+                                    <div class="row">
+                                        <ImageLeftParagraphRight class="col" :image_src="tab_content.instructor.row_2.realworld_challenge" :paragraph_content="tab_content.instructor.row_2.realworld_challenge_paragraph"
                                                                  :title="tab_content.instructor.row_2.realworld_challenge_title"></ImageLeftParagraphRight>
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="learners" role="tabpanel" aria-labelledby="learners-tab">
-                                    <div class="row justify-content-center my-3">
-                                        <ImageLeftParagraphRight class="col-10"
-                                                                 :image_src="tab_content.learners.row_1.image"
-                                                                 :paragraph_content="tab_content.learners.row_1.paragraph"
+                                    <div class="row">
+                                        <ImageLeftParagraphRight class="col" :image_src="tab_content.learners.row_1.image" :paragraph_content="tab_content.learners.row_1.paragraph"
                                                                  :title="tab_content.learners.row_1.title"></ImageLeftParagraphRight>
                                     </div>
-                                    <div class="row justify-content-center mt-4">
-                                        <ImageLeftParagraphRight class="col-10"
-                                                                 :image_src="tab_content.learners.row_2.image"
-                                                                 :paragraph_content="tab_content.learners.row_2.paragraph"
+                                    <div class="row">
+                                        <ImageLeftParagraphRight class="col" :image_src="tab_content.learners.row_2.image" :paragraph_content="tab_content.learners.row_2.paragraph"
                                                                  :title="tab_content.learners.row_2.title"></ImageLeftParagraphRight>
                                     </div>
                                 </div>
@@ -305,13 +248,16 @@
                 main_title: {
                     title1: "Understanding the context first, \n" +
                         "then design for it.",
-                    title2: "Design implication Guidelines",
-                    title3: "Evaluative Research"
+                    title2: "Evaluative Research",
+                    title3: "Design implication Guidelines",
+                    title4: "Key Insights",
+                    title5: "Generative Research",
+                    title6: "Stakeholder Findings"
                 },
                 paragraph: {
                     p1: "In the 8-month project, we spent more than 2 months working on user-centered research to understand our stakeholders’ goals and needs. We invited people from MindEdge, the potential customers and users to help us define our design goals.",
                     p2: "To design a good online learning mobile app for adult learners, we need to learn about the problem space as much as possible. Our goal for evaluative research is to\tunderstand the current market for mobile educational technologies, investigate how learners are engaging with the current content of MindEdge products and identify design principles to guide the future phases.",
-                    p3: ""
+                    p3: "In order to better understand the stakeholders’ needs, feelings and frustrations, we conducted interviews and cognitive task analysis. By the end of the spring, we came up with a stakeholder map, a adult online learning model, 10 insights and 3 personas."
                 },
                 carousel_item: {
                     slide_number: 1,
@@ -478,13 +424,13 @@
                             realworld_challenge_paragraph: "Instructors desire real-world challenges and practices that are beyond traditional textbooks."
                         }
                     },
-                    learners: {
-                        row_1: {
+                    learners:{
+                        row_1:{
                             image: long_term,
                             title: "Learners motivated by long-term success",
                             paragraph: "Learners are motivated more by long-term real-life success than short-term learning outcomes."
                         },
-                        row_2: {
+                        row_2:{
                             image: flexibility,
                             title: "Learners need more flexibility",
                             paragraph: "Students' needs of flexibility add more burden onto their self-regulation skills."
@@ -557,15 +503,9 @@
         height: fit-content;
     }
 
-    .carousel-control-prev {
-        align-items: flex-start;
-    }
 
-    .carousel-control-next {
-        align-items: flex-end;; /* Aligns it at the bottom */
-    }
 
-    .nav-tabs {
+    .nav-tabs{
         border: 0px;
     }
 
@@ -596,14 +536,14 @@
     }
 
     #myTabContent {
-        background: #FFFFFF;
-        box-shadow: 0px 0px 5px #bbbbbb,
+        box-shadow:  0px 0px 5px #bbbbbb,
         0px 0px 5px #bbbbbb, 0px 0px 5px #bbbbbb;
         height: 40vh;
         border-radius: 10px;
+        overflow: hidden;
     }
 
-    ul.col-2 {
-        padding-right: 0;
+    ul.col-2{
+        padding-right:0;
     }
 </style>
