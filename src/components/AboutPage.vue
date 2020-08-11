@@ -14,12 +14,7 @@
                         <MainTitle class="col-12" :title="titles.title1"></MainTitle>
                     </div>
                     <div class="row text-justify mb-5">
-                        <p class="col my-1">
-                            We are five thinkers from Carnegie Mellon University who are improving mobile learning
-                            experience
-                            based
-                            on learning science, cognitive model, user-centered research and design thinking.
-                        </p>
+                        <Paragraph class="col" :content="paragraphs.content1"></Paragraph>
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-12">
@@ -180,6 +175,7 @@
     import TealTitle from "@/components/TealTitle";
     import MainTitle from "./MainTitle";
     import Introduction from "./Introduction";
+    import Paragraph from "./Paragraph";
     import shujing from "./images/shujing.png";
     import congying from "./images/congying.png";
     import yu from "./images/yu.png";
@@ -196,10 +192,14 @@
         components: {
             Introduction,
             TealTitle,
-            MainTitle
+            MainTitle,
+            Paragraph
         },
         data: function () {
             return {
+                paragraphs: {
+                    content1: "We are five thinkers from Carnegie Mellon University who are improving mobile learning experience based on learning science, cognitive model, user-centered research and design thinking."
+                },
                 titles: {
                     title1: "Hi, We are Team SynchronizED!",
                     title2: "Meet the Team",
