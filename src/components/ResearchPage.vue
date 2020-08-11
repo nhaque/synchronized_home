@@ -503,13 +503,7 @@
         height: fit-content;
     }
 
-    .carousel-control-prev {
-        align-items: flex-start;
-    }
 
-    .carousel-control-next {
-        align-items: flex-end;; /* Aligns it at the bottom */
-    }
 
     .nav-tabs{
         border: 0px;
