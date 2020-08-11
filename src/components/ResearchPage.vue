@@ -89,6 +89,9 @@
 
             <tr>
                 <td>
+                    <div class="row">
+                        <TealTitle title="Evaluative Research" class="col"></TealTitle>
+                    </div>
                     <div class="row my-3">
                         <h6>Key Insights</h6>
                     </div>
@@ -116,7 +119,7 @@
             }">
                 <td>
                     <div class="row">
-                        <TealTitle title="Understanding the Stakeholder Landscape" class="col"></TealTitle>
+                        <TealTitle title="Scoping the Stakeholder Landscape" class="col"></TealTitle>
                     </div>
                     <div class="row mb-3">
                         <h2 class="col">Generative Research</h2>
@@ -150,10 +153,10 @@
             }">
                 <td>
                     <div class="row">
-                        <TealTitle title="Understanding the Stakeholders' Feeling and Needs" class="col"></TealTitle>
+                        <TealTitle title="Understanding the Stakeholders' Needs and Motivations" class="col"></TealTitle>
                     </div>
                     <div class="row">
-                        <MainTitle class="col" title="Generative Research"></MainTitle>
+                        <MainTitle class="col" title="Stakeholder Findings"></MainTitle>
                     </div>
                     <div class="row mt-5">
                         <div class="col d-flex flex-row justify-content-start">
