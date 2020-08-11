@@ -30,10 +30,7 @@
             </transition>
 
             <!--            <tr id="PossibleDesignOpp" v-if="show.current>=1" >-->
-            <tr id="PossibleDesignOpp" :style="{
-                backgroundImage: `url(${background.wave})`,
-             'background-repeat': 'no-repeat', 'background-size': 'cover'
-            }">
+            <tr>
 
                 <td class="align-middle" :style="{
                 'background-color': '#FFF8EE', 'background-size': 'cover'
@@ -73,7 +70,7 @@
             <tr id="IndividualIdeas"
                 :style="{
                 backgroundImage: `url(${background.wavetop})`,
-             'background-repeat': 'no-repeat', 'background-size': 'cover'
+             'background-repeat': 'no-repeat', 'background-size': '100% 100%'
             }">
                 <td>
                     <div class="row mb-2">
@@ -109,7 +106,7 @@
             <tr id="WholeAppDesign"
                 :style="{
                 backgroundImage: `url(${background.wavebot})`,
-             'background-repeat': 'no-repeat', 'background-size': 'cover'
+             'background-repeat': 'no-repeat', 'background-size': '100% 100%'
                 }">
                 <td>
                     <div class="row my-2">
