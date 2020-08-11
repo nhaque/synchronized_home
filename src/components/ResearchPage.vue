@@ -90,9 +90,9 @@
             <tr>
                 <td>
                     <div class="row">
-                        <TealTitle title="Evaluative Research" class="col"></TealTitle>
+                        <TealTitle title="Evaluative Research"></TealTitle>
                     </div>
-                    <div class="row my-3">
+                    <div class="row">
                         <h6>Key Insights</h6>
                     </div>
                     <div class="row justify-content-center">
@@ -125,13 +125,7 @@
                         <h2 class="col">Generative Research</h2>
                     </div>
                     <div class="row">
-                        <p class="col">
-                            In order to better understand the stakeholders’ needs, feelings and frustrations, we conducted
-                            interviews
-                            and cognitive task analysis. By the end of the spring, we came up with a stakeholder map, a adult
-                            online
-                            learning model, 10 insights and 3 personas.
-                        </p>
+                        <Paragraph :content="paragraph.p3"></Paragraph>
                     </div>
                     <div class="row justify-content-center ">
                         <Card class="col-md-6 col-xs-6 " :quant="card.cta.number" :card_title="card.cta.title"
@@ -260,7 +254,7 @@
                 paragraph: {
                     p1: "In the 8-month project, we spent more than 2 months working on user-centered research to understand our stakeholders’ goals and needs. We invited people from MindEdge, the potential customers and users to help us define our design goals.",
                     p2: "To design a good online learning mobile app for adult learners, we need to learn about the problem space as much as possible. Our goal for evaluative research is to\tunderstand the current market for mobile educational technologies, investigate how learners are engaging with the current content of MindEdge products and identify design principles to guide the future phases.",
-                    p3: ""
+                    p3: "In order to better understand the stakeholders’ needs, feelings and frustrations, we conducted interviews and cognitive task analysis. By the end of the spring, we came up with a stakeholder map, a adult online learning model, 10 insights and 3 personas."
                 },
                 carousel_item: {
                     slide_number: 1,
