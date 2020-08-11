@@ -55,7 +55,7 @@
     .card-text{
         font-family: "Lato Light", sans-serif;
         font-weight: 300;
-        font-size: 12px;
+        font-size: .71vw;
         line-height: 18px;
         color: #000000;
     }
