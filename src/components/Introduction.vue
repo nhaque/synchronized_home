@@ -98,5 +98,8 @@
         color: #2F80ED;
     }
 
+    img {
+        max-width: 90%;
+    }
 
 </style>
