@@ -512,7 +512,7 @@
         border: 0px;
     }
 
-    .nav-link.active {
+    .nav-tabs .nav-link.active {
         border-right: none;
         border-width: 1px;
         border-color: #a1a1a1;
@@ -527,7 +527,7 @@
     .nav-item {
         border-right: none;
         border-width: 1px;
-        border-color: gray;
+        border-color: #a1a1a1;
         border-radius: 10px 0px 0px 10px;
         /*box-shadow:  -4px 0px 10px #bbbbbb,*/
         /*-5px 0px 5px #bbbbbb, -4px 0px 10px #bbbbbb;*/
