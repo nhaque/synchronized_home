@@ -87,6 +87,12 @@
     }
 
     @font-face {
+        font-family: "Lato Bold";
+        src: local("Lato Bold"),
+        url(./fonts/Lato/Lato-Bold.ttf) format("truetype");
+    }
+
+    @font-face {
         font-family: "Lato Light";
         src: local("Lato Light"),
         url(./fonts/Lato/Lato-Light.ttf) format("truetype");

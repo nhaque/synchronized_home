@@ -17,7 +17,7 @@
                             <MainTitle class="col-12" :title="titles.title1"></MainTitle>
                         </div>
                         <div class="row text-justify my-5">
-                            <Paragraph class="col-10" :content="paragraphs.content1"></Paragraph>
+                            <Paragraph class="col-12" :content="paragraphs.content1"></Paragraph>
                         </div>
                         <div class="row justify-content-center">
                             <div class="col-12">
