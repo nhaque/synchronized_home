@@ -515,13 +515,25 @@
         border: 0px;
     }
 
+    .nav-link.active {
+        border-right: none;
+        border-width: 1px;
+        border-color: #a1a1a1;
+        border-radius: 10px 0px 0px 10px;
+        font-family: Lato, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
     .nav-item {
         border-right: none;
         border-width: 1px;
         border-color: gray;
         border-radius: 10px 0px 0px 10px;
-        box-shadow:  -4px 0px 10px #bbbbbb,
-        -5px 0px 5px #bbbbbb, -4px 0px 10px #bbbbbb;
+        /*box-shadow:  -4px 0px 10px #bbbbbb,*/
+        /*-5px 0px 5px #bbbbbb, -4px 0px 10px #bbbbbb;*/
         font-family: Lato, sans-serif;
         font-style: normal;
         font-weight: 300;
