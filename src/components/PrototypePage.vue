@@ -7,7 +7,7 @@
                 <tr id="RapidDesignAndIteration"
                     :style="{
                 backgroundImage: `url(${background.bubble})`,
-             'background-repeat': 'no-repeat', 'background-size': 'cover'
+             'background-repeat': 'no-repeat', 'background-size': '100% 100%'
             }">
                     <td class="align-middle justify-content-center">
                         <div class="row mb-2">
