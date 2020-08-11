@@ -185,7 +185,6 @@
     import TealTitle from "@/components/TealTitle";
     import MainTitle from "@/components/MainTitle";
     import Paragraph from "@/components/Paragraph";
-    // import HyperLink from "@/components/HyperLink";
     import Card from "@/components/Card";
 
     import pic1 from "@/components/images/timeline_design.png"
