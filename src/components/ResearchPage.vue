@@ -133,7 +133,7 @@
                             <MainTitle title="Key Insights"></MainTitle>
                         </div>
                     </div>
-                    <div class="row align-content-center mx-auto">
+                    <div class="row align-content-center mx-auto my-5">
                         <div class="col-4">
                             <IconText2 :icon_text_title="iconText.personal_commitment.title"
                                        :icon_text_text="iconText.personal_commitment.text"
