@@ -1,5 +1,5 @@
 <template>
-    <div class="iconText2">
+    <div class="iconText2 mx-auto">
         <div class="row justify-content-center mb-4">
             <img :src="imgSrc" alt=".."/>
 

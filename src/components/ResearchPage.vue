@@ -58,7 +58,7 @@
              'background-repeat': 'no-repeat', 'background-size': '100% 100%'
             }">
                 <td class="align-middle">
-                    <div class="row mb-2">
+                    <div class="row pt-5 mb-2">
                         <div class="col">
                             <TealTitle title="Theory-based design guideline"></TealTitle>
                         </div>
@@ -113,7 +113,7 @@
                     <!--                    TODO finish carousel-->
                     <div id="carousel-slide-labels" class="row my-6 justify-content-around">
                         <div id="carousel-label-1" class="col-3 text-center font-weight-bold">01 Chunked Courses</div>
-                        <div id="carousel-label-2" class="col-3 text-center">02 Interactive Micro Content</div>
+                        <div id="carousel-label-2" class="col-3 text-center">02 Interactive Micro-Content</div>
                         <div id="carousel-label-3" class="col-3 text-center">03 Continued Access</div>
                         <div id="carousel-label-4" class="col-3 text-center">04 Flexible Pedagogies</div>
                     </div>
@@ -123,21 +123,28 @@
 
             <tr>
                 <td>
-                    <div class="row my-3">
-                        <h6>Key Insights</h6>
-                    </div>
-                    <div class="row justify-content-center">
+                    <div class="row mb-3">
                         <div class="col">
+                            <TealTitle title="Evaluative Research"></TealTitle>
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col">
+                            <MainTitle title="Key Insights"></MainTitle>
+                        </div>
+                    </div>
+                    <div class="row align-content-center mx-auto">
+                        <div class="col-4">
                             <IconText2 :icon_text_title="iconText.personal_commitment.title"
                                        :icon_text_text="iconText.personal_commitment.text"
                                        :img-src="iconText.personal_commitment.icon"></IconText2>
                         </div>
-                        <div class="col">
+                        <div class="col-4">
                             <IconText2 :icon_text_title="iconText.course_design.title"
                                        :icon_text_text="iconText.course_design.text"
                                        :img-src="iconText.course_design.icon"></IconText2>
                         </div>
-                        <div class="col">
+                        <div class="col-4">
                             <IconText2 :icon_text_title="iconText.personalization.title"
                                        :icon_text_text="iconText.personalization.text"
                                        :img-src="iconText.personalization.icon"></IconText2>
@@ -149,13 +156,13 @@
                 'background-color': '#F7FAFE', 'background-size': 'cover'
             }">
                 <td>
-                    <div class="row">
+                    <div class="row mb-2">
                         <TealTitle title="Understanding the Stakeholder Landscape" class="col"></TealTitle>
                     </div>
                     <div class="row mb-3">
                         <h2 class="col">Generative Research</h2>
                     </div>
-                    <div class="row">
+                    <div class="row my-4">
                         <p class="col">
                             In order to better understand the stakeholders’ needs, feelings and frustrations, we
                             conducted
@@ -185,13 +192,13 @@
              'background-repeat': 'no-repeat', 'background-size': '100% 100%'
             }">
                 <td>
-                    <div class="row">
+                    <div class="row mb-2">
                         <TealTitle title="Understanding the Stakeholders' Feeling and Needs" class="col"></TealTitle>
                     </div>
                     <div class="row">
                         <MainTitle class="col" title="Generative Research"></MainTitle>
                     </div>
-                    <div class="row mt-5">
+                    <div class="row my-5">
                         <div class="col d-flex flex-row justify-content-start">
                             <ul class="nav nav-tabs d-flex flex-column col-2 align-items-end" id="myTab" role="tablist">
                                 <li class="nav-item my-3" role="presentation">
@@ -206,28 +213,28 @@
                             <div class="tab-content col-8 ml-0 py-5" id="myTabContent">
                                 <div class="tab-pane fade show active" id="instructor" role="tabpanel"
                                      aria-labelledby="instructors-tab">
-                                    <div class="row">
-                                        <ImageLeftParagraphRight class="col"
+                                    <div class="row justify-content-center mb-3">
+                                        <ImageLeftParagraphRight class="col-10"
                                                                  :image_src="tab_content.instructor.row_1.instructor_input"
                                                                  :paragraph_content="tab_content.instructor.row_1.instructor_input_paragraph"
                                                                  :title="tab_content.instructor.row_1.instructor_input_title"></ImageLeftParagraphRight>
                                     </div>
-                                    <div class="row">
-                                        <ImageLeftParagraphRight class="col"
+                                    <div class="row justify-content-center">
+                                        <ImageLeftParagraphRight class="col-10"
                                                                  :image_src="tab_content.instructor.row_2.realworld_challenge"
                                                                  :paragraph_content="tab_content.instructor.row_2.realworld_challenge_paragraph"
                                                                  :title="tab_content.instructor.row_2.realworld_challenge_title"></ImageLeftParagraphRight>
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="learners" role="tabpanel" aria-labelledby="learners-tab">
-                                    <div class="row">
-                                        <ImageLeftParagraphRight class="col"
+                                    <div class="row justify-content-center my-3">
+                                        <ImageLeftParagraphRight class="col-10"
                                                                  :image_src="tab_content.learners.row_1.image"
                                                                  :paragraph_content="tab_content.learners.row_1.paragraph"
                                                                  :title="tab_content.learners.row_1.title"></ImageLeftParagraphRight>
                                     </div>
-                                    <div class="row">
-                                        <ImageLeftParagraphRight class="col"
+                                    <div class="row justify-content-center mt-4">
+                                        <ImageLeftParagraphRight class="col-10"
                                                                  :image_src="tab_content.learners.row_2.image"
                                                                  :paragraph_content="tab_content.learners.row_2.paragraph"
                                                                  :title="tab_content.learners.row_2.title"></ImageLeftParagraphRight>
@@ -589,6 +596,7 @@
     }
 
     #myTabContent {
+        background: #FFFFFF;
         box-shadow: 0px 0px 5px #bbbbbb,
         0px 0px 5px #bbbbbb, 0px 0px 5px #bbbbbb;
         height: 40vh;
