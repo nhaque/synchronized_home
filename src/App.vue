@@ -80,6 +80,30 @@
         padding: 0;
     }
 
+    @font-face {
+        font-family: "Lato";
+        src: local("Lato"),
+        url(./fonts/Lato/Lato-Regular.ttf) format("truetype");
+    }
+
+    @font-face {
+        font-family: "Lato Light";
+        src: local("Lato Light"),
+        url(./fonts/Lato/Lato-Light.ttf) format("truetype");
+    }
+
+    @font-face {
+        font-family: "Libre Baskerville";
+        src: local("Libre Baskerville"),
+        url(./fonts/Libre_Baskerville/LibreBaskerville-Bold.ttf) format("truetype");
+    }
+
+    @font-face {
+        font-family: "Josefin Sans";
+        src: local("Josefin Sans"),
+        url(./fonts/Josefin_Sans/static/JosefinSans-Bold.ttf) format("truetype");
+    }
+
     #app {
         font-family: Avenir, Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
@@ -121,7 +145,7 @@
 
 
     div h3 {
-        font-family: Libre Baskerville, Helvetica, sans-serif;
+        font-family: "Libre Baskerville", serif;
         font-style: normal;
         font-weight: bold;
         font-size: 20px;
@@ -132,7 +156,7 @@
 
 
     p {
-        font-family: Open Sans, sans-serif;
+
         font-style: normal;
         font-weight: normal;
         font-size: 20px;
@@ -143,7 +167,7 @@
     }
 
     ul {
-        font-family: Open Sans, sans-serif;
+        font-family: Avenir, sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 20px;

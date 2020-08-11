@@ -70,7 +70,6 @@
 
 <style scoped>
     .nav-item {
-        font-family: Proxima Nova;
         font-style: normal;
         font-weight: normal;
         font-size: 18px;

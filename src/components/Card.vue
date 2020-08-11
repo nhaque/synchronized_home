@@ -36,16 +36,15 @@
     }
 
     .data_quantity{
-        font-family: Open Sans, sans-serif;
+        font-family: "Libre Baskerville", serif;
         font-style: normal;
         font-weight: 300;
         font-size: 40px;
         line-height: 54px;
-        color:#02B1E1;
+        color:#0081B8;
     }
 
     .card-title{
-        font-family: Open Sans, sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
@@ -54,8 +53,7 @@
     }
 
     .card-text{
-        font-family: Open Sans, sans-serif;
-        font-style: normal;
+        font-family: "Lato Light", sans-serif;
         font-weight: 300;
         font-size: 12px;
         line-height: 18px;
