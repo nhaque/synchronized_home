@@ -78,7 +78,7 @@
                             <span class="" aria-hidden="true"><img :src="image.carousel_arrow_left"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <div class="carousel-inner offset-1 col-8 mx-auto py-5 ">
+                        <div class="carousel-inner offset-1 col-8 mx-auto py-5 pl-4">
                             <div class="carousel-item active">
                                 <CarouselItem id="carouselItem1" class=" w-100" :item_title="carousel_item.c1.title"
                                               :item_paragraph="carousel_item.c1.paragraph"
