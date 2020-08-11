@@ -51,7 +51,7 @@
 
 <style scoped>
     h4{
-        font-family: Lato;
+        font-family: Avenir;
         font-style: normal;
         font-weight: normal;
         font-size: 18px;

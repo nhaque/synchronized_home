@@ -6,10 +6,10 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <ul class="navbar-nav mr-5">
-            <li class="nav-item active font-weight-bold">
+            <li id="product" class="nav-item active font-weight-bold">
                 <a class="nav-link" href="#" @click="goToOverviewPage">Product<span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item dropdown">
+            <li id="process" class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Process
                 </a>
@@ -19,7 +19,7 @@
                     <a class="dropdown-item" href="#" @click="goToPrototypePage">Prototyping</a>
                 </div>
             </li>
-            <li class="nav-item">
+            <li id="team" class="nav-item">
                 <a class="nav-link" href="#" @click="goToAboutPage">Team</a>
             </li>
 
@@ -35,11 +35,13 @@
 
     export default {
         name: "Navbar",
+
         props: {
         },
-        components: {
 
+        components: {
         },
+
         data: function(){
             return{
                 image: {
@@ -50,21 +52,38 @@
         methods: {
             goToResearchPage: function () {
                 this.$emit('changeView', 1);
+                boldItem("process");
             },
             goToIdeationPage: function(){
-                this.$emit('changeView', 2)
+                this.$emit('changeView', 2);
+                boldItem("process");
             },
             goToPrototypePage: function(){
-                this.$emit('changeView', 3)
+                this.$emit('changeView', 3);
+                boldItem("process");
             },
             goToOverviewPage: function(){
-                this.$emit('changeView', 4)
+                this.$emit('changeView', 4);
+                boldItem("product");
             },
             goToAboutPage: function(){
-                this.$emit('changeView', 0)
+                this.$emit('changeView', 0);
+                boldItem("team");
             }
         }
     }
+
+    function boldItem(id) {
+        var nav = document.getElementsByClassName("nav-item");
+        for(var i = 0; i < nav.length; i++) {
+            console.log(i.valueOf());
+            nav[i].classList.remove("font-weight-bold");
+        }
+
+        var process = document.getElementById(id);
+        process.classList += " font-weight-bold";
+    }
+
 
 </script>
 
