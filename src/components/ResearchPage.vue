@@ -546,6 +546,7 @@
         0px 0px 5px #bbbbbb, 0px 0px 5px #bbbbbb;
         height: 40vh;
         border-radius: 10px;
+        overflow: hidden;
     }
 
     ul.col-2{
