@@ -2,7 +2,7 @@
     <div>
         <div id="app" class="container-fluid">
             <div class="row justify-content-center">
-                <Navbar :about_page="about_page" :research_page="research_page" v-on:changeView="changeView"></Navbar>
+                <Navbar v-on:changeView="changeView"></Navbar>
             </div>
             <div id="main-content" class="">
                 <div id="about_page" class="row justify-content-center">
@@ -13,6 +13,12 @@
                 </div>
                 <div id="ideation_page" class="row justify-content-center">
                     <IdeationPage name="IdeationPage" v-if="current_page==ideation_page"></IdeationPage>
+                </div>
+                <div id="prototype_page" class="row justify-content-center">
+                    <PrototypePage name="PrototypePage" v-if="current_page==prototype_page"></PrototypePage>
+                </div>
+                <div id="overview_page" class="row justify-content-center">
+                    <OverviewPage name="OverviewPage" v-if="current_page==overview_page"></OverviewPage>
                 </div>
             </div>
             <Footer></Footer>
@@ -29,23 +35,29 @@
     import Navbar from "@/components/Navbar";
     import Footer from "@/components/Footer";
     import IdeationPage from "@/components/IdeationPage";
+    import PrototypePage from "./components/PrototypePage";
+    import OverviewPage from "./components/OverviewPage";
 
 
     export default {
         name: 'App',
         components: {
+            PrototypePage,
             AboutPage,
             ResearchPage,
             IdeationPage,
+            OverviewPage,
             Navbar,
             Footer,
         },
         data: function () {
             return {
-                current_page: 0,
+                current_page: 4,
                 about_page: 0,
                 research_page: 1,
-                ideation_page: 2
+                ideation_page: 2,
+                prototype_page: 3,
+                overview_page: 4
             }
         },
         methods: {
@@ -68,12 +80,52 @@
         padding: 0;
     }
 
+    @font-face {
+        font-family: "Lato";
+        src: local("Lato"),
+        url(./fonts/Lato/Lato-Regular.ttf) format("truetype");
+    }
+
+    @font-face {
+        font-family: "Lato Bold";
+        src: local("Lato Bold"),
+        url(./fonts/Lato/Lato-Bold.ttf) format("truetype");
+    }
+
+    @font-face {
+        font-family: "Lato Light";
+        src: local("Lato Light"),
+        url(./fonts/Lato/Lato-Light.ttf) format("truetype");
+    }
+
+    @font-face {
+        font-family: "Libre Baskerville";
+        src: local("Libre Baskerville"),
+        url(./fonts/Libre_Baskerville/LibreBaskerville-Bold.ttf) format("truetype");
+    }
+
+    @font-face {
+        font-family: "Josefin Sans";
+        src: local("Josefin Sans"),
+        url(./fonts/Josefin_Sans/static/JosefinSans-Bold.ttf) format("truetype");
+    }
+
     #app {
-        font-family: Avenir, Helvetica, Arial, sans-serif;
+        font-family: "Lato", sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: left;
         color: #2c3e50;
+    }
+
+    tr {
+        height: 110vh;
+    }
+
+
+
+    td {
+        padding: 0 20%;
     }
 
     div h2 {
@@ -97,8 +149,20 @@
         color: #000000;
     }
 
+
+    div h3 {
+        font-family: "Libre Baskerville", serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 140%;
+
+        color: #0081B8;
+    }
+
+
     p {
-        font-family: Open Sans, sans-serif;
+
         font-style: normal;
         font-weight: normal;
         font-size: 20px;
@@ -109,7 +173,7 @@
     }
 
     ul {
-        font-family: Open Sans, sans-serif;
+        font-family: Avenir, sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 20px;

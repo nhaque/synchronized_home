@@ -20,15 +20,15 @@
                 </div>
                 <div class="row contact">
                     <div class = "col">
-                    <a :href="resume" class="resume">
-                        Resume
-                    </a>
-                    |
-                    <a :href="linkedIn" class="linkedIn">
-                        LinkedIn
-                    </a>
-                    |
-                    <a :href="portfolio" class="portfolio">
+                        <a :href="linkedIn" v-if="linkedIn!='#'" target="_blank" class="linkedIn">
+                            LinkedIn
+                        </a>
+                        <span v-if="resume!='#'">|</span>
+                        <a :href="resume" v-if="resume!='#'" target="_blank" class="resume">
+                            Resume
+                        </a>
+                        <span v-if="portfolio!='#'">|</span>
+                    <a :href="portfolio" v-if="portfolio!='#'" target="_blank" class="portfolio">
                         Portfolio
                     </a>
                     </div>
@@ -62,18 +62,15 @@
     }
 
     .introduction-name {
-        font-family: Proxima Nova, sans-serif;
-        font-style: normal;
-        font-weight: bold;
+        font-family: Lato Bold, sans-serif;
         font-size: 28px;
         line-height: 28px;
         color: #000000;
     }
 
     .introduction-role {
-        font-family: Proxima Nova, sans-serif;
+        font-family: Lato, sans-serif;
         font-style: normal;
-        font-weight: 300;
         font-size: 28px;
         line-height: 28px;
         color: #5F5F5F;
@@ -81,22 +78,24 @@
 
 
     .introduction-text {
-        font-family: Open Sans, sans-serif;
+        font-family: Lato, sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 20px;
-        line-height: 26px;
+        line-height: 28px;
         color: #111111;
     }
 
     .contact {
-        font-family: Open Sans， sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
         line-height: 22px;
-        color: #2F80ED;
+        color: #111111;
     }
 
+    img {
+        max-width: 90%;
+    }
 
 </style>

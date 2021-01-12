@@ -15,7 +15,6 @@
     h1{
         font-family: Libre Baskerville,serif;
         font-style: normal;
-        font-weight: bold;
         font-size: 28px;
         line-height: 140%;
         /* or 39px */

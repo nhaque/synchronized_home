@@ -6,18 +6,18 @@
                 <!--            <tr id="FromInsightToIdeas" v-if="show.current<1" >-->
                 <tr id="FromInsightToIdeas container">
                     <td class="align-middle justify-content-center">
-                        <div class="row">
+                        <div class="row mb-3">
                             <TealTitle class="col-12" title="Ideation"></TealTitle>
                         </div>
                         <div class="row">
                             <MainTitle class="col-12" :title="titles.title1"></MainTitle>
                         </div>
-                        <div class="row text-justify">
+                        <div class="row text-justify my-4">
                             <Paragraph class="col" :content="paragraphs.content1"></Paragraph>
                         </div>
                         <div class="row justify-content-center">
                             <div class="col-12">
-                                <img :src="images.image1" class="img-responsive" alt="design workshop">
+                                <img id="workshop" :src="images.image1" class="img-responsive" alt="design workshop">
                             </div>
                         </div>
                     </td>
@@ -26,55 +26,65 @@
             </transition>
 
             <!--            <tr id="PossibleDesignOpp" v-if="show.current>=1" >-->
-            <tr id="PossibleDesignOpp">
-                <div class="row mb-5">
-                    <div class="col-12"><img :src="background.wavetop" class="background" alt="background wave top">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
+            <tr id="PossibleDesignOpp" :style="{
+                backgroundImage: `url(${background.wave})`,
+             'background-repeat': 'no-repeat', 'background-size': 'cover'
+            }">
+
                         <td id="backgroundWaveTop" class="backgroundTop ">
-                            <div class="row">
+                            <div class="row mb-3">
                                 <TealTitle class="col-12"
                                            title="#001 Kick-off meeting and the design workshop"></TealTitle>
                             </div>
                             <div class="row">
                                 <MainTitle class="col-12" :title="titles.title2"></MainTitle>
                             </div>
-                            <div class="row">
-                                <Paragraph class="col-8" :content="paragraphs.content2"></Paragraph>
+                            <div class="row my-5">
+                                <Paragraph class="col-8 my-auto" :content="paragraphs.content2"></Paragraph>
                                 <div class="col-4">
                                     <img :src="images.image2" class="align-middle" alt="kickoff meeting">
                                 </div>
                             </div>
                             <HyperLink :link="link.medium1" linkname="Read the Medium Article"></HyperLink>
                         </td>
-                    </div>
-                </div>
-                <div class="row mt-5"><img :src="background.wevebot" class="background" alt="background wave top"/>
-                </div>
             </tr>
 
             <tr>
                 <td class="backgroundF9F8FF">
+                    <div class="row mb-3">
+                        <div class="col">
                     <TealTitle :title="titles.tealtitle1"></TealTitle>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
                     <MainTitle :title="titles.title3"></MainTitle>
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col">
                     <Paragraph :content="paragraphs.content3"></Paragraph>
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                    <div class="col">
                     <HyperLink :link="link.medium2" linkname="Read the Medium Article"></HyperLink>
-                    <div class="row justify-content-center">
-                        <div class="col-3">
+                    </div>
+                    </div>
+                    <div class="row justify-content-center my-5">
+                        <div class="col-xl-3 col-lg-6 col-sm-12">
                             <Card :quant="cards.card1.quant" :card_title="cards.card1.card_title"
                                   :card_content="cards.card1.card_content"></Card>
                         </div>
-                        <div class="col-3">
+                        <div class="col-xl-3 col-lg-6 col-sm-12">
                             <Card :quant="cards.card2.quant" :card_title="cards.card2.card_title"
                                   :card_content="cards.card2.card_content"></Card>
                         </div>
-                        <div class="col-3">
+                        <div class="col-xl-3 col-lg-6 col-sm-12">
                             <Card :quant="cards.card3.quant" :card_title="cards.card3.card_title"
                                   :card_content="cards.card3.card_content"></Card>
                         </div>
-                        <div class="col-3">
+                        <div class="col-xl-3 col-lg-6 col-sm-12">
                             <Card :quant="cards.card4.quant" :card_title="cards.card4.card_title"
                                   :card_content="cards.card4.card_content"></Card>
                         </div>
@@ -83,51 +93,65 @@
                 </td>
             </tr>
 
-            <tr id="RemoteOnlineColab">
+            <tr id="OnlineCollaboration"
+                :style="{
+                backgroundImage: `url(${background.bg4})`,
+             'background-repeat': 'no-repeat', 'background-size': 'cover'
+            }">
                         <td>
-                            <div class="row">
+                            <div class="row mb-3">
                                 <TealTitle class="col-12" title="Online working session"></TealTitle>
                             </div>
                             <div class="row">
                                 <MainTitle class="col-12" :title="titles.title4"></MainTitle>
                             </div>
                             <div class="row">
-                                <div class="col-8">
+                                <div class="col-6 my-auto mr-5">
                                     <Paragraph class="" :content="paragraphs.content4"></Paragraph>
-                                    <HyperLink class="" :link="link.medium3"
-                                               linkname="Read the Medium Article"></HyperLink>
-                                    <img :src="images.image4" class="row" alt="sticky notes miro">
                                 </div>
                                 <div class="col-4">
                                     <img :src="images.image3" class="align-middle" alt="miro collab">
-
                                 </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <HyperLink class="" :link="link.medium3"
+                                               linkname="Read the Medium Article"></HyperLink>
+                                </div>
+                            </div>
+                            <div class="row my-5">
+                                    <img :src="images.image4" class="align-middle" alt="sticky notes">
                             </div>
                         </td>
             </tr>
+
             <tr id="SelectingFeatures"
                 :style="{
                 backgroundImage: `url(${background.bubble})`,
-             'background-repeat': 'no-repeat'
+             'background-repeat': 'no-repeat',  'background-size': 'cover'
             }">
                 <td>
-                    <div class="row">
+                    <div class="row mb-3">
                         <TealTitle class="col-12" title="#003 Idea pitch"></TealTitle>
                     </div>
                     <div class="row">
                         <MainTitle class="col-12" :title="titles.title5"></MainTitle>
                     </div>
-                    <div class="row">
-                        <div class="col-12">
+                    <div class="row my-5">
+                        <div class="col-10">
                             <Paragraph class="" :content="paragraphs.content5"></Paragraph>
-
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-6"><img :src="images.image5" class="row" alt="sticky notes miro"></div>
-                        <div class="col-6"><img :src="images.image6" class="align-middle" alt="miro collab"></div>
-
+                        <div class="col-6" align="center"><img :src="images.image5" class="row mb-3" alt="sticky notes miro">
+                            <h7>Idea Pitch</h7>
+                        </div>
+                        <div class="col-6" align="center"><img :src="images.image6" class="row mb-3 align-middle" alt="miro collab">
+                            <h7>Quantitative Evaluation</h7>
+                        </div>
                     </div>
+
                 </td>
             </tr>
 
@@ -151,7 +175,9 @@
 
     import background_wave_top from "@/components/images/wavetop.png"
     import background_wave_bot from "@/components/images/wavebot.png"
-    import background_bubble from "@/components/images/bubblebackground.png"
+    import background_bubble from "@/components/images/ideation-bg5.png"
+    import background_wave from "@/components/images/wavebackground.png"
+    import bg4 from "@/components/images/Ideation-bg4.png"
 
     export default {
         name: "IdeationPage",
@@ -202,12 +228,14 @@
                 background: {
                     wavetop: background_wave_top,
                     wevebot: background_wave_bot,
-                    bubble: background_bubble
+                    bubble: background_bubble,
+                    wave: background_wave,
+                    bg4: bg4
                 },
                 link: {
-                    medium1: "https://medium.com",
-                    medium2: "https://medium.com",
-                    medium3: "https://medium.com"
+                    medium1: "https://medium.com/metals-capstone-2020-syncronized/client-kick-off-defining-the-scope-of-the-project-9914ab4952b",
+                    medium2: "https://medium.com/metals-capstone-2020-syncronized/our-research-scope-and-methods-d41fe09538c2",
+                    medium3: "https://medium.com/metals-capstone-2020-syncronized/online-design-research-what-and-how-efb90d7a82cf"
                 },
                 cards: {
                     card1: {
@@ -282,12 +310,10 @@
         object-fit: fill;
     }
 
-    tr {
-        height: 85vh;
-    }
-
-    td {
-        padding: 0 20vw;
+    #workshop {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
     }
 
     /*TODO slide*/
